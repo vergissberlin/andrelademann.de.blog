@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /**
  * One-time migration: Hashnode RSS → Astro Markdown posts
  * Run: node scripts/import-from-rss.mjs
