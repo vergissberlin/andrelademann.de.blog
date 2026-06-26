@@ -36,7 +36,7 @@ npm install workerpool
 Create `worker.js` with a deliberately inefficient CPU task:
 
 ```javascript
-const workerpool = require('workerpool');
+const workerpool = require("workerpool");
 
 // deliberately inefficient fibonacci implementation
 function fibonacci(n) {
@@ -51,11 +51,11 @@ function fibonacci(n) {
 
 ```javascript
 // threads.js
-const workerpool = require('workerpool');
+const workerpool = require("workerpool");
 
 workerpool.worker({
   fibonacci: fibonacci,
-  workerType: 'thread'
+  workerType: "thread",
 });
 ```
 
@@ -63,11 +63,11 @@ workerpool.worker({
 
 ```javascript
 // child_processes.js
-const workerpool = require('workerpool');
+const workerpool = require("workerpool");
 
 workerpool.worker({
   fibonacci: fibonacci,
-  workerType: 'process'
+  workerType: "process",
 });
 ```
 

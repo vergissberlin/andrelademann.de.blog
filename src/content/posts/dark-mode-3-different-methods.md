@@ -36,10 +36,18 @@ When you use bootstrap-sass, it comes with custom properties — but unfortunate
 
 ```html
 <head>
-  <link rel="stylesheet" type="text/css"
-    media="(prefers-color-scheme: light)" href="light-theme.css">
-  <link rel="stylesheet" type="text/css"
-    media="(prefers-color-scheme: dark)"  href="dark-theme.css">
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="(prefers-color-scheme: light)"
+    href="light-theme.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    media="(prefers-color-scheme: dark)"
+    href="dark-theme.css"
+  />
 </head>
 ```
 

@@ -8,7 +8,7 @@ draft: false
 tags:
   - beginner-developers
   - blogging
-description: "@adriantwarog told me in his article \"Programmers That Don't Blog Should Start Right Now\" to start blogging because every developer should do it. Maybe not all, but I agree that every developer I know who blogs is a good developer. And since I want ..."
+description: '@adriantwarog told me in his article "Programmers That Don''t Blog Should Start Right Now" to start blogging because every developer should do it. Maybe not all, but I agree that every developer I know who blogs is a good developer. And since I want ...'
 canonicalURL: https://blog.andrelademann.de/okay-lets-blog
 ---
 

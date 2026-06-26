@@ -32,14 +32,14 @@ Best regards André
 
 ### Cliparts
 
--   Mean Boss Cliparts #2867138 http://clipart-library.com/clipart/880897.htm
--   Mean Boss Cliparts #2867116 http://clipart-library.com/clipart/880641.htm
--   Mean Boss Cliparts #2867135 http://clipart-library.com/clipart/880874.htm
--   Boss Cliparts #34897 http://clipart-library.com/clipart/271303.htm
+- Mean Boss Cliparts #2867138 http://clipart-library.com/clipart/880897.htm
+- Mean Boss Cliparts #2867116 http://clipart-library.com/clipart/880641.htm
+- Mean Boss Cliparts #2867135 http://clipart-library.com/clipart/880874.htm
+- Boss Cliparts #34897 http://clipart-library.com/clipart/271303.htm
 
 ### Book
 
--   The Art of Action: How Leaders Close the Gaps between Plans, Actions and Results https://amzn.to/2ZS5uWC
+- The Art of Action: How Leaders Close the Gaps between Plans, Actions and Results https://amzn.to/2ZS5uWC
 
 ### Video
 

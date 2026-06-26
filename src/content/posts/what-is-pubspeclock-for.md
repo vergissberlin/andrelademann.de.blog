@@ -18,9 +18,7 @@ It is good practice to version the `pubspec.lock` file in a Flutter project. The
 Here are some reasons why you should version the `pubspec.lock` file:
 
 1.  **Reproducibility**: By versioning the `pubspec.lock` file, you can ensure that other developers working on your project use the exact same versions of the dependencies. This ensures that your project works consistently in different environments.
-    
 2.  **Protection against changes**: If you do not version the `pubspec.lock` file and instead use only the `pubspec.yaml` file to define dependencies, updates to package versions can cause unexpected problems. The `pubspec.lock` file ensures that the defined versions are maintained until you deliberately update them.
-    
 
 Continuous Integration (CI): If you are using Continuous Integration in your development process, the `pubspec.lock` file is important to ensure that the CI environment uses the same dependencies as your local development environment.
 

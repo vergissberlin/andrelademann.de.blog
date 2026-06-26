@@ -19,12 +19,12 @@ In pair programming, two developers work simultaneously on one source code. The 
 
 At Netresearch, we use this method and derive many advantages from it:
 
--   Direct knowledge exchange about methods, tools used and ways of working.
--   Improvement of code quality through direct code review, which leads to more robust code.
--   Improving collaboration through communication
--   When you have to describe approaches verbally, new ideas come up and thinking errors are noticed.
--   In dialogue, the best solution can be found.
--   A shared sense of achievement makes people more satisfied with the result.
+- Direct knowledge exchange about methods, tools used and ways of working.
+- Improvement of code quality through direct code review, which leads to more robust code.
+- Improving collaboration through communication
+- When you have to describe approaches verbally, new ideas come up and thinking errors are noticed.
+- In dialogue, the best solution can be found.
+- A shared sense of achievement makes people more satisfied with the result.
 
 ## Stereotype
 
