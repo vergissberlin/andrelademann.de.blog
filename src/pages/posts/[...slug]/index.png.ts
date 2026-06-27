@@ -51,7 +51,14 @@ export const GET: APIRoute = async ({ props, url }) => {
   let heroDataUri: string | null = null;
 
   for (const ext of heroExtensions) {
-    const heroPath = resolve(process.cwd(), "public", "images", "posts", slug, `hero.${ext}`);
+    const heroPath = resolve(
+      process.cwd(),
+      "public",
+      "images",
+      "posts",
+      slug,
+      `hero.${ext}`
+    );
     if (existsSync(heroPath)) {
       const heroBuffer = await sharp(heroPath)
         .resize(540, 420, { fit: "cover" })
