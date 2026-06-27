@@ -3,6 +3,8 @@ import { getCollection } from "astro:content";
 import { fontData, experimental_getFontFileURL } from "astro:assets";
 import satori from "satori";
 import sharp from "sharp";
+import { existsSync } from "node:fs";
+import { resolve } from "node:path";
 import { getFontPathByWeight } from "@/utils/getFontPathByWeight";
 import { getPostSlug } from "@/utils/getPostPaths";
 import config from "@/config";
@@ -44,6 +46,177 @@ export const GET: APIRoute = async ({ props, url }) => {
     ),
   ]);
 
+  const slug = getPostSlug(props.id, props.filePath);
+  const heroExtensions = ["png", "jpeg", "jpg"];
+  let heroDataUri: string | null = null;
+
+  for (const ext of heroExtensions) {
+    const heroPath = resolve(process.cwd(), "public", "images", "posts", slug, `hero.${ext}`);
+    if (existsSync(heroPath)) {
+      const heroBuffer = await sharp(heroPath)
+        .resize(540, 420, { fit: "cover" })
+        .jpeg({ quality: 85 })
+        .toBuffer();
+      heroDataUri = `data:image/jpeg;base64,${heroBuffer.toString("base64")}`;
+      break;
+    }
+  }
+
+  const cardChildren = heroDataUri
+    ? [
+        {
+          type: "div",
+          props: {
+            style: {
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              padding: "20px",
+              width: "55%",
+              height: "100%",
+            },
+            children: [
+              {
+                type: "p",
+                props: {
+                  style: {
+                    fontSize: 52,
+                    fontWeight: "bold",
+                    maxHeight: "78%",
+                    overflow: "hidden",
+                    margin: 0,
+                  },
+                  children: props.data.title,
+                },
+              },
+              {
+                type: "div",
+                props: {
+                  style: {
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "100%",
+                    marginBottom: "8px",
+                    fontSize: 24,
+                  },
+                  children: [
+                    {
+                      type: "span",
+                      props: {
+                        children: [
+                          "by ",
+                          {
+                            type: "span",
+                            props: {
+                              style: { overflow: "hidden", fontWeight: "bold" },
+                              children: props.data.author,
+                            },
+                          },
+                        ],
+                      },
+                    },
+                    {
+                      type: "span",
+                      props: {
+                        style: { overflow: "hidden", fontWeight: "bold" },
+                        children: config.site.title,
+                      },
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        },
+        {
+          type: "img",
+          props: {
+            src: heroDataUri,
+            style: {
+              width: "45%",
+              height: "100%",
+              objectFit: "cover",
+              borderLeft: "4px solid #000",
+            },
+          },
+        },
+      ]
+    : [
+        {
+          type: "div",
+          props: {
+            style: {
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              margin: "20px",
+              width: "90%",
+              height: "90%",
+            },
+            children: [
+              {
+                type: "p",
+                props: {
+                  style: {
+                    fontSize: 72,
+                    fontWeight: "bold",
+                    maxHeight: "84%",
+                    overflow: "hidden",
+                  },
+                  children: props.data.title,
+                },
+              },
+              {
+                type: "div",
+                props: {
+                  style: {
+                    display: "flex",
+                    justifyContent: "space-between",
+                    width: "100%",
+                    marginBottom: "8px",
+                    fontSize: 28,
+                  },
+                  children: [
+                    {
+                      type: "span",
+                      props: {
+                        children: [
+                          "by ",
+                          {
+                            type: "span",
+                            props: {
+                              style: { color: "transparent" },
+                              children: '"',
+                            },
+                          },
+                          {
+                            type: "span",
+                            props: {
+                              style: {
+                                overflow: "hidden",
+                                fontWeight: "bold",
+                              },
+                              children: props.data.author,
+                            },
+                          },
+                        ],
+                      },
+                    },
+                    {
+                      type: "span",
+                      props: {
+                        style: { overflow: "hidden", fontWeight: "bold" },
+                        children: config.site.title,
+                      },
+                    },
+                  ],
+                },
+              },
+            ],
+          },
+        },
+      ];
+
   const svg = await satori(
     {
       type: "div",
@@ -84,84 +257,13 @@ export const GET: APIRoute = async ({ props, url }) => {
                 background: "#fefbfb",
                 borderRadius: "4px",
                 display: "flex",
-                justifyContent: "center",
+                flexDirection: "row",
+                overflow: "hidden",
                 margin: "2rem",
                 width: "88%",
                 height: "80%",
               },
-              children: {
-                type: "div",
-                props: {
-                  style: {
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                    margin: "20px",
-                    width: "90%",
-                    height: "90%",
-                  },
-                  children: [
-                    {
-                      type: "p",
-                      props: {
-                        style: {
-                          fontSize: 72,
-                          fontWeight: "bold",
-                          maxHeight: "84%",
-                          overflow: "hidden",
-                        },
-                        children: props.data.title,
-                      },
-                    },
-                    {
-                      type: "div",
-                      props: {
-                        style: {
-                          display: "flex",
-                          justifyContent: "space-between",
-                          width: "100%",
-                          marginBottom: "8px",
-                          fontSize: 28,
-                        },
-                        children: [
-                          {
-                            type: "span",
-                            props: {
-                              children: [
-                                "by ",
-                                {
-                                  type: "span",
-                                  props: {
-                                    style: { color: "transparent" },
-                                    children: '"',
-                                  },
-                                },
-                                {
-                                  type: "span",
-                                  props: {
-                                    style: {
-                                      overflow: "hidden",
-                                      fontWeight: "bold",
-                                    },
-                                    children: props.data.author,
-                                  },
-                                },
-                              ],
-                            },
-                          },
-                          {
-                            type: "span",
-                            props: {
-                              style: { overflow: "hidden", fontWeight: "bold" },
-                              children: config.site.title,
-                            },
-                          },
-                        ],
-                      },
-                    },
-                  ],
-                },
-              },
+              children: cardChildren,
             },
           },
         ],
