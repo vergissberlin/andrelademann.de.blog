@@ -38,18 +38,18 @@ This is achieved by adding semantic data to the source text of the email. Here i
 <html>
   <body>
     <script type="application/ld+json">
-    {
-      "@context":             "http://schema.org",
-      "@type":                "EventReservation",
-      "reservationNumber":    "IO12345",
-      "underName":            "John Smith",
-      "reservationFor": {
-        "@type":              "Event",
-        "name":               "Google I/O 2013",
-        "startDate":          "2013-05-15T08:30:00-08:00",
-        "location":           "Moscone Center, 800 Howard St., San Francisco, CA 94103"
+      {
+        "@context": "http://schema.org",
+        "@type": "EventReservation",
+        "reservationNumber": "IO12345",
+        "underName": "John Smith",
+        "reservationFor": {
+          "@type": "Event",
+          "name": "Google I/O 2013",
+          "startDate": "2013-05-15T08:30:00-08:00",
+          "location": "Moscone Center, 800 Howard St., San Francisco, CA 94103"
+        }
       }
-    }
     </script>
     <p>Dear John, thanks for booking your Google I/O ticket with us.</p>
   </body>
@@ -80,18 +80,18 @@ Create a new text file `content.html` and put the following content in it:
 <html>
   <body>
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "EventReservation",
-      "reservationNumber": "IO12345",
-      "underName": "John Smith",
-      "reservationFor": {
-        "@type": "Event",
-        "name": "Google I/O 2013",
-        "startDate": "2013-05-15T08:30:00-08:00",
-        "location": "Moscone Center, 800 Howard St., San Francisco, CA 94103"
+      {
+        "@context": "http://schema.org",
+        "@type": "EventReservation",
+        "reservationNumber": "IO12345",
+        "underName": "John Smith",
+        "reservationFor": {
+          "@type": "Event",
+          "name": "Google I/O 2013",
+          "startDate": "2013-05-15T08:30:00-08:00",
+          "location": "Moscone Center, 800 Howard St., San Francisco, CA 94103"
+        }
       }
-    }
     </script>
   </body>
 </html>

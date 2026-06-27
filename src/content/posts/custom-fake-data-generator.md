@@ -38,7 +38,7 @@ Women are known to be capable of multitasking. Developer's best friend can do th
 
 ### Worker types
 
-With worker pool, you have the option to choose between the worker types process and thread. In case of 'process', child\_process will be used. In case of 'thread', worker\_threads will be used. I was curious to find out if child\_process or worker\_threads is better for generating test data. 1st test: 90,000 test users
+With worker pool, you have the option to choose between the worker types process and thread. In case of 'process', child_process will be used. In case of 'thread', worker_threads will be used. I was curious to find out if child_process or worker_threads is better for generating test data. 1st test: 90,000 test users
 
 In my first test 90000 test users are generated. They are distributed over 18 CSV files. Surprisingly for me, processes are a little bit faster than threads (child processes). But that already counts when you generate gigabytes of test data!
 
@@ -52,4 +52,4 @@ You come so far now it's time to give it a try on your own! Checkout the reposit
 
 ## Summary
 
-Faker is an awesome concept. It is developed in many programming languages. In that cases, I tested the JavaScript version, and I am pretty happy with the outcome. Now I am curious how faker performs in other languages like Python, Ruby, PHP, Java or go! Sounds like a good contest to me :) Give it a try! With parallel processing, it was almost 4 times faster than on a single process in my tests. And child\_processes are up to 5% faster than worker\_threads. Download and try Download the example project, and try it on your machine!
+Faker is an awesome concept. It is developed in many programming languages. In that cases, I tested the JavaScript version, and I am pretty happy with the outcome. Now I am curious how faker performs in other languages like Python, Ruby, PHP, Java or go! Sounds like a good contest to me :) Give it a try! With parallel processing, it was almost 4 times faster than on a single process in my tests. And child_processes are up to 5% faster than worker_threads. Download and try Download the example project, and try it on your machine!

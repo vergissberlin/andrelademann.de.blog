@@ -64,13 +64,13 @@ MJML is a markup language like HTML and here is the example we use in our flow:
             Hello World
         </mj-text>
         <mj-text>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
-          Ipsum has been the industry's standard dummy text ever since the 1500s, when 
-          an unknown printer took a galley of type and scrambled it to make a type 
-          specimen book. It has survived not only five centuries, but also the leap into 
-          electronic typesetting, remaining essentially unchanged. It was popularised in the 
-          1960s with the release of Letraset sheets containing Lorem Ipsum passages, and 
-          more recently with desktop publishing software like Aldus PageMaker including 
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+          Ipsum has been the industry's standard dummy text ever since the 1500s, when
+          an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into
+          electronic typesetting, remaining essentially unchanged. It was popularised in the
+          1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker including
           versions of Lorem Ipsum.
         </mj-text>
       </mj-column>
@@ -95,10 +95,10 @@ Send beautiful, well-structured email with Node-RED is now an easy task to do. I
 
 ## Links
 
--   [Node-RED repository](https://flows.nodered.org/node/@vergissberlin/node-red-contrib-mjml)
--   [Node-RED](http://nodered.org/)
--   [MJML documentation](https://documentation.mjml.io/)
--   [MJML templates](https://mjml.io/templates)
+- [Node-RED repository](https://flows.nodered.org/node/@vergissberlin/node-red-contrib-mjml)
+- [Node-RED](http://nodered.org/)
+- [MJML documentation](https://documentation.mjml.io/)
+- [MJML templates](https://mjml.io/templates)
 
 ### Repository on GitHub
 
