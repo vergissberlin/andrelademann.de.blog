@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import { type CollectionEntry, getCollection, render } from "astro:content";
 import PostLayout from "@/layouts/PostLayout.astro";
 import Header from "@/components/Header.astro";
@@ -63,6 +64,7 @@ const {
   title,
   description,
   ogImage: initOgImage,
+  heroImage: initHeroImage,
   canonicalURL,
   pubDatetime,
   modDatetime,
@@ -73,12 +75,21 @@ const {
 
 const { Content } = await render(post);
 
+let heroImageUrl: string | undefined;
+if (typeof initHeroImage === "string") {
+  heroImageUrl = initHeroImage;
+} else if (initHeroImage?.src) {
+  heroImageUrl = initHeroImage.src;
+}
+
 let ogImageUrl: string | undefined;
 
 if (typeof initOgImage === "string") {
   ogImageUrl = initOgImage;
 } else if (initOgImage?.src) {
   ogImageUrl = initOgImage.src;
+} else if (heroImageUrl) {
+  ogImageUrl = heroImageUrl;
 }
 
 if (!ogImageUrl && config.features.dynamicOgImage) {
@@ -131,6 +142,31 @@ const ogImage = ogImageUrl
       </span>
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
     </div>
+
+    {
+      initHeroImage && (
+        <div class="mt-4 mb-6 w-full">
+          {typeof initHeroImage === "string" ? (
+            <img
+              src={initHeroImage}
+              alt={`Hero image for ${title}`}
+              class="aspect-video w-full rounded-lg object-cover"
+              loading="eager"
+              decoding="async"
+            />
+          ) : (
+            <Image
+              src={initHeroImage}
+              alt={`Hero image for ${title}`}
+              widths={[800, 1200, 1600]}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+              class="aspect-video w-full rounded-lg object-cover"
+              loading="eager"
+            />
+          )}
+        </div>
+      )
+    }
 
     <article
       id="article"

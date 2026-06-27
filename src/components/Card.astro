@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import type { CollectionEntry } from "astro:content";
 import { getPostUrl } from "@/utils/getPostPaths";
 import { toTransitionName } from "@/utils/toTransitionName";
@@ -10,12 +11,37 @@ type Props = {
 
 const { variant: Heading = "h2", id, data, filePath } = Astro.props;
 
-const { title, description, ...props } = data;
+const { title, description, heroImage, ...props } = data;
+const postUrl = getPostUrl(id, filePath, Astro.currentLocale);
 ---
 
 <li class="my-6">
+  {
+    heroImage && (
+      <a href={postUrl} tabindex="-1" aria-hidden="true">
+        {typeof heroImage === "string" ? (
+          <img
+            src={heroImage}
+            alt=""
+            class="mb-3 aspect-video w-full rounded-md object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <Image
+            src={heroImage}
+            alt=""
+            widths={[400, 800]}
+            sizes="(max-width: 640px) 100vw, 800px"
+            class="mb-3 aspect-video w-full rounded-md object-cover"
+            loading="lazy"
+          />
+        )}
+      </a>
+    )
+  }
   <a
-    href={getPostUrl(id, filePath, Astro.currentLocale)}
+    href={postUrl}
     class:list={[
       "text-accent inline-block text-lg font-medium",
       "decoration-dashed underline-offset-4 hover:underline",
