@@ -23,12 +23,14 @@ export const GET: APIRoute = async context => {
     ),
   ]);
 
+  const hostname = new URL(config.site.url).hostname;
+
   const svg = await satori(
     {
       type: "div",
       props: {
         style: {
-          background: "#fefbfb",
+          background: "#0f172a",
           width: "100%",
           height: "100%",
           display: "flex",
@@ -37,103 +39,149 @@ export const GET: APIRoute = async context => {
           fontFamily: "Google Sans Code",
         },
         children: [
+          // Accent gradient bar (top)
           {
             type: "div",
             props: {
               style: {
                 position: "absolute",
-                top: "-1px",
-                right: "-1px",
-                border: "4px solid #000",
-                background: "#ecebeb",
-                opacity: "0.9",
-                borderRadius: "4px",
-                display: "flex",
-                justifyContent: "center",
-                margin: "2.5rem",
-                width: "88%",
-                height: "80%",
+                top: "0",
+                left: "0",
+                width: "100%",
+                height: "6px",
+                background:
+                  "linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #ec4899 100%)",
               },
             },
           },
+          // Main card
           {
             type: "div",
             props: {
               style: {
-                border: "4px solid #000",
-                background: "#fefbfb",
-                borderRadius: "4px",
                 display: "flex",
-                justifyContent: "center",
-                margin: "2rem",
-                width: "88%",
-                height: "80%",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                padding: "60px 72px",
+                width: "100%",
+                height: "100%",
+                boxSizing: "border-box",
               },
-              children: {
-                type: "div",
-                props: {
-                  style: {
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                    margin: "20px",
-                    width: "90%",
-                    height: "90%",
+              children: [
+                // Top: avatar initials + name
+                {
+                  type: "div",
+                  props: {
+                    style: {
+                      display: "flex",
+                      alignItems: "center",
+                      gap: "28px",
+                    },
+                    children: [
+                      {
+                        type: "div",
+                        props: {
+                          style: {
+                            width: "80px",
+                            height: "80px",
+                            borderRadius: "50%",
+                            background:
+                              "linear-gradient(135deg, #6366f1 0%, #a855f7 100%)",
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: 32,
+                            fontWeight: "bold",
+                            color: "#fff",
+                            flexShrink: "0",
+                          },
+                          children: "AL",
+                        },
+                      },
+                      {
+                        type: "span",
+                        props: {
+                          style: {
+                            fontSize: 32,
+                            fontWeight: "bold",
+                            color: "#94a3b8",
+                            letterSpacing: "0.05em",
+                          },
+                          children: hostname,
+                        },
+                      },
+                    ],
                   },
-                  children: [
-                    {
-                      type: "div",
-                      props: {
-                        style: {
-                          display: "flex",
-                          flexDirection: "column",
-                          justifyContent: "center",
-                          alignItems: "center",
-                          height: "90%",
-                          maxHeight: "90%",
-                          overflow: "hidden",
-                          textAlign: "center",
-                        },
-                        children: [
-                          {
-                            type: "p",
-                            props: {
-                              style: { fontSize: 72, fontWeight: "bold" },
-                              children: config.site.title,
-                            },
-                          },
-                          {
-                            type: "p",
-                            props: {
-                              style: { fontSize: 28 },
-                              children: config.site.description,
-                            },
-                          },
-                        ],
-                      },
-                    },
-                    {
-                      type: "div",
-                      props: {
-                        style: {
-                          display: "flex",
-                          justifyContent: "flex-end",
-                          width: "100%",
-                          marginBottom: "8px",
-                          fontSize: 28,
-                        },
-                        children: {
-                          type: "span",
-                          props: {
-                            style: { overflow: "hidden", fontWeight: "bold" },
-                            children: new URL(config.site.url).hostname,
-                          },
-                        },
-                      },
-                    },
-                  ],
                 },
-              },
+                // Middle: title + description
+                {
+                  type: "div",
+                  props: {
+                    style: {
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: "20px",
+                    },
+                    children: [
+                      {
+                        type: "h1",
+                        props: {
+                          style: {
+                            fontSize: 80,
+                            fontWeight: "bold",
+                            color: "#f8fafc",
+                            margin: "0",
+                            lineHeight: "1.1",
+                          },
+                          children: config.site.title,
+                        },
+                      },
+                      {
+                        type: "p",
+                        props: {
+                          style: {
+                            fontSize: 30,
+                            color: "#94a3b8",
+                            margin: "0",
+                            lineHeight: "1.5",
+                            maxWidth: "800px",
+                          },
+                          children: config.site.description,
+                        },
+                      },
+                    ],
+                  },
+                },
+                // Bottom: tag pills
+                {
+                  type: "div",
+                  props: {
+                    style: {
+                      display: "flex",
+                      gap: "16px",
+                    },
+                    children: [
+                      ...[
+                        "Cloud Architecture",
+                        "Software Engineering",
+                        "DevOps",
+                      ].map(tag => ({
+                        type: "div",
+                        props: {
+                          style: {
+                            padding: "8px 20px",
+                            borderRadius: "999px",
+                            border: "2px solid #334155",
+                            color: "#94a3b8",
+                            fontSize: 22,
+                          },
+                          children: tag,
+                        },
+                      })),
+                    ],
+                  },
+                },
+              ],
             },
           },
         ],
