@@ -23,7 +23,7 @@ const postUrl = getPostUrl(id, filePath, Astro.currentLocale);
           <img
             src={heroImage}
             alt=""
-            class="mb-3 w-full aspect-video object-cover rounded-md"
+            class="mb-3 aspect-video w-full rounded-md object-cover"
             loading="lazy"
             decoding="async"
           />
@@ -33,7 +33,7 @@ const postUrl = getPostUrl(id, filePath, Astro.currentLocale);
             alt=""
             widths={[400, 800]}
             sizes="(max-width: 640px) 100vw, 800px"
-            class="mb-3 w-full aspect-video object-cover rounded-md"
+            class="mb-3 aspect-video w-full rounded-md object-cover"
             loading="lazy"
           />
         )}
