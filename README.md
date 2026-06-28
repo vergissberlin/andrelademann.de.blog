@@ -9,7 +9,7 @@ Built with [Astro](https://astro.build/) on the [AstroPaper](https://github.com/
 ## Tech stack
 
 | Area                | Tools                                                                                  |
-|---------------------|----------------------------------------------------------------------------------------|
+| ------------------- | -------------------------------------------------------------------------------------- |
 | Framework           | [Astro](https://astro.build/) 6                                                        |
 | Styling             | [Tailwind CSS](https://tailwindcss.com/) 4                                             |
 | Content             | Markdown / MDX via Astro Content Collections                                           |
@@ -45,7 +45,7 @@ astro dev stop
 ## Commands
 
 | Command             | Description                                       |
-|---------------------|---------------------------------------------------|
+| ------------------- | ------------------------------------------------- |
 | `pnpm dev`          | Start the local dev server                        |
 | `pnpm build`        | Type-check, build the site, run Pagefind indexing |
 | `pnpm preview`      | Preview the production build locally              |

@@ -29,7 +29,7 @@ When I tried AI for the first time, I was so amazed! One line after the other fi
 If CoPilot where allowed to bring the sentence **"From today's perspective, \[…\]"** to an end, it would write:
 
 ```text
-we can see the AI as a tool that can help us write code 
+we can see the AI as a tool that can help us write code
 that is more readable, more maintainable, and more efficient.
 
 ```

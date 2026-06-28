@@ -29,18 +29,25 @@ The pattern plays out in code all the time:
 ```javascript
 // ❌ Building a "generic form system" before anyone asked for one
 class FormBuilder {
-  constructor(config) { /* ... */ }
-  addField(name, type, validators = []) { /* ... */ }
-  addAsyncValidator(fn) { /* ... */ }
-  render(container) { /* ... */ }
+  constructor(config) {
+    /* ... */
+  }
+  addField(name, type, validators = []) {
+    /* ... */
+  }
+  addAsyncValidator(fn) {
+    /* ... */
+  }
+  render(container) {
+    /* ... */
+  }
 }
 
 // ✅ The ticket asked for a contact form — so write a contact form
-document.querySelector('#contact-form')
-  .addEventListener('submit', (e) => {
-    e.preventDefault();
-    sendContactEmail(new FormData(e.target));
-  });
+document.querySelector("#contact-form").addEventListener("submit", e => {
+  e.preventDefault();
+  sendContactEmail(new FormData(e.target));
+});
 ```
 
 The `FormBuilder` is satisfying to write. It's also three days of work nobody requested, with a test surface nobody will maintain.

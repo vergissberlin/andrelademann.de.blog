@@ -95,4 +95,4 @@ I would be pleased if you would also conduct a battle in your company and tell m
 
 ## This is how it looks like
 
-[https://www.youtube.com/watch?v=20QiX8rmHnU&feature=emb\_imp\_woyt](https://www.youtube.com/watch?v=20QiX8rmHnU&feature=emb_imp_woyt)
+[https://www.youtube.com/watch?v=20QiX8rmHnU&feature=emb_imp_woyt](https://www.youtube.com/watch?v=20QiX8rmHnU&feature=emb_imp_woyt)

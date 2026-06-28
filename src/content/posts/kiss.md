@@ -25,7 +25,7 @@ For better testing, we split our function, so that any function hast a single re
 ```javascript
 // Add two arguments to each other
 function add(a, b) {
-    return a + b;
+  return a + b;
 }
 
 // Subtraction of two numbers
@@ -46,19 +46,18 @@ function divide(a, b) {
 // Delegate two numbers and their operant to the correct function
 function calculator(a, b, operator) {
   switch (operator) {
-    case '+':
+    case "+":
       return add(a, b);
-    case '-':
+    case "-":
       return subtract(a, b);
-    case '*':
+    case "*":
       return multiply(a, b);
-    case '/':
+    case "/":
       return divide(a, b);
     default:
-      return 'Error';
+      return "Error";
   }
 }
-
 ```
 
 ### Bad example?
@@ -66,24 +65,23 @@ function calculator(a, b, operator) {
 ```javascript
 // caclulator which can add, subtract, multiply and divide two numbers
 function calculator(a, b, operator) {
-    let result = 0;
-    switch (operator) {
-        case "+":
-            result = a + b;
-            break;
-        case "-":
-            result = a - b;
-            break;
-        case "*":
-            result = a * b;
-            break;
-        case "/":
-            result = a / b;
-            break;
-    }
-    return result;
+  let result = 0;
+  switch (operator) {
+    case "+":
+      result = a + b;
+      break;
+    case "-":
+      result = a - b;
+      break;
+    case "*":
+      result = a * b;
+      break;
+    case "/":
+      result = a / b;
+      break;
+  }
+  return result;
 }
-
 ```
 
 At first glance, the 2nd example is much easier to read, and it would be correct if there were no future with users and their new function requests, such as combining operators and rules like dot before dash. If you start to implement the new functions in that way, you will run in trouble pretty quickly.
