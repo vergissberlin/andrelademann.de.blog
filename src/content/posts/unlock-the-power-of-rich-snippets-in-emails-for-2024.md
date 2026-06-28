@@ -41,18 +41,18 @@ Here's what a hotel reservation confirmation looks like with the markup embedded
 <html>
   <body>
     <script type="application/ld+json">
-    {
-      "@context":          "http://schema.org",
-      "@type":             "EventReservation",
-      "reservationNumber": "IO12345",
-      "underName":         "John Smith",
-      "reservationFor": {
-        "@type":     "Event",
-        "name":      "Google I/O 2013",
-        "startDate": "2013-05-15T08:30:00-08:00",
-        "location":  "Moscone Center, 800 Howard St., San Francisco, CA 94103"
+      {
+        "@context": "http://schema.org",
+        "@type": "EventReservation",
+        "reservationNumber": "IO12345",
+        "underName": "John Smith",
+        "reservationFor": {
+          "@type": "Event",
+          "name": "Google I/O 2013",
+          "startDate": "2013-05-15T08:30:00-08:00",
+          "location": "Moscone Center, 800 Howard St., San Francisco, CA 94103"
+        }
       }
-    }
     </script>
     <p>Dear John, thanks for booking your Google I/O ticket with us.</p>
   </body>
@@ -81,18 +81,18 @@ Create a new file called `content.html` with the following:
 <html>
   <body>
     <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "EventReservation",
-      "reservationNumber": "IO12345",
-      "underName": "John Smith",
-      "reservationFor": {
-        "@type":     "Event",
-        "name":      "Google I/O 2013",
-        "startDate": "2013-05-15T08:30:00-08:00",
-        "location":  "Moscone Center, 800 Howard St., San Francisco, CA 94103"
+      {
+        "@context": "http://schema.org",
+        "@type": "EventReservation",
+        "reservationNumber": "IO12345",
+        "underName": "John Smith",
+        "reservationFor": {
+          "@type": "Event",
+          "name": "Google I/O 2013",
+          "startDate": "2013-05-15T08:30:00-08:00",
+          "location": "Moscone Center, 800 Howard St., San Francisco, CA 94103"
+        }
       }
-    }
     </script>
   </body>
 </html>

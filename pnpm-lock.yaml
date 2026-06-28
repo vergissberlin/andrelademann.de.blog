@@ -809,11 +809,11 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@rrweb/types@2.1.0':
-    resolution: {integrity: sha512-svOHkcuukP6rIjz2umwVsS7uYct+2h0N97+bg+8IJYKIUj5+YjwIvqx5y9NILFKPIu3yk+Mb+KDFfJ8RV+4JlA==}
+  '@rrweb/types@2.0.1':
+    resolution: {integrity: sha512-x8cNaKFxdvS0/5IfKOj1xG8Htnw1fUwqoPqgP61bOaWqZL6t9UtRPpO9ZlMB2z+FiTxg9zlFFL+Da4ZpFuhoiA==}
 
-  '@rrweb/utils@2.1.0':
-    resolution: {integrity: sha512-hU7MT3TSdD+Do7FmMoHrBfPevFCheN5vo2mn97Y4vbXuwemopAmo8dqo5KJeMaA6oQQt7FinHJ0Xqb7k68Ci6Q==}
+  '@rrweb/utils@2.0.1':
+    resolution: {integrity: sha512-t+b+4rB23/e4EpoGMdPUr6cKtDsFuOb3LxA9IHE8e3A/Xo0nMUfH0bkwqdpUNa/VGDOdiGeG3bhHjuO9zWX54g==}
 
   '@shikijs/core@4.3.0':
     resolution: {integrity: sha512-EooU3i9F6IAE8kEu+AnGf9DFZWkQBZ+hJn3tLVbsH+61mtQiva5biai66fAA6nvFPXkLgvrh7BrR7YcJU83xQQ==}
@@ -2276,8 +2276,8 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
-  postcss@8.5.16:
-    resolution: {integrity: sha512-vuwillviilfKZsg0VGj5R/YwwcHx4SLsIOI/7K6mQkWx+l5cUHTjj5g0AasTBcyXsbfTgrwsUNmVUb5xVwyPwg==}
+  postcss@8.5.15:
+    resolution: {integrity: sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==}
     engines: {node: ^10 || ^12 || >=14}
 
   prelude-ls@1.2.1:
@@ -2482,11 +2482,11 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  rrdom@2.1.0:
-    resolution: {integrity: sha512-d7oaIHzwffxI74UJMZDGq/f97/Yfm3QX4CcTIlQelt2HsLavItLjp8x8nQ0g9Pet5+5wG1RGr9yvsxb1gJlo8A==}
+  rrdom@2.0.1:
+    resolution: {integrity: sha512-z8GdQWFmVfa8GpcGkAqfBXseb89z0ciTPSBkID0qr0i6KHCye1MdQ4VoXFf0Ejp3ELe/c7AObu4zsbSbMT+hiw==}
 
-  rrweb-snapshot@2.1.0:
-    resolution: {integrity: sha512-CFjUKWlO+Dl72gk8qwcDcNE/Pj9yr6IvGRAiRAx12pmJaSWaOKFoFgpQQ1j/mW0WKwEZXbHnMJL8M92gIsdwUQ==}
+  rrweb-snapshot@2.0.1:
+    resolution: {integrity: sha512-H8TA29ct2tpYtr5oaB0N+ksRY9bhEErfAYcKbce4+w8lqEUQChpKZd41HpBJLkp04b5QUfWUg4v6r9Okf8r7vA==}
 
   rrweb@2.0.1:
     resolution: {integrity: sha512-MQYzOtI7aZft9ffDMT6rmRSAj6hO4W6T7iA4eB9Mtcuiv3M7DbnnxDMrcPW0sQXepgYN46YhfSKe75d/mlUHrQ==}
@@ -3621,9 +3621,9 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.62.2':
     optional: true
 
-  '@rrweb/types@2.1.0': {}
+  '@rrweb/types@2.0.1': {}
 
-  '@rrweb/utils@2.1.0': {}
+  '@rrweb/utils@2.0.1': {}
 
   '@shikijs/core@4.3.0':
     dependencies:
@@ -4331,7 +4331,7 @@ snapshots:
       eslint: 10.6.0(jiti@2.7.0)
       eslint-compat-utils: 0.6.5(eslint@10.6.0(jiti@2.7.0))
       globals: 16.5.0
-      postcss: 8.5.16
+      postcss: 8.5.15
       postcss-selector-parser: 7.1.4
     transitivePeerDependencies:
       - supports-color
@@ -5559,7 +5559,7 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
-  postcss@8.5.16:
+  postcss@8.5.15:
     dependencies:
       nanoid: 3.3.15
       picocolors: 1.1.1
@@ -5803,24 +5803,24 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.62.2
       fsevents: 2.3.3
 
-  rrdom@2.1.0:
+  rrdom@2.0.1:
     dependencies:
-      rrweb-snapshot: 2.1.0
+      rrweb-snapshot: 2.0.1
 
-  rrweb-snapshot@2.1.0:
+  rrweb-snapshot@2.0.1:
     dependencies:
-      postcss: 8.5.16
+      postcss: 8.5.15
 
   rrweb@2.0.1:
     dependencies:
-      '@rrweb/types': 2.1.0
-      '@rrweb/utils': 2.1.0
+      '@rrweb/types': 2.0.1
+      '@rrweb/utils': 2.0.1
       '@types/css-font-loading-module': 0.0.7
       '@xstate/fsm': 1.6.5
       base64-arraybuffer: 1.0.2
       mitt: 3.0.1
-      rrdom: 2.1.0
-      rrweb-snapshot: 2.1.0
+      rrdom: 2.0.1
+      rrweb-snapshot: 2.0.1
 
   rss-parser@3.13.0:
     dependencies:
@@ -6150,7 +6150,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.16
+      postcss: 8.5.15
       rollup: 4.62.2
       tinyglobby: 0.2.17
     optionalDependencies:

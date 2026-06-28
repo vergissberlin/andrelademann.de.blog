@@ -46,19 +46,18 @@ Firstly, we establish a connection to the microcontroller:
 let port;
 
 async function connect() {
-    port = await navigator.serial.requestPort();
-    await port.open({ baudRate: 9600 });
+  port = await navigator.serial.requestPort();
+  await port.open({ baudRate: 9600 });
 
-    // Event listener for incoming data
-    port.addEventListener('input', ({ data }) => {
-        let decoder = new TextDecoder();
-        let text = decoder.decode(data);
-        console.log('Received:', text);
-    });
+  // Event listener for incoming data
+  port.addEventListener("input", ({ data }) => {
+    let decoder = new TextDecoder();
+    let text = decoder.decode(data);
+    console.log("Received:", text);
+  });
 }
 
 connect(); // Call connect() when your application starts
-
 ```
 
 ### Send data
@@ -67,13 +66,12 @@ Now we can send data like so:
 
 ```javascript
 async function send() {
-    if (!port) return;
-    let data = "Hello Arduino!";
-    const writer = port.writable.getWriter();
-    await writer.write(new TextEncoder().encode(data));
-    await writer.releaseLock();
+  if (!port) return;
+  let data = "Hello Arduino!";
+  const writer = port.writable.getWriter();
+  await writer.write(new TextEncoder().encode(data));
+  await writer.releaseLock();
 }
-
 ```
 
 ### Receive the data with you controller

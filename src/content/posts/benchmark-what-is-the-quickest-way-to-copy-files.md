@@ -44,7 +44,7 @@ copy directories recursively
 
 copy only when the SOURCE file is newer than the destination file or when the destination file is missing
 
-\-p, --preserve\[=ATTR\_LIST\]
+\-p, --preserve\[=ATTR_LIST\]
 
 preserve the specified attributes (default: mode, ownership, timestamps), if possible additional attributes: context, links, xattr, all
 

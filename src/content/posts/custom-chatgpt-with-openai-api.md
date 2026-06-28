@@ -31,22 +31,24 @@ For a chat with a bot, all you need is a GET request that contains the request a
 3. then you have to import the OpenAI module into the NodeJS application and initialise the API key:
 
 ```javascript
-var openai = require('openai'); openai.apiKey = "API key";
-
+var openai = require("openai");
+openai.apiKey = "API key";
 ```
 
 1. Now you can use the various functions of the OpenAI API by calling the appropriate methods on the OpenAI object. For example, one could generate the text of a document with the generate() method:
 
 ```javascript
-openai.generate({
+openai.generate(
+  {
     prompt: "text used as a template",
     model: "Name of the model used",
-    temperature: 0.5 
-}, function(error, response) {
+    temperature: 0.5,
+  },
+  function (error, response) {
     if (error) console.error(error);
     else console.log(response.text);
-});
-
+  }
+);
 ```
 
 **That's it!**

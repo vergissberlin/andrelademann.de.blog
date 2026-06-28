@@ -554,8 +554,10 @@ const ogImage = ogImageUrl
         try {
           ctx.drawImage(img, 0, 0);
           const samplePoints = [
-            [0, 0], [canvas.width - 1, 0],
-            [0, canvas.height - 1], [canvas.width - 1, canvas.height - 1],
+            [0, 0],
+            [canvas.width - 1, 0],
+            [0, canvas.height - 1],
+            [canvas.width - 1, canvas.height - 1],
             [Math.floor(canvas.width / 2), 0],
             [0, Math.floor(canvas.height / 2)],
           ];
