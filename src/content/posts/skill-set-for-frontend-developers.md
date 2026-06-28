@@ -22,7 +22,7 @@ I don't agree with every suggestion, but I agree with most of them. After all, i
 
 Here is a preview of the roadmap from [roadmap.sh](https://roadmap.sh). I recommend going directly to the page and saving it to your bookmarks!
 
-![Roadmap Frontend](https://roadmap.sh/roadmaps/frontend.png)
+![Frontend developer roadmap from roadmap.sh showing recommended technologies and learning paths](https://roadmap.sh/roadmaps/frontend.png)
 
 ## Other roadmaps
 

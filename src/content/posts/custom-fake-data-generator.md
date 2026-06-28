@@ -31,7 +31,7 @@ Women are known to be capable of multitasking. Developer's best friend can do th
 
 ### output from HTOP
 
-![Terminal - htop - one thread.png](/images/posts/custom-fake-data-generator/img-1.png) Wai Ting Loooooong! ![Terminal - htop - full load.png](/images/posts/custom-fake-data-generator/img-2.png) With parallel processes
+![htop output showing a single Node.js process using one CPU core with a red cross mark](/images/posts/custom-fake-data-generator/img-1.png) Wai Ting Loooooong! ![htop output showing four parallel Node.js faker processes fully utilising all CPU cores with a green check mark](/images/posts/custom-fake-data-generator/img-2.png) With parallel processes
 
 ## NodeJS
 

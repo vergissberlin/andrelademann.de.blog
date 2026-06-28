@@ -50,7 +50,7 @@ preserve the specified attributes (default: mode, ownership, timestamps), if pos
 
 ### Test with `cp`
 
-```
+```bash
 hyperfine \
     'cp -upr --sparse=never src tmp-cp' \
     'cp -upr --sparse=never src tmp-cp'
@@ -59,7 +59,7 @@ hyperfine \
 
 It copies file by file from source to target without checking if there are any changes in it.
 
-```
+```text
 hyperfine 'cp -upr --sparse=never src tmp-cp' 'cp -upr --sparse=never src tmp-cp'
 Benchmark #1: cp -upr --sparse=never src tmp-cp
   Time (mean ± σ):     11.744 s ± 32.450 s    [User: 775.2 ms, System: 2396.0 ms]
@@ -115,7 +115,7 @@ compress file data during the transfer
 
 ### Test with rsync
 
-```
+```text
 hyperfine \
     'rsync -a src tmp-rsync' \
     'rsync -a src tmp-rsync'
@@ -156,7 +156,7 @@ Change to DIR before performing any operations. This option is order-sensitive, 
 
 ### Test with tar
 
-```
+```text
 hyperfine 'tar -qxf src.tar -C tmp-tar' 'tar -qxf src.tar -C tmp-tar'
 Benchmark #1: tar -xf src.tar
   Time (mean ± σ):     53.214 s ±  4.403 s    [User: 3.303 s, System: 12.450 s]
@@ -171,6 +171,6 @@ Benchmark #1: tar -xf src.tar -C tmp-tar
 
 ## Consumption
 
-![image.png](/images/posts/benchmark-what-is-the-quickest-way-to-copy-files/img-1.png)
+![Bar chart comparing first and second run times for cp, rsync and tar CLI copy tools](/images/posts/benchmark-what-is-the-quickest-way-to-copy-files/img-1.png)
 
 These tests have shown that _CP_ is slightly faster than _RSYNC_ when updating. However, **CP takes significantly more time to initially copy the files**. TAR is faster on the first copy as CP, but it has no advantages over RSYNC.

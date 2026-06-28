@@ -21,7 +21,7 @@ In order to make the visualisation of data palatable to all of us, I came up wit
 
 Haven't you often wondered why petrol prices fluctuate so much, even during the course of the day?
 
-![](/images/posts/visualisation-with-a-connection-to-personal-life/screenshot-01.png)
+![Grafana dashboard showing E10 petrol price trends for ARAL, HEM, JET, Minol, Shell and TOTAL in Leipzig over several days](/images/posts/visualisation-with-a-connection-to-personal-life/screenshot-01.png)
 
 It's nice to see that there's a pattern:
 
@@ -35,7 +35,7 @@ Visualisation helps!
 
 Since 2013, all petrol stations have had to make their prices publicly available. This data is collected by service providers and made available as an API. The Tankerkönig API is free:
 
-```
+```http
 https://creativecommons.tankerkoenig.de/json/list.php?lat=51.318490&lng=12.375410&rad=4&sort=price&type=e10&apikey=YOUR_KEY
 ```
 
@@ -69,4 +69,4 @@ Example response:
 
 Besides price, the API returns name, address, opening hours and distance to my location. I save this data in 15-minute intervals using Node-RED into an InfluxDB, which Grafana then uses to visualise the data.
 
-![](/images/posts/visualisation-with-a-connection-to-personal-life/screenshot-02.png)
+![Node-RED flow fetching petrol prices from the Tankerkönig API every 15 minutes and writing the data to InfluxDB and MQTT](/images/posts/visualisation-with-a-connection-to-personal-life/screenshot-02.png)

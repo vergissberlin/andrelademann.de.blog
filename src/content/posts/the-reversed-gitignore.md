@@ -34,7 +34,7 @@ There are several generators on the web to create a `.gitignore` file. There are
 
 First we ignore all files
 
-```
+```gitignore
 # Ignore all files
 /*
 
@@ -42,7 +42,7 @@ First we ignore all files
 
 to then exclude the files that we really want to have versioned. You can specify individual files, but also entire directories.
 
-```
+```gitignore
 # Ignore all files
 /*
 
@@ -54,7 +54,7 @@ to then exclude the files that we really want to have versioned. You can specify
 
 **Beware!** There is one special thing to note here. All files are really excluded. Including the `.gitignore` file itself. We must therefore also explicitly add it to the list of wanted files.
 
-```
+```gitignore
 # Ignore all files
 /*
 
@@ -69,7 +69,7 @@ to then exclude the files that we really want to have versioned. You can specify
 
 That use case is al little bit tricky. Imagine you have a file in the APP directory that you want to ignore, but not the other files it contains. Than you have to do that
 
-```
+```gitignore
 # Ignore all files
 /*
 

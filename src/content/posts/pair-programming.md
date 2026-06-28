@@ -52,7 +52,7 @@ Sitting together at a computer is probably the most beautiful thing of all. Prob
 
 But how does pair programming work when the workplaces are kilometres apart? There are a few techniques for this, such as [git handover](https://www.remotemobprogramming.org/), but what I would like to introduce today is **Code With Me** by JetBrains.
 
-![image-20210521-081647.png](/images/posts/pair-programming/img-1.png)
+![JetBrains IDE during a Code With Me pair programming session with docker-compose.yml open and video chat](/images/posts/pair-programming/img-1.png)
 
 One day I actually read through one of the tips that pop up when you open _Android Studio_ / _WebStorm_ / _PHPStorm_ / _RubyMine_ / _PyCharm_ / _GoLand_ / _CLine_ or another derivate of IntelliJ IDE and discovered this feature. There are already several other editors that allow you to work together on a file, but with _Code With Me_, JetBrains from the Czech Republic has taken it to a new level.
 
@@ -63,7 +63,7 @@ One day I actually read through one of the tips that pop up when you open _Andro
 
 You can start a pair programming session by clicking on the user icon in the top right-hand corner.
 
-![image-20210521-082055.png](/images/posts/pair-programming/img-2.png)
+![Code With Me dropdown menu in a JetBrains IDE with Enable Access and Copy Invitation Link highlighted](/images/posts/pair-programming/img-2.png)
 
 ---
 

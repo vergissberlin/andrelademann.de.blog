@@ -31,14 +31,14 @@ For a chat with a bot, all you need is a GET request that contains the request a
 3.  then you have to import the OpenAI module into the NodeJS application and initialise the API key:
     
 
-```
+```javascript
 var openai = require('openai'); openai.apiKey = "API key";
 
 ```
 
 1.  Now you can use the various functions of the OpenAI API by calling the appropriate methods on the OpenAI object. For example, one could generate the text of a document with the generate() method:
     
-    ```
+    ```javascript
      openai.generate({
          prompt: "text used as a template",
          model: "Name of the model used",
@@ -60,7 +60,7 @@ var openai = require('openai'); openai.apiKey = "API key";
     
     To take control of your cost, they provide a nice tool where you can set limits, and you can see the current usage:
     
-    ![](/images/posts/custom-chatgpt-with-openai-api/img-1.png)
+    ![OpenAI usage dashboard showing daily API spend in January and a monthly limit of 12 dollars](/images/posts/custom-chatgpt-with-openai-api/img-1.png)
     
     ## Dive deeper
     

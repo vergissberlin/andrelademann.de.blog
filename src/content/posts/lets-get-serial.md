@@ -25,7 +25,7 @@ If you want to make configurations on an ESP32 via the Web Serial API, you must 
 
 I've prepared a all in one Demo for you. All you need is a Computer with a Chromium based browser, an microcontroller and a USB cable to connect both devices.
 
-![](/images/posts/lets-get-serial/img-1.png)
+![Illustration of a browser connecting to an Arduino Uno via USB for bidirectional serial data exchange](/images/posts/lets-get-serial/img-1.png)
 
 At first, let's give it a try:  
 [https://vergissberlin.github.io/example-serial-web-api/](https://vergissberlin.github.io/example-serial-web-api/)
@@ -42,7 +42,7 @@ If you want to know how to get started in general, read on.
 
 Firstly, we establish a connection to the microcontroller:
 
-```
+```javascript
 let port;
 
 async function connect() {
@@ -65,7 +65,7 @@ connect(); // Call connect() when your application starts
 
 Now we can send data like so:
 
-```
+```javascript
 async function send() {
     if (!port) return;
     let data = "Hello Arduino!";
@@ -80,7 +80,7 @@ async function send() {
 
 Receiving the data is surprisingly easy:
 
-```
+```javascript
 void setup() {
   Serial.begin(9600);
 }

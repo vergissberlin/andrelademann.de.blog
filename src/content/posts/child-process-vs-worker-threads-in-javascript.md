@@ -19,7 +19,7 @@ There are many aspects to consider when comparing both types of workers, but in 
 
 > An allusion to how much rubbish came out of the mouth of the man whose name no longer needs to be mentioned. 🐦
 
-![](/images/posts/child-process-vs-worker-threads-in-javascript/screenshot-01.png)
+![Satirical illustration titled Fake data generator showing a caricature against a sky with Twitter birds](/images/posts/child-process-vs-worker-threads-in-javascript/screenshot-01.png)
 
 ## Let's go!
 
@@ -75,7 +75,7 @@ workerpool.worker({
 
 Testing on a MacBook Pro (16-inch, 2019), 2.6 GHz 6-Core Intel Core i7.
 
-![](/images/posts/child-process-vs-worker-threads-in-javascript/screenshot-02.png)
+![macOS About This Mac window showing a 2019 16-inch MacBook Pro with a 2.6 GHz 6-Core Intel Core i7](/images/posts/child-process-vs-worker-threads-in-javascript/screenshot-02.png)
 
 Using [hyperfine](https://github.com/sharkdp/hyperfine) to run each script 1,000 times:
 

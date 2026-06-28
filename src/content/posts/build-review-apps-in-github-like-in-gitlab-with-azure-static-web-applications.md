@@ -15,7 +15,7 @@ description: "GitLab makes it trivial. Here's how to get the same isolated previ
 
 With GitLab, automatically deploying a review app — or _preview environment_, as Azure calls it — for each merge request is almost effortless. Each one gets its own URL, so new features can be tested in complete isolation. Compared to a shared staging system, this saves a lot of grief with merge conflicts and unintended side effects.
 
-![Diagram](/images/posts/build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications/diagram.png)
+![Diagram showing a GitHub review app deployed from a feature branch and deleted after merge](/images/posts/build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications/diagram.png)
 
 You can achieve the same thing with GitHub Actions. This article shows one approach via Azure Static Web Applications (SWA).
 

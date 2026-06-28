@@ -27,7 +27,7 @@ In this article, we will install the node and send a well-structured, beautiful-
 
 As a requirement, you need to have Node-RED [to be installed](https://nodered.org/docs/getting-started/local). Then change directory to your Node-RED installation and run:
 
-```
+```bash
 npm install @vergissberlin/node-red-contrib-mjml
 
 ```
@@ -38,13 +38,13 @@ npm install @vergissberlin/node-red-contrib-mjml
 
 Let's now set up a basic flow with which we can send our first mail.
 
-![image.png](/images/posts/using-mjml-to-improve-your-email-in-node-red/img-1.png)
+![Node-RED flow with email content, template, mjml-parse and email output nodes](/images/posts/using-mjml-to-improve-your-email-in-node-red/img-1.png)
 
 1.  Copy and import the following flow into your Node-RED: https://github.com/vergissberlin/node-red-contrib-mjml/blob/main/examples/Parse%20node%20example.json
 2.  Configure the credentials and receiver address in the email node and press the deploy button
 3.  Use the button one the debug node to trigger the email proccess.
 
-You will get an email which looks like this: ![image.png](/images/posts/using-mjml-to-improve-your-email-in-node-red/img-2.png)
+You will get an email which looks like this: ![MJML example email with Hello World heading and Lorem Ipsum body text](/images/posts/using-mjml-to-improve-your-email-in-node-red/img-2.png)
 
 **Pretty cool, right?**
 
@@ -54,7 +54,7 @@ _MJML_ has a great [documentation](https://documentation.mjml.io/), and an [onli
 
 MJML is a markup language like HTML and here is the example we use in our flow:
 
-```
+```xml
 <mjml>
   <mj-body>
     <mj-section>
@@ -83,7 +83,7 @@ MJML is a markup language like HTML and here is the example we use in our flow:
 
 Now we can use variables for sensor data like so:
 
-```
+```xml
 […]
         <mj-text>Random number: {msg.payload}</mj-text>
 […]

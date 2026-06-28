@@ -22,7 +22,7 @@ For better testing, we split our function, so that any function hast a single re
 
 ### Good example?
 
-```
+```javascript
 // Add two arguments to each other
 function add(a, b) {
     return a + b;
@@ -63,7 +63,7 @@ function calculator(a, b, operator) {
 
 ### Bad example?
 
-```
+```javascript
 // caclulator which can add, subtract, multiply and divide two numbers
 function calculator(a, b, operator) {
     let result = 0;

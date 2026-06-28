@@ -37,7 +37,7 @@ canonicalURL: https://blog.andrelademann.de/dry-design-pattern
 
 Easy to install and simple to use. You can even export machine-readable reports to show the results in a graph over time, for example. In my case, I used XML for my C++ report, which is compatible with good old Jenkins.
 
-```
+```bash
 ./run.sh cpd --files /path/to/source --language cpp --format xml
 
 ```

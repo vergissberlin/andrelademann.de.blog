@@ -28,7 +28,7 @@ When I tried AI for the first time, I was so amazed! One line after the other fi
 
 If CoPilot where allowed to bring the sentence **"From today's perspective, \[…\]"** to an end, it would write:
 
-```
+```text
 we can see the AI as a tool that can help us write code 
 that is more readable, more maintainable, and more efficient.
 
@@ -46,7 +46,7 @@ that is more readable, more maintainable, and more efficient.
 > 
 > Back now, broom, into the closet! Be thou as thou wert before! Until I, **the real master** call thee forth to serve once more!
 
-![copilots-never-die-downsized\_large.gif](/images/posts/vs-code-includes-githubs-copilot-and-i-just-love-it/img-4.gif)
+![Animated meme of GitHub Copilot continuing to suggest code like the sorcerer's apprentice's unstoppable broom](/images/posts/vs-code-includes-githubs-copilot-and-i-just-love-it/img-4.gif)
 
 ## Links
 

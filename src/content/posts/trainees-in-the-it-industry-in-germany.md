@@ -21,7 +21,7 @@ Today I was having lunch with IT colleagues and we were talking about our traine
 
 In an industry with complex problems, we need people who think and act independently. In the wiki of my employer [Netresearch](https://netresearch.de) there is an appropriate graphic that describes the company culture well. Or the aspired corporate culture as presented self-critically.
 
-![Alignment enables autonomy.png](/images/posts/trainees-in-the-it-industry-in-germany/img-2.png)
+![Matrix diagram comparing organisational cultures by alignment and autonomy levels](/images/posts/trainees-in-the-it-industry-in-germany/img-2.png)
 
 I am very happy to work in the IT industry, that became clear to me again today.
 

@@ -15,7 +15,7 @@ description: "Measuring and visualising coffee machine data with TASMOTA, MQTT, 
 
 Weeee all love coffee … aren't we?
 
-![](/images/posts/big-coffee-data/screenshot.png)
+![Login page of the coffee bin web application at coffee-bin.andrelademann.de](/images/posts/big-coffee-data/screenshot.png)
 
 ## Table of content
 

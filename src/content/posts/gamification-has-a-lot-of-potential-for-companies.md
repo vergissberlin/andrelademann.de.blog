@@ -74,11 +74,11 @@ To entertain the spectators and participants during the competition, the partici
 -   Voting tool
 -   Coding Battle platform such as [cssbattle.dev](https://cssbattle.dev/)
 
-![image.png](/images/posts/gamification-has-a-lot-of-potential-for-companies/img-1.png)
+![OBS Studio on macOS set up for recording a coding battle with scenes, sources and audio mixer panels](/images/posts/gamification-has-a-lot-of-potential-for-companies/img-1.png)
 
 ## Prizes
 
-![image.png](/images/posts/gamification-has-a-lot-of-potential-for-companies/img-2.png)
+![Coding battle prizes including a turquoise drawstring bag, sunglasses and promotional materials](/images/posts/gamification-has-a-lot-of-potential-for-companies/img-2.png)
 
 At the end of a competition, the award ceremony is always a crowning event. The appreciation of the winner's performance by all participants. For our first battle, I chose CSS. Getting the frontend developers excited wasn't particularly difficult, but I wanted to get more colleagues on board from the backend as well, so I asked our marketing department for prizes for the winners.
 
@@ -89,7 +89,7 @@ At the end of a competition, the award ceremony is always a crowning event. The 
 
 Imparting knowledge in a playful way is not a new invention. My goal with this article is to show that this can also work for knowledge exchange in companies in the IT sector. At our first Coding Battle, we had a lot of fun and learned a lot. Organising an event like this takes a lot of effort the first time. The second time, it's much easier. So the key to success is regularity.
 
-![image.png](/images/posts/gamification-has-a-lot-of-potential-for-companies/img-3.png)
+![Google Meet session showing a CSSBattle challenge being shared during a Friday Dev Samurai meetup](/images/posts/gamification-has-a-lot-of-potential-for-companies/img-3.png)
 
 I would be pleased if you would also conduct a battle in your company and tell me about your experiences! You want to know more about it? Get in touch with me!
 
