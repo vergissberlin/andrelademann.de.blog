@@ -122,13 +122,13 @@ Optional Google Site Verification via the `PUBLIC_GOOGLE_SITE_VERIFICATION` envi
 
 ## Analytics (Swetrix)
 
-Page views and client-side errors are tracked with [Swetrix](https://swetrix.com) (cookieless, respects Do Not Track). The production project is **andrelademann.blog** (`6LH65qU3KYkF`), scoped to `blog.andrelademann.de`.
+Page views and client-side errors are tracked with [Swetrix](https://swetrix.com) (cookieless, respects Do Not Track). The production project is **andrelademann.blog** (`6LH65qU3KYkF`), scoped to `blog.andrelademann.de`, hosted on [analytics.kieks.me](https://analytics.kieks.me) with ingest at [analytics-api.kieks.me](https://analytics-api.kieks.me).
 
-**Local setup:** copy [`.env.example`](./.env.example) to `.env` and set `PUBLIC_SWETRIX_PID`. Tracking is disabled in dev (`import.meta.env.DEV`).
+**Local setup:** copy [`.env.example`](./.env.example) to `.env` and set `PUBLIC_SWETRIX_PID`. Tracking is disabled in dev (`import.meta.env.DEV`). Override `PUBLIC_SWETRIX_API_URL` only when pointing at a different Swetrix instance.
 
-**Production:** add the repository secret `PUBLIC_SWETRIX_PID` in GitHub (Settings → Secrets → Actions). The deploy workflow passes it into the build so the project ID is baked into the static output.
+**Production:** add the repository secret `PUBLIC_SWETRIX_PID` in GitHub (Settings → Secrets → Actions). The deploy workflow passes it into the build so the project ID is baked into the static output. The API URL defaults to `https://analytics-api.kieks.me/log`.
 
-Dashboard: [swetrix.com/projects](https://swetrix.com/projects)
+Dashboard: [analytics.kieks.me/projects/6LH65qU3KYkF](https://analytics.kieks.me/projects/6LH65qU3KYkF)
 
 ## CI / deployment
 

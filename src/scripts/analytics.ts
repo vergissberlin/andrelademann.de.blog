@@ -5,9 +5,11 @@ import {
   trackViews,
 } from "swetrix";
 import { PUBLIC_SWETRIX_PID } from "astro:env/client";
+import { getSwetrixApiUrl } from "@/utils/swetrix";
 
 if (PUBLIC_SWETRIX_PID) {
   init(PUBLIC_SWETRIX_PID, {
+    apiURL: getSwetrixApiUrl(),
     disabled: import.meta.env.DEV,
     respectDNT: true,
   });

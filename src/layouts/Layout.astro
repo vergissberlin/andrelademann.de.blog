@@ -10,6 +10,7 @@ import {
 } from "@/utils/defaultOgImage";
 import { getAssetPath } from "@/utils/withBase";
 import { PUBLIC_SWETRIX_PID } from "astro:env/client";
+import { getSwetrixNoscriptUrl } from "@/utils/swetrix";
 import config from "@/config";
 import "@/styles/global.css";
 
@@ -118,7 +119,7 @@ const rssHref = getRelativeLocaleUrl(
       PUBLIC_SWETRIX_PID && (
         <noscript>
           <img
-            src={`https://api.swetrix.com/log/noscript?pid=${PUBLIC_SWETRIX_PID}`}
+            src={getSwetrixNoscriptUrl(PUBLIC_SWETRIX_PID)}
             alt=""
             referrerpolicy="no-referrer-when-downgrade"
           />
