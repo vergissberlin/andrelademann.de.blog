@@ -62,7 +62,8 @@ const locale = Astro.currentLocale ?? config.site.lang;
 const {
   title,
   description,
-  ogImage: initOgImage,
+  ogImage: ogImageField,
+  heroImage,
   canonicalURL,
   pubDatetime,
   modDatetime,
@@ -73,7 +74,9 @@ const {
 
 const { Content } = await render(post);
 
-let ogImageUrl: string | undefined = initOgImage;
+const postImage = heroImage ?? ogImageField;
+
+let ogImageUrl: string | undefined = postImage;
 
 if (!ogImageUrl && config.features.dynamicOgImage) {
   const postUrl = getPostUrl(post.id, post.filePath, locale).replace(
@@ -127,9 +130,9 @@ const ogImage = ogImageUrl
     </div>
 
     {
-      typeof initOgImage === "string" && (
+      typeof postImage === "string" && (
         <img
-          src={initOgImage}
+          src={postImage}
           alt={title}
           class="my-6 w-full rounded-lg object-cover"
           style="max-height: 420px;"
