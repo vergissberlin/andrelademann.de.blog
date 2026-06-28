@@ -1,6 +1,6 @@
 ---
 author: André Lademann
-pubDatetime: 2026-06-30T12:24:00.000Z
+pubDatetime: 2026-06-28T12:24:00.000Z
 title: "Why Good Retrospectives Still Feel Like a Chore"
 slug: why-good-retrospectives-feel-like-a-chore
 featured: true
