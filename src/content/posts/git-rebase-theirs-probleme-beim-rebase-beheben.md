@@ -4,7 +4,7 @@ pubDatetime: 2022-10-25T00:00:00.000Z
 title: "git rebase -Xtheirs and -Xours: Resolving Conflicts Automatically"
 slug: git-rebase-theirs-probleme-beim-rebase-beheben
 featured: false
-draft: true
+draft: false
 tags:
   - git
   - developer-experience

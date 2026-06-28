@@ -4,7 +4,7 @@ pubDatetime: 2021-08-10T00:00:00.000Z
 title: "YAGNI"
 slug: yagni
 featured: false
-draft: true
+draft: false
 tags:
   - design-patterns
   - clean-code

@@ -4,7 +4,7 @@ pubDatetime: 2024-01-01T00:00:00.000Z
 title: "Rich Snippets in Emails: Action Buttons and Cards with Schema.org"
 slug: unlock-the-power-of-rich-snippets-in-emails-for-2024
 featured: false
-draft: true
+draft: false
 tags:
   - email
   - schema-org

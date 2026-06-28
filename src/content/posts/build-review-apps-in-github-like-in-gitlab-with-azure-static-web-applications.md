@@ -4,7 +4,7 @@ pubDatetime: 2023-09-25T00:00:00.000Z
 title: "Build Review Apps in GitHub Like in GitLab with Azure Static Web Applications"
 slug: build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications
 featured: false
-draft: true
+draft: false
 tags:
   - azure
   - github-actions
