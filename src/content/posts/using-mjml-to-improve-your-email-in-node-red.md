@@ -10,6 +10,7 @@ tags:
   - no-code
   - email
   - html-emails
+ogImage: "/images/posts/using-mjml-to-improve-your-email-in-node-red/hero.png"
 description: "Sending emails with Node-RED is very easy. The email node is easy to configure. Variables can be used in the content area, which we can use to include sensor data, for example. If you want to send an email in HTML format, there is a lot to consider, ..."
 canonicalURL: https://blog.andrelademann.de/using-mjml-to-improve-your-email-in-node-red
 ---

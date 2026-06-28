@@ -73,13 +73,7 @@ const {
 
 const { Content } = await render(post);
 
-let ogImageUrl: string | undefined;
-
-if (typeof initOgImage === "string") {
-  ogImageUrl = initOgImage;
-} else if (initOgImage?.src) {
-  ogImageUrl = initOgImage.src;
-}
+let ogImageUrl: string | undefined = initOgImage;
 
 if (!ogImageUrl && config.features.dynamicOgImage) {
   const postUrl = getPostUrl(post.id, post.filePath, locale).replace(
@@ -131,6 +125,17 @@ const ogImage = ogImageUrl
       </span>
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
     </div>
+
+    {
+      typeof initOgImage === "string" && (
+        <img
+          src={initOgImage}
+          alt={title}
+          class="my-6 w-full rounded-lg object-cover"
+          style="max-height: 420px;"
+        />
+      )
+    }
 
     <article
       id="article"

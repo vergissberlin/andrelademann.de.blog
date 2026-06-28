@@ -9,6 +9,7 @@ tags:
   - ai
   - github
   - visual-studio-code
+ogImage: "/images/posts/vs-code-includes-githubs-copilot-and-i-just-love-it/hero.jpeg"
 description: "The year is 2021, and Elon Musk is so scared about AI and its danger to humanity that he is pushing to build big rockets 🚀 to land on Mars as soon as possible. And he has to know it, he is one of the investors in OpenAI, a company (largely owned ..."
 canonicalURL: https://blog.andrelademann.de/vs-code-includes-githubs-copilot-and-i-just-love-it
 ---

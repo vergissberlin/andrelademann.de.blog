@@ -9,6 +9,7 @@ tags:
   - music
   - jobs
   - general-programming
+ogImage: "/images/posts/job-with-a-daily-dose-of-goose-bumps/hero.jpeg"
 description: "What I love about my job is that I can listen to my favourite music at any time. I bought extra over-ear headphones because I want to wear them as long as possible without pain. In what other job would I have goose bumps early in the morning? This mo..."
 canonicalURL: https://blog.andrelademann.de/job-with-a-daily-dose-of-goose-bumps
 ---

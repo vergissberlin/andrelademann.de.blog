@@ -9,6 +9,7 @@ tags:
   - pair-programming
   - communication
   - remote
+ogImage: "/images/posts/pair-programming/hero.jpeg"
 description: "In pair programming, two developers work simultaneously on one source code. The method helps to develop better software products. Advantages At Netresearch, we use this method and derive many advantages from it: Direct knowledge exchange about meth..."
 canonicalURL: https://blog.andrelademann.de/pair-programming
 ---

@@ -8,6 +8,7 @@ draft: false
 tags:
   - benchmark
   - files
+ogImage: "/images/posts/benchmark-what-is-the-quickest-way-to-copy-files/hero.jpg"
 description: "Purpose In software development, there is sometimes a need to copy a large amount of file from one directory to another. For instance, when you have shared volumes in a Docker environment with different services, some services need to have access to ..."
 canonicalURL: https://blog.andrelademann.de/benchmark-what-is-the-quickest-way-to-copy-files
 ---

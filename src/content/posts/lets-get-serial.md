@@ -12,6 +12,7 @@ tags:
   - arduino
   - esp32
   - example
+ogImage: "/images/posts/lets-get-serial/hero.jpeg"
 description: "The Web Serial API is a browser-based interface that makes it possible to communicate with hardware devices via the serial interface. It is mainly used for communication with development boards such as the ESP32 or Arduino Uno to send and receive dat..."
 canonicalURL: https://blog.andrelademann.de/lets-get-serial
 ---

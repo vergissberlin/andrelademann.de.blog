@@ -7,6 +7,7 @@ featured: false
 draft: false
 tags:
   - design-patterns
+ogImage: "/images/posts/kiss/hero.jpeg"
 description: "Yah, that's a very emotional speech for a programming design pattern. As a side note, it tells us about the many stories in which they have struggled through complex programming code of their colleagues or even themselves from the past. keep it small..."
 canonicalURL: https://blog.andrelademann.de/kiss
 ---
