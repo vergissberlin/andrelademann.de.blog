@@ -1,7 +1,7 @@
 ---
 author: André Lademann
 pubDatetime: 2023-09-25T00:00:00.000Z
-title: "Build review apps in GitHub like in GitLab with Azure Static Web Applications"
+title: "Build Review Apps in GitHub Like in GitLab with Azure Static Web Applications"
 slug: build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications
 featured: false
 draft: true
@@ -9,45 +9,50 @@ tags:
   - azure
   - github-actions
   - devops
-description: "How to automatically deploy isolated preview environments for every pull request using Azure Static Web Applications and GitHub Actions."
+heroImage: /images/posts/build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications/hero.jpg
+description: "GitLab makes it trivial. Here's how to get the same isolated preview environments on GitHub using Azure Static Web Applications and GitHub Actions."
 ---
 
-With Gitlab, it is easy to automatically deploy a review app (or _preview environment_ like it's called in Azure) for each merge request, which can then be tested under its own domain. The big advantage here is that compared to a "testing" or "staging" system, new features can be tested in isolation. This usually saves trouble with merge conflicts and unwanted side effects.
+With GitLab, automatically deploying a review app — or _preview environment_, as Azure calls it — for each merge request is almost effortless. Each one gets its own URL, so new features can be tested in complete isolation. Compared to a shared staging system, this saves a lot of grief with merge conflicts and unintended side effects.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695326067043/c92df18f-e53c-49ff-b46a-f05a15136c00.png)
 
-Review apps can also be created with GitHub Actions. I show one way — via Azure Static Web Applications (SWA) — in this article.
+You can achieve the same thing with GitHub Actions. This article shows one approach via Azure Static Web Applications (SWA).
 
-## Pros
+## Why It's Worth Setting Up
 
-Azure Static Web Applications are free of charge. You get a URL, an SSL certificate and storage space.
+Azure Static Web Applications are free of charge. You get a URL, an SSL certificate, and storage space — with no configuration overhead to speak of.
 
-1. GitHub Actions are provided for building and deploying.
-2. Review apps are automatically linked in pull requests. When closing a pull request, the review app can be deleted automatically.
+1. GitHub Actions workflows for building and deploying are provided out of the box.
+2. Review apps are automatically linked in pull requests as a status check. When a pull request is closed, the environment is torn down automatically.
 
-## Cons
+## Where It Falls Short
 
-This method is mainly suitable for static websites. However, it is also conceivable to offer artefacts (dmg, exe, jar files) for download in this way.
+This approach is primarily suited to static websites. That said, it's also conceivable to host build artefacts (dmg, exe, jar files) for download via a preview URL — it doesn't have to be just HTML.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695325716895/3db9944d-9b78-499d-bbb7-fa1f011b144d.png)
 
-## Alternatives
+## Alternatives Worth Knowing
 
-It is also conceivable to deploy on other platforms that often offer the possibility to host static websites for free:
+Several other platforms offer free static hosting and fit the same pattern well:
 
-- [surge.sh](https://surge.sh) (simple commandline tool)
-- [vercel.com](https://vercel.com)
+- [surge.sh](https://surge.sh) — a simple command-line tool, very low friction to get started
+- [Vercel](https://vercel.com)
 - [Netlify](https://www.netlify.com/)
 - [AWS S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html)
 
 ---
 
-## See it in action
+## See It in Action
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695646355214/86caaa8c-6ab0-4050-9d1f-be65474b2c35.png)
 
-## Summary
+Review apps linked directly in the GitHub pull request — no manual deployment step needed.
 
-_Review apps_ aka _preview environments_ are the best way to test individual features in isolation. The effort required to deploy them automatically differs depending on the technology used. It is easiest for static web applications.
+## The Takeaway
 
-Azure Static Web Apps (SWA) provide a simple solution to integrate into your pipeline. [Surge.sh](https://surge.sh) is a good alternative.
+_Review apps_ are the cleanest way to test individual features without polluting a shared environment. The effort to set them up varies depending on the stack, but for static web applications it's minimal.
+
+Azure Static Web Apps provide a straightforward integration point for GitHub Actions. If Azure isn't your thing, [Surge.sh](https://surge.sh) is the quickest route to something running.
+
+Have you set up review apps in your own pipeline? I'd be curious whether you went with a cloud provider or something more self-hosted.
