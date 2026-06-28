@@ -9,7 +9,7 @@ tags:
   - mcp
   - security
   - enterprise
-  - developer-experience
+  - ai
 heroImage: /images/posts/mcp-servers-speed-vs-security-enterprise/hero.png
 description: "New MCP servers drop every day, and they're genuinely useful — but in an enterprise context, every one of them is a door you're propping open..."
 canonicalURL: https://blog.andrelademann.de/mcp-servers-speed-vs-security-enterprise
