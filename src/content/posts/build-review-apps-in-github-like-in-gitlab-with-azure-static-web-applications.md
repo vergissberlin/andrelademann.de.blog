@@ -15,7 +15,7 @@ description: "GitLab makes it trivial. Here's how to get the same isolated previ
 
 With GitLab, automatically deploying a review app — or _preview environment_, as Azure calls it — for each merge request is almost effortless. Each one gets its own URL, so new features can be tested in complete isolation. Compared to a shared staging system, this saves a lot of grief with merge conflicts and unintended side effects.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695326067043/c92df18f-e53c-49ff-b46a-f05a15136c00.png)
+![Diagram](/images/posts/build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications/diagram.png)
 
 You can achieve the same thing with GitHub Actions. This article shows one approach via Azure Static Web Applications (SWA).
 
@@ -30,7 +30,7 @@ Azure Static Web Applications are free of charge. You get a URL, an SSL certific
 
 This approach is primarily suited to static websites. That said, it's also conceivable to host build artefacts (dmg, exe, jar files) for download via a preview URL — it doesn't have to be just HTML.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695325716895/3db9944d-9b78-499d-bbb7-fa1f011b144d.png)
+![GitHub Actions workflow](/images/posts/build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications/github-action.png)
 
 ## Alternatives Worth Knowing
 
@@ -45,7 +45,7 @@ Several other platforms offer free static hosting and fit the same pattern well:
 
 ## See It in Action
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1695646355214/86caaa8c-6ab0-4050-9d1f-be65474b2c35.png)
+![Review app linked in a GitHub pull request](/images/posts/build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications/in-action.png)
 
 Review apps linked directly in the GitHub pull request — no manual deployment step needed.
 

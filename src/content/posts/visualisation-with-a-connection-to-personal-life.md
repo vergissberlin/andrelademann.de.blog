@@ -21,7 +21,7 @@ In order to make the visualisation of data palatable to all of us, I came up wit
 
 Haven't you often wondered why petrol prices fluctuate so much, even during the course of the day?
 
-![image-20200427-135246.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1651530082394/1sruD_sV4.png)
+![](/images/posts/visualisation-with-a-connection-to-personal-life/screenshot-01.png)
 
 It's nice to see that there's a pattern:
 
@@ -69,4 +69,4 @@ Example response:
 
 Besides price, the API returns name, address, opening hours and distance to my location. I save this data in 15-minute intervals using Node-RED into an InfluxDB, which Grafana then uses to visualise the data.
 
-![image-20200427-085108.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1651530249228/P4ihz6sey.png)
+![](/images/posts/visualisation-with-a-connection-to-personal-life/screenshot-02.png)

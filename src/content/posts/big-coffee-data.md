@@ -15,7 +15,7 @@ description: "Measuring and visualising coffee machine data with TASMOTA, MQTT, 
 
 Weeee all love coffee … aren't we?
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1636902630616/JF8QDFHvc.png)
+![](/images/posts/big-coffee-data/screenshot.png)
 
 ## Table of content
 

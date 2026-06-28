@@ -71,7 +71,7 @@ echo "Hello World" | mail -s "Test email" someone@example.com
 
 Emails sent this way will likely land in spam — that's fine for testing. Check your spam folder.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1637755308833/LNBs35oyT.png)
+![Gmail spam folder showing the test email](/images/posts/unlock-the-power-of-rich-snippets-in-emails-for-2024/gmail-spam-test.png)
 
 ### 2. Create the email content with the rich snippet
 
