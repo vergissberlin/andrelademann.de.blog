@@ -1,0 +1,25 @@
+---
+description: Use typographic ellipsis (…) instead of three dots (...)
+alwaysApply: true
+---
+
+# Typography — Ellipsis
+
+Use the typographic ellipsis character **…** (U+2026), not three full stops **...**.
+
+## Apply to
+
+- Blog posts and other prose
+- UI copy, labels, and messages
+- Comments and documentation text
+
+## Examples
+
+- Good: "Wait for it…"
+- Good: "Loading…"
+- Bad: "Wait for it..."
+- Bad: "Loading..."
+
+## Exceptions
+
+Do not replace `...` in code where it has syntactic meaning (e.g. rest/spread in JavaScript, shell globs, placeholder syntax in APIs).

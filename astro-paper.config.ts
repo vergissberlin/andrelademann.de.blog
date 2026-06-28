@@ -30,8 +30,8 @@ export default defineAstroPaperConfig({
   },
   socials: [
     { name: "github", url: "https://github.com/vergissberlin" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/andrelademann/" },
-    { name: "mail", url: "mailto:alademann@thinkport.digital" },
+    { name: "linkedin", url: "https://www.linkedin.com/in/andre-lademann/" },
+    { name: "mail", url: "info@andrelademann.de" },
   ],
   shareLinks: [
     { name: "x", url: "https://x.com/intent/post?url=" },

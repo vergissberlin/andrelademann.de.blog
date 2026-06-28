@@ -2,6 +2,14 @@
 
 All blog post content must be written in **British English** — spelling, vocabulary, and punctuation conventions (e.g. "colour", "organise", "whilst", "-ise" suffixes). Do not use American English variants.
 
+## Typography
+
+Use the typographic ellipsis **…** (U+2026), not three full stops **...**, in prose, UI copy, and documentation. Do not replace `...` in code where it has syntactic meaning (e.g. rest/spread, shell globs).
+
+## Tone
+
+Do not use emoticons or emoji in blog posts, UI copy, documentation, or assistant responses. Use plain text only.
+
 ## Image Prompts
 
 When generating prompts for blog images:
