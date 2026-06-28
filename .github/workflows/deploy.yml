@@ -3,6 +3,9 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    # Rebuild hourly so posts with a future pubDatetime go live without a manual push.
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
