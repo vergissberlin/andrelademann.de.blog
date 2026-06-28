@@ -4,7 +4,7 @@ pubDatetime: 2026-06-28T09:00:00.000Z
 title: "MCP Servers in the Enterprise: The Speed-vs-Security Trap"
 slug: mcp-servers-speed-vs-security-enterprise
 featured: false
-draft: true
+draft: false
 tags:
   - mcp
   - security
