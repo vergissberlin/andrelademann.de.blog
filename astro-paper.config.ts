@@ -38,6 +38,6 @@ export default defineAstroPaperConfig({
     { name: "linkedin", url: "https://www.linkedin.com/shareArticle?url=" },
     { name: "telegram", url: "https://t.me/share/url?url=" },
     { name: "mail", url: "mailto:?subject=See%20this%20post&body=" },
-    { name: "xing", url: "https://xing.com/share/url/" },
+    { name: "xing", url: "https://www.xing.com/spi/shares/new?url=" },
   ],
 });

@@ -45,7 +45,14 @@ const items = await Promise.all(
               data-swetrix-event="SHARE_CLICK"
               data-swetrix-platform={name}
             >
-              <Icon class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110" />
+              <Icon
+                class:list={[
+                  "inline-block size-6 scale-125 opacity-90 sm:scale-110",
+                  name === "xing"
+                    ? "grayscale transition-[filter] duration-200 group-hover:grayscale-0"
+                    : "fill-transparent stroke-current stroke-2 group-hover:fill-transparent",
+                ]}
+              />
               <span class="sr-only">{title}</span>
             </LinkButton>
           ) : null
