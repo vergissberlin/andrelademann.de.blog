@@ -534,4 +534,44 @@ const ogImage = ogImageUrl
   document.addEventListener("astro:after-swap", () =>
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
   );
+
+  function removeTransparentImageBorders() {
+    const article = document.getElementById("article");
+    if (!article) return;
+
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const images = article.querySelectorAll("img");
+    images.forEach(img => {
+      if (!img.src.match(/\.(png|gif|webp)(\?.*)?$/i)) return;
+
+      const check = () => {
+        canvas.width = img.naturalWidth || img.width;
+        canvas.height = img.naturalHeight || img.height;
+        if (!canvas.width || !canvas.height) return;
+        try {
+          ctx.drawImage(img, 0, 0);
+          const samplePoints = [
+            [0, 0], [canvas.width - 1, 0],
+            [0, canvas.height - 1], [canvas.width - 1, canvas.height - 1],
+            [Math.floor(canvas.width / 2), 0],
+            [0, Math.floor(canvas.height / 2)],
+          ];
+          const hasTransparency = samplePoints.some(([x, y]) => {
+            const pixel = ctx.getImageData(x, y, 1, 1).data;
+            return pixel[3] < 255;
+          });
+          if (hasTransparency) img.style.border = "none";
+        } catch {}
+      };
+
+      if (img.complete) check();
+      else img.addEventListener("load", check, { once: true });
+    });
+  }
+
+  removeTransparentImageBorders();
+  document.addEventListener("astro:after-swap", removeTransparentImageBorders);
 </script>
