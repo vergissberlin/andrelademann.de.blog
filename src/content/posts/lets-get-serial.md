@@ -21,7 +21,7 @@ The Web Serial API is a browser-based interface that makes it possible to commun
 
 If you want to make configurations on an ESP32 via the Web Serial API, you must first ensure that the ESP32 is programmed so that it can receive commands via its serial interface and respond to them accordingly. This usually requires firmware that has been specially developed to interpret commands and implement settings or actions on the device.
 
-## Let's do it!
+## Let's do it
 
 I've prepared a all in one Demo for you. All you need is a Computer with a Chromium based browser, an microcontroller and a USB cable to connect both devices.
 

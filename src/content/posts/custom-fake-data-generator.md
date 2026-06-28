@@ -45,7 +45,7 @@ In my first test 90000 test users are generated. They are distributed over 18 CS
 
 In my second test, I generated larger amounts of data. 5 million test users spread over 50 CSV files. So there are 100,000 test users in each file.
 
-## Fake it yourself!
+## Fake it yourself
 
 You come so far now it's time to give it a try on your own! Checkout the repository:
 

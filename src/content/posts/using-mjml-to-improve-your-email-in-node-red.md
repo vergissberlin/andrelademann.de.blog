@@ -21,7 +21,7 @@ If you want to send an email in HTML format, there is a lot to consider, because
 
 In this article, we will install the node and send a well-structured, beautiful-looking email as an example.
 
-# node-red-contrib-mjml
+## node-red-contrib-mjml
 
 ## Installation
 
@@ -40,9 +40,9 @@ Let's now set up a basic flow with which we can send our first mail.
 
 ![Node-RED flow with email content, template, mjml-parse and email output nodes](/images/posts/using-mjml-to-improve-your-email-in-node-red/img-1.png)
 
-1.  Copy and import the following flow into your Node-RED: https://github.com/vergissberlin/node-red-contrib-mjml/blob/main/examples/Parse%20node%20example.json
-2.  Configure the credentials and receiver address in the email node and press the deploy button
-3.  Use the button one the debug node to trigger the email proccess.
+1. Copy and import the following flow into your Node-RED: [Parse node example.json](https://github.com/vergissberlin/node-red-contrib-mjml/blob/main/examples/Parse%20node%20example.json)
+2. Configure the credentials and receiver address in the email node and press the deploy button
+3. Use the button one the debug node to trigger the email proccess.
 
 You will get an email which looks like this: ![MJML example email with Hello World heading and Lorem Ipsum body text](/images/posts/using-mjml-to-improve-your-email-in-node-red/img-2.png)
 
@@ -96,10 +96,10 @@ Send beautiful, well-structured email with Node-RED is now an easy task to do. I
 
 ## Links
 
--   [Node-RED repository](https://flows.nodered.org/node/@vergissberlin/node-red-contrib-mjml)
--   [Node-RED](http://nodered.org/)
--   [MJML documentation](https://documentation.mjml.io/)
--   [MJML templates](https://mjml.io/templates)
+- [Node-RED repository](https://flows.nodered.org/node/@vergissberlin/node-red-contrib-mjml)
+- [Node-RED](http://nodered.org/)
+- [MJML documentation](https://documentation.mjml.io/)
+- [MJML templates](https://mjml.io/templates)
 
 ### Repository on GitHub
 

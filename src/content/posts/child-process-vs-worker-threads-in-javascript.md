@@ -21,7 +21,7 @@ There are many aspects to consider when comparing both types of workers, but in 
 
 ![Satirical illustration titled Fake data generator showing a caricature against a sky with Twitter birds](/images/posts/child-process-vs-worker-threads-in-javascript/screenshot-01.png)
 
-## Let's go!
+## Let's go
 
 ### Dependencies
 

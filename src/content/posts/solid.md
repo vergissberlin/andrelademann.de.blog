@@ -24,16 +24,16 @@ So let's take a closer look at _SOLID_. Unlike other posts on this topic, I will
 
 ## O – stands for
 
-_… (coming soon)_
+… (coming soon)
 
 ## L – stands for
 
-_… (coming soon)_
+… (coming soon)
 
 ## I – stands for
 
-_… (coming soon)_
+… (coming soon)
 
 ## D – stands for
 
-_… (coming soon)_
+… (coming soon)

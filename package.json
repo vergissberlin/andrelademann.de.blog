@@ -13,7 +13,8 @@
     "astro": "astro",
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "lint": "eslint ."
+    "lint": "eslint . && markdownlint-cli2",
+    "lint:md": "markdownlint-cli2"
   },
   "dependencies": {
     "@astrojs/mdx": "^6.0.3",
@@ -42,6 +43,7 @@
     "@typescript-eslint/parser": "^8.62.0",
     "eslint": "^10.6.0",
     "eslint-plugin-astro": "^1.7.0",
+    "markdownlint-cli2": "^0.22.1",
     "pagefind": "^1.5.2",
     "prettier": "3.8.3",
     "prettier-plugin-astro": "0.14.1",

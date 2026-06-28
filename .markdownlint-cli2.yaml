@@ -1,0 +1,11 @@
+frontMatter: ^---\s*\n[\s\S]*?\n---\s*\n
+globs:
+  - "src/content/**/*.md"
+  - "README.md"
+ignores:
+  - node_modules/**
+  - dist/**
+config:
+  default: true
+  MD013: false
+  MD041: false

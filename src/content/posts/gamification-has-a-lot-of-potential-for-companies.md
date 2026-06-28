@@ -32,27 +32,27 @@ Inspired by my famous CSS YouTuber [Kevin Powell](https://www.youtube.com/channe
 
 To entertain the spectators and participants during the competition, the participants take turns describing what they are currently working on. Furthermore, they are asked prepared questions. Here are a few examples:
 
-**Pot 1 – Serious questions**
+### Pot 1 – Serious questions
 
 - What are your tasks at Netresearch?
 - Have you had another job before?
 - What else do you do when you are not programming?
 - What is your favourite programming language?
 
-**Pot 2 – Fun questions / tasks**
+### Pot 2 – Fun questions / tasks
 
 - Tell a joke!
 - What profession would your parents have imagined for you?
 - If you had become a girl/boy, what would your first name be?
 
-**Pot 3 – Tricky questions**
+### Pot 3 – Tricky questions
 
 - What can you find on <http://info.cern.ch> ? – The first website ever.
 - Have you ever peed standing up?
 - Have you ever stolen a sweet from a colleague's desk?
 - What was your most embarrassing experience at work?
 
-**Pot 4 – Nasty questions for an applicant**
+### Pot 4 – Nasty questions for an applicant
 
 - How do you feel about being criticised?
 - What was your biggest mistake - and what have you learned from it?
@@ -67,7 +67,7 @@ To entertain the spectators and participants during the competition, the partici
 - Microphone and a webcam
 - A browser
 
-**To organise such an event, you will need**
+### To organise such an event, you will need
 
 - Video conferencing software with screen sharing capability
 - [OBS](https://obsproject.com/) for recording and streaming

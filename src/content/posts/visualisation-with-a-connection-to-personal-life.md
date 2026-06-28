@@ -13,7 +13,7 @@ tags:
 description: "Making data visualisation tangible by monitoring petrol prices in real time with Node-RED, InfluxDB and Grafana."
 ---
 
-## Hello friends of data,
+## Hello friends of data
 
 In many of our projects, software is already used to visualise states — CPU load, network traffic — but for many who don't deal with it closely, the "pretty graphics" are incomprehensible in the long run, because they lack a personal connection to these values.
 

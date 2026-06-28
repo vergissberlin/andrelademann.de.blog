@@ -22,7 +22,7 @@ There are several generators on the web to create a `.gitignore` file. There are
 
 **But that doesn't have to be the case!** Instead of excluding all files that you don't like, you can also explicitly specify in the `.gitignore` which files should end up in the version management.
 
-### Pros and cons
+## Pros and cons
 
 ✅ Protection against unintentional commit of files of OS, IDE or test files
 
