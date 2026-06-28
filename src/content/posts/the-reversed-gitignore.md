@@ -7,8 +7,6 @@ featured: false
 draft: false
 tags:
   - git
-  - version-control
-  - versioning
 ogImage: "/images/posts/the-reversed-gitignore/hero.jpeg"
 description: "The .gitignore is there to prevent files from ending up in git's version management that have no business being there. You can find them in most repositories in the world. Creating these is a tedious and sometimes tricky task. For example, files that..."
 canonicalURL: https://blog.andrelademann.de/the-reversed-gitignore

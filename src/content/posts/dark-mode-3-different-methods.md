@@ -6,8 +6,6 @@ slug: dark-mode-3-different-methods
 featured: false
 draft: true
 tags:
-  - css
-  - dark-mode
   - frontend
 description: "Three approaches to implementing dark mode in CSS: custom properties, separate files with media queries, and component overrides — with pros and cons for each."
 ---

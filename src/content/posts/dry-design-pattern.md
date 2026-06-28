@@ -7,7 +7,6 @@ featured: false
 draft: false
 tags:
   - design-patterns
-  - design-principles
 ogImage: "/images/posts/dry-design-pattern/hero.jpeg"
 description: 'Excuses to do it "It''s another project. I don''t know much about it. Don''t wanna break something, so I just copied it." "I don''t have time, maybe later …" "Maybe later on, I want to have something different in each function/template/class, so it''s be...'
 canonicalURL: https://blog.andrelademann.de/dry-design-pattern

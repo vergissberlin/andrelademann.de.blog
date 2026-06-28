@@ -6,8 +6,6 @@ slug: build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applicati
 featured: false
 draft: false
 tags:
-  - azure
-  - github-actions
   - devops
 heroImage: /images/posts/build-review-apps-in-github-like-in-gitlab-with-azure-static-web-applications/hero.png
 description: "GitLab makes it trivial. Here's how to get the same isolated preview environments on GitHub using Azure Static Web Applications and GitHub Actions."

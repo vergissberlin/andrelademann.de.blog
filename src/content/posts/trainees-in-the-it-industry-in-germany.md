@@ -6,10 +6,7 @@ slug: trainees-in-the-it-industry-in-germany
 featured: false
 draft: false
 tags:
-  - training
-  - culture
-  - internships
-  - leadership
+  - career
 ogImage: "/images/posts/trainees-in-the-it-industry-in-germany/hero.png"
 description: "Today I was having lunch with IT colleagues and we were talking about our trainee. One colleague who previously worked in another industry thought that his manner was inappropriate for a trainee. When I was an apprentice, I could not have allowed mys..."
 canonicalURL: https://blog.andrelademann.de/trainees-in-the-it-industry-in-germany

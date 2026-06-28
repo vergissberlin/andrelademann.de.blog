@@ -6,10 +6,7 @@ slug: custom-fake-data-generator
 featured: false
 draft: false
 tags:
-  - faker
-  - test-data-management
-  - etc
-  - anonymous-data
+  - testing
 ogImage: "/images/posts/custom-fake-data-generator/hero.png"
 description: "In 2019 (and still in 2022), we probably do not need to create data, we just need to print out one of the famous Twitter channels. Just kidding. :) Sometimes we need millions, I mean gigabytes of test data, which are really close to the data we are u..."
 canonicalURL: https://blog.andrelademann.de/custom-fake-data-generator

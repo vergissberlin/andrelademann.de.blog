@@ -7,7 +7,6 @@ featured: false
 draft: false
 tags:
   - git
-  - developer-experience
 heroImage: /images/posts/git-rebase-theirs-probleme-beim-rebase-beheben/hero.png
 description: "How -Xtheirs and -Xours work in git rebase — and why they mean the exact opposite of what you'd expect."
 ---

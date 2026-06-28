@@ -7,8 +7,6 @@ featured: false
 draft: true
 tags:
   - design-patterns
-  - clean-code
-  - oop
 description: "An introduction to the five SOLID principles of object-oriented design — with mnemonics and examples to make them stick."
 ---
 

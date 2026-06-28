@@ -6,12 +6,7 @@ slug: lets-get-serial
 featured: false
 draft: false
 tags:
-  - web-serial
-  - serial-communications
-  - serial-port
-  - arduino
-  - esp32
-  - example
+  - iot
 ogImage: "/images/posts/lets-get-serial/hero.jpeg"
 description: "The Web Serial API is a browser-based interface that makes it possible to communicate with hardware devices via the serial interface. It is mainly used for communication with development boards such as the ESP32 or Arduino Uno to send and receive dat..."
 canonicalURL: https://blog.andrelademann.de/lets-get-serial

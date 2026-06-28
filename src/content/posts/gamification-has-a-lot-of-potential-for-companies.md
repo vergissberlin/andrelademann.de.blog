@@ -6,11 +6,9 @@ slug: gamification-has-a-lot-of-potential-for-companies
 featured: false
 draft: false
 tags:
-  - css
-  - coding-challenge
+  - frontend
   - learning
-  - company
-  - general-programming
+  - career
 ogImage: "/images/posts/gamification-has-a-lot-of-potential-for-companies/hero.gif"
 description: "Inspired by my famous CSS YouTuber Kevin Powell and his CSS battles on YouTube, I organised a CSS battle in my company, Netresearch. Why? I noticed how quickly after a few tasks on CSS-battle, I was up to speed again. I learned so many new things, ..."
 canonicalURL: https://blog.andrelademann.de/gamification-has-a-lot-of-potential-for-companies

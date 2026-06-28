@@ -7,9 +7,7 @@ featured: false
 draft: true
 tags:
   - javascript
-  - nodejs
   - performance
-  - benchmarking
 description: "A speed benchmark comparing Node.js child_process and worker_threads using the workerpool library and hyperfine."
 ---
 

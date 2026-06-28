@@ -6,8 +6,8 @@ slug: custom-chatgpt-with-openai-api
 featured: false
 draft: false
 tags:
-  - chatgpt
-  - vue-js
+  - ai
+  - frontend
 ogImage: "/images/posts/custom-chatgpt-with-openai-api/hero.png"
 description: "OpenAI's API is surprisingly easy to use. It is no different from other REST APIs. So integrating AI into your own software is easy, and we will see AI being integrated into more and more applications. Be it in ticket systems, email clients, content ..."
 canonicalURL: https://blog.andrelademann.de/custom-chatgpt-with-openai-api

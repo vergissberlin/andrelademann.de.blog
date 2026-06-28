@@ -7,8 +7,7 @@ featured: false
 draft: false
 tags:
   - email
-  - schema-org
-  - tooling
+  - tools
 heroImage: /images/posts/unlock-the-power-of-rich-snippets-in-emails-for-2024/hero.png
 description: "How to embed Schema.org markup in emails to add Track Order buttons, event cards, and more — directly visible in Gmail's inbox view."
 ---

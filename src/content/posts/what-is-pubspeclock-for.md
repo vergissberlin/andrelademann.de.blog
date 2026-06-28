@@ -6,9 +6,8 @@ slug: what-is-pubspeclock-for
 featured: false
 draft: false
 tags:
-  - flutter
-  - version-control
-  - lock-files
+  - frontend
+  - git
 ogImage: "/images/posts/what-is-pubspeclock-for/hero.jpeg"
 description: "It is good practice to version the pubspec.lock file in a Flutter project. The pubspec.lock file contains an accurate record of the versions of the dependencies (packages) used in your Flutter project. By versioning this file, you ensure that your pr..."
 canonicalURL: https://blog.andrelademann.de/what-is-pubspeclock-for

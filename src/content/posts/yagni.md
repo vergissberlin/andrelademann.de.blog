@@ -7,7 +7,6 @@ featured: false
 draft: false
 tags:
   - design-patterns
-  - clean-code
 heroImage: /images/posts/yagni/hero.png
 description: "You Aren't Gonna Need It — why building features before they're requested burns money and complicates codebases."
 ---

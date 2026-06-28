@@ -6,9 +6,6 @@ slug: visualisation-with-a-connection-to-personal-life
 featured: false
 draft: true
 tags:
-  - grafana
-  - node-red
-  - influxdb
   - iot
 description: "Making data visualisation tangible by monitoring petrol prices in real time with Node-RED, InfluxDB and Grafana."
 ---

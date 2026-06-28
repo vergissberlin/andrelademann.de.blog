@@ -6,9 +6,7 @@ slug: make-it-beautiful
 featured: false
 draft: true
 tags:
-  - make
   - devops
-  - docker
 description: "A proposal for a standardised Make API across all dockerised projects — one consistent interface for up, down, build, test, db, cache and more."
 ---
 

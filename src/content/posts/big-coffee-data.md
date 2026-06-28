@@ -7,9 +7,6 @@ featured: false
 draft: true
 tags:
   - iot
-  - grafana
-  - mqtt
-  - node-red
 description: "Measuring and visualising coffee machine data with TASMOTA, MQTT, Node-RED, InfluxDB and Grafana."
 ---
 
