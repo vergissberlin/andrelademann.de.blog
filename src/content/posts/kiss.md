@@ -94,8 +94,8 @@ At first glance, the 2nd example is much easier to read, and it would be correct
 
 If someone in the future ask you what the hell KISS means, do you know the answer? Probably not when it comes to the details because not everyone likes it as colourful as you do. Pair programming can help you and your friends to get better programmer with (a) KISS 💋
 
-1.  Your code should be easy to read
-2.  The complexity (nested <=3) should be low
+1. Your code should be easy to read
+2. The complexity (nested <=3) should be low
 
 ## Question
 

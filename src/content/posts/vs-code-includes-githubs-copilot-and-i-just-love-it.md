@@ -43,17 +43,17 @@ that is more readable, more maintainable, and more efficient.
 ### The Sorcerer's Apprentice, _(Göthe, Der Zauberlehrling, 1798)_
 
 > I have need of Thee! from the spirits that I called Sir, deliver me!
-> 
+>
 > Back now, broom, into the closet! Be thou as thou wert before! Until I, **the real master** call thee forth to serve once more!
 
 ![Animated meme of GitHub Copilot continuing to suggest code like the sorcerer's apprentice's unstoppable broom](/images/posts/vs-code-includes-githubs-copilot-and-i-just-love-it/img-4.gif)
 
 ## Links
 
--   [GPT-3 on Wikipedia](https://en.wikipedia.org/wiki/GPT-3)
--   [OpenAI](https://openai.com/)
--   [GitHub CoPilot](https://copilot.github.com/)
--   [Visual Studio Code](https://code.visualstudio.com/)
+- [GPT-3 on Wikipedia](https://en.wikipedia.org/wiki/GPT-3)
+- [OpenAI](https://openai.com/)
+- [GitHub CoPilot](https://copilot.github.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ---
 

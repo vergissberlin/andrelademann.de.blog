@@ -32,8 +32,8 @@ $ git rebase -Xtheirs branch-b
 Here's the part that trips nearly everyone up: **`-Xtheirs` favours your current branch** (`branch-a`) — not the branch you're rebasing onto. The naming is counterintuitive, and it's the direct opposite of how `git merge` uses the same flags:
 
 ```bash
-$ git rebase -Xtheirs branch-b  # ours = branch-b,  theirs = branch-a
-$ git merge  -Xtheirs branch-b  # ours = branch-a,  theirs = branch-b
+git rebase -Xtheirs branch-b  # ours = branch-b,  theirs = branch-a
+git merge  -Xtheirs branch-b  # ours = branch-a,  theirs = branch-b
 ```
 
 The reason: `git rebase` replays your commits on top of the target branch. From Git's perspective, the target branch is "ours" and the commits being replayed are "theirs" — even though those commits are yours. It reflects the internal mechanics of how rebase works, not whose code it is.
@@ -43,13 +43,13 @@ The reason: `git rebase` replays your commits on top of the target branch. From 
 If you're merging changes from `origin/master` and want your current branch to win on any conflict:
 
 ```bash
-$ git merge -Xours origin/master
+git merge -Xours origin/master
 ```
 
 If you're rebasing your feature branch onto master and want your feature branch to win:
 
 ```bash
-$ git rebase -Xtheirs master
+git rebase -Xtheirs master
 ```
 
 A quick rule of thumb to save somewhere visible: **in a rebase, "theirs" means your own commits.** I still look this up occasionally — and now you won't have to.

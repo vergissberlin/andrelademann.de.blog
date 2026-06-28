@@ -9,6 +9,7 @@ import {
   OG_IMAGE_WIDTH,
 } from "@/utils/defaultOgImage";
 import { getAssetPath } from "@/utils/withBase";
+import { PUBLIC_SWETRIX_PID } from "astro:env/client";
 import config from "@/config";
 import "@/styles/global.css";
 
@@ -113,6 +114,18 @@ const rssHref = getRelativeLocaleUrl(
       )
     }
 
+    {
+      PUBLIC_SWETRIX_PID && (
+        <noscript>
+          <img
+            src={`https://api.swetrix.com/log/noscript?pid=${PUBLIC_SWETRIX_PID}`}
+            alt=""
+            referrerpolicy="no-referrer-when-downgrade"
+          />
+        </noscript>
+      )
+    }
+
     <!--
       Inline FOUC-prevention script: sets data-theme on <html> before
       the browser paints. Runs synchronously, no defer/async.
@@ -140,6 +153,9 @@ const rssHref = getRelativeLocaleUrl(
     <slot />
     <script>
       import "@/scripts/theme";
+    </script>
+    <script>
+      import "@/scripts/analytics";
     </script>
   </body>
 </html>

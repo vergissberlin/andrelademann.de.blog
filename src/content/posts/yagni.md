@@ -59,6 +59,6 @@ Keep in mind that this rule of thumb is **always about functions and templates**
 
 Sometimes you genuinely know that taking the easy route now will cost more later. That's worth a conversation with the product owner. Even if the upfront investment is higher, the client may prefer to build a prototype first — this is precisely the case with an MVP ([minimum viable product](https://en.wikipedia.org/wiki/Minimum_viable_product)).
 
-The key word is *know*. If you're speculating, it's YAGNI. If you have a roadmap item, a written requirement, or a concrete deadline — that's a different conversation entirely.
+The key word is _know_. If you're speculating, it's YAGNI. If you have a roadmap item, a written requirement, or a concrete deadline — that's a different conversation entirely.
 
 What's the most elaborate "just in case" feature you've seen built that never got used? I'd love to hear it.

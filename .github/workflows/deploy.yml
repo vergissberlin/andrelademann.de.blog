@@ -38,6 +38,8 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: "🚀 Build site"
+        env:
+          PUBLIC_SWETRIX_PID: ${{ secrets.PUBLIC_SWETRIX_PID }}
         run: pnpm build
 
       - name: "📤 Upload Pages artifact"

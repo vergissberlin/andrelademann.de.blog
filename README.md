@@ -8,16 +8,16 @@ Built with [Astro](https://astro.build/) on the [AstroPaper](https://github.com/
 
 ## Tech stack
 
-| Area | Tools |
-| --- | --- |
-| Framework | [Astro](https://astro.build/) 6 |
-| Styling | [Tailwind CSS](https://tailwindcss.com/) 4 |
-| Content | Markdown / MDX via Astro Content Collections |
-| Syntax highlighting | [Shiki](https://shiki.style/) |
-| Search | [Pagefind](https://pagefind.app/) |
-| Dynamic OG images | [Satori](https://github.com/vercel/satori) + [Sharp](https://sharp.pixelplumbing.com/) |
-| Package manager | [pnpm](https://pnpm.io/) |
-| Deployment | GitHub Pages |
+| Area                | Tools                                                                                  |
+|---------------------|----------------------------------------------------------------------------------------|
+| Framework           | [Astro](https://astro.build/) 6                                                        |
+| Styling             | [Tailwind CSS](https://tailwindcss.com/) 4                                             |
+| Content             | Markdown / MDX via Astro Content Collections                                           |
+| Syntax highlighting | [Shiki](https://shiki.style/)                                                          |
+| Search              | [Pagefind](https://pagefind.app/)                                                      |
+| Dynamic OG images   | [Satori](https://github.com/vercel/satori) + [Sharp](https://sharp.pixelplumbing.com/) |
+| Package manager     | [pnpm](https://pnpm.io/)                                                               |
+| Deployment          | GitHub Pages                                                                           |
 
 ## Requirements
 
@@ -44,16 +44,16 @@ astro dev stop
 
 ## Commands
 
-| Command | Description |
-| --- | --- |
-| `pnpm dev` | Start the local dev server |
-| `pnpm build` | Type-check, build the site, run Pagefind indexing |
-| `pnpm preview` | Preview the production build locally |
-| `pnpm sync` | Generate Astro TypeScript types |
-| `pnpm lint` | Run ESLint |
-| `pnpm format` | Format the codebase with Prettier |
-| `pnpm format:check` | Check formatting without writing changes |
-| `pnpm astro …` | Run Astro CLI commands |
+| Command             | Description                                       |
+|---------------------|---------------------------------------------------|
+| `pnpm dev`          | Start the local dev server                        |
+| `pnpm build`        | Type-check, build the site, run Pagefind indexing |
+| `pnpm preview`      | Preview the production build locally              |
+| `pnpm sync`         | Generate Astro TypeScript types                   |
+| `pnpm lint`         | Run ESLint                                        |
+| `pnpm format`       | Format the codebase with Prettier                 |
+| `pnpm format:check` | Check formatting without writing changes          |
+| `pnpm astro …`      | Run Astro CLI commands                            |
 
 ## Project structure
 
@@ -119,6 +119,16 @@ Site-wide settings are in [`astro-paper.config.ts`](./astro-paper.config.ts):
 - Social and share links
 
 Optional Google Site Verification via the `PUBLIC_GOOGLE_SITE_VERIFICATION` environment variable (see [`astro.config.ts`](./astro.config.ts)).
+
+## Analytics (Swetrix)
+
+Page views and client-side errors are tracked with [Swetrix](https://swetrix.com) (cookieless, respects Do Not Track). The production project is **andrelademann.blog** (`6LH65qU3KYkF`), scoped to `blog.andrelademann.de`.
+
+**Local setup:** copy [`.env.example`](./.env.example) to `.env` and set `PUBLIC_SWETRIX_PID`. Tracking is disabled in dev (`import.meta.env.DEV`).
+
+**Production:** add the repository secret `PUBLIC_SWETRIX_PID` in GitHub (Settings → Secrets → Actions). The deploy workflow passes it into the build so the project ID is baked into the static output.
+
+Dashboard: [swetrix.com/projects](https://swetrix.com/projects)
 
 ## CI / deployment
 

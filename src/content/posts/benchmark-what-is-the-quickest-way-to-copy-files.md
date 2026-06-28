@@ -25,8 +25,8 @@ As a benchmark tool for the CLI, I used [hyperfine](https://github.com/sharkdp/h
 
 ### Test use cases
 
-1.  On an initial boot up, the target directory is empty. We have to copy all files from one directory to another.
-2.  The second use case to just update files where is a change.
+1. On an initial boot up, the target directory is empty. We have to copy all files from one directory to another.
+2. The second use case to just update files where is a change.
 
 ## CP
 

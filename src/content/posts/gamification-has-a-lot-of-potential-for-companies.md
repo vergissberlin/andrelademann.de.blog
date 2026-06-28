@@ -22,11 +22,11 @@ Inspired by my famous CSS YouTuber [Kevin Powell](https://www.youtube.com/channe
 
 ## Rules
 
-1.  one round lasts 20 minutes
-2.  afterwards there is a 10-minute evaluation
-3.  everyone writes human-readable code (no compression)
-4.  use of any documentation is allowed
-5.  The entire event is recorded. A moderator switches to the participants' screens via screen-sharing and asks questions.
+1. one round lasts 20 minutes
+2. afterwards there is a 10-minute evaluation
+3. everyone writes human-readable code (no compression)
+4. use of any documentation is allowed
+5. The entire event is recorded. A moderator switches to the participants' screens via screen-sharing and asks questions.
 
 ## Entertainment
 
@@ -34,45 +34,45 @@ To entertain the spectators and participants during the competition, the partici
 
 **Pot 1 – Serious questions**
 
--   What are your tasks at Netresearch?
--   Have you had another job before?
--   What else do you do when you are not programming?
--   What is your favourite programming language?
+- What are your tasks at Netresearch?
+- Have you had another job before?
+- What else do you do when you are not programming?
+- What is your favourite programming language?
 
 **Pot 2 – Fun questions / tasks**
 
--   Tell a joke!
--   What profession would your parents have imagined for you?
--   If you had become a girl/boy, what would your first name be?
+- Tell a joke!
+- What profession would your parents have imagined for you?
+- If you had become a girl/boy, what would your first name be?
 
 **Pot 3 – Tricky questions**
 
--   What can you find on http://info.cern.ch ? – The first website ever.
--   Have you ever peed standing up?
--   Have you ever stolen a sweet from a colleague's desk?
--   What was your most embarrassing experience at work?
+- What can you find on <http://info.cern.ch> ? – The first website ever.
+- Have you ever peed standing up?
+- Have you ever stolen a sweet from a colleague's desk?
+- What was your most embarrassing experience at work?
 
 **Pot 4 – Nasty questions for an applicant**
 
--   How do you feel about being criticised?
--   What was your biggest mistake - and what have you learned from it?
--   When was the last time you disregarded a rule or regulation, and why?
--   What added value would your attitude bring to our company?
+- How do you feel about being criticised?
+- What was your biggest mistake - and what have you learned from it?
+- When was the last time you disregarded a rule or regulation, and why?
+- What added value would your attitude bring to our company?
 
 ## Tools
 
 **To participate in the event**, the opponents will need the following items:
 
--   Video conferencing software with the possibility to share the screen
--   Microphone and a webcam
--   A browser
+- Video conferencing software with the possibility to share the screen
+- Microphone and a webcam
+- A browser
 
 **To organise such an event, you will need**
 
--   Video conferencing software with screen sharing capability
--   [OBS](https://obsproject.com/) for recording and streaming
--   Voting tool
--   Coding Battle platform such as [cssbattle.dev](https://cssbattle.dev/)
+- Video conferencing software with screen sharing capability
+- [OBS](https://obsproject.com/) for recording and streaming
+- Voting tool
+- Coding Battle platform such as [cssbattle.dev](https://cssbattle.dev/)
 
 ![OBS Studio on macOS set up for recording a coding battle with scenes, sources and audio mixer panels](/images/posts/gamification-has-a-lot-of-potential-for-companies/img-1.png)
 
@@ -82,8 +82,8 @@ To entertain the spectators and participants during the competition, the partici
 
 At the end of a competition, the award ceremony is always a crowning event. The appreciation of the winner's performance by all participants. For our first battle, I chose CSS. Getting the frontend developers excited wasn't particularly difficult, but I wanted to get more colleagues on board from the backend as well, so I asked our marketing department for prizes for the winners.
 
--   Audience Award (Voting)
--   **The Highest score** in CSS Battle platform
+- Audience Award (Voting)
+- **The Highest score** in CSS Battle platform
 
 ## Summary
 

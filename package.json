@@ -29,6 +29,7 @@
     "satori": "^0.26.0",
     "sharp": "^0.34.5",
     "slugify": "^1.6.9",
+    "swetrix": "^4.2.0",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {

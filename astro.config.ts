@@ -76,6 +76,11 @@ export default defineConfig({
         context: "client",
         optional: true,
       }),
+      PUBLIC_SWETRIX_PID: envField.string({
+        access: "public",
+        context: "client",
+        optional: true,
+      }),
     },
   },
   experimental: {
