@@ -46,6 +46,8 @@ const t = useTranslations(locale);
 </Layout>
 
 <script>
+  import { track } from "swetrix";
+
   function initSearch() {
     const pageFindSearch: HTMLElement | null =
       document.querySelector("#pagefind-search");
@@ -86,6 +88,14 @@ const t = useTranslations(locale);
           const backUrl =
             pageFindSearch?.dataset?.backurl ?? window.location.pathname;
           sessionStorage.setItem("backUrl", `${backUrl}?${params.toString()}`);
+
+          const trimmed = term.trim();
+          if (trimmed.length >= 2) {
+            void track({
+              ev: "SEARCH_USED",
+              meta: { query: trimmed.slice(0, 100) },
+            });
+          }
 
           return term;
         },
