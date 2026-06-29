@@ -5,7 +5,7 @@ on:
     branches: [main]
   schedule:
     # Rebuild hourly so posts with a future pubDatetime go live without a manual push.
-    - cron: "0 10 * * *"
+    - cron: "0 6 * * *"
   workflow_dispatch:
 
 permissions:
