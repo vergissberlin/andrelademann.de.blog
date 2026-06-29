@@ -108,6 +108,21 @@ const ogImage = ogImageUrl
     class:list={["app-layout", { "mt-8": !config.features.showBackButton }]}
     data-pagefind-body
   >
+    {
+      post.data.draft && import.meta.env.DEV && (
+        <div class="mb-4 rounded border border-dashed border-orange-400 bg-orange-50 px-4 py-2 text-sm text-orange-700 dark:border-orange-600 dark:bg-orange-950/40 dark:text-orange-400">
+          <strong>Draft</strong> — This post has not been published yet. It is only visible in development mode.
+        </div>
+      )
+    }
+    {
+      !post.data.draft && import.meta.env.DEV && new Date(post.data.pubDatetime) > new Date() && (
+        <div class="mb-4 rounded border border-dashed border-blue-400 bg-blue-50 px-4 py-2 text-sm text-blue-700 dark:border-blue-600 dark:bg-blue-950/40 dark:text-blue-400">
+          <strong>Scheduled</strong> — This post is set to publish on {new Date(post.data.pubDatetime).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" })}. It is only visible in development mode.
+        </div>
+      )
+    }
+
     <h1
       style={{ viewTransitionName: toTransitionName(title) }}
       class="text-accent inline-block text-2xl font-bold sm:text-3xl"
