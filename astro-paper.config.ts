@@ -31,6 +31,7 @@ export default defineAstroPaperConfig({
   socials: [
     { name: "github", url: "https://github.com/vergissberlin" },
     { name: "linkedin", url: "https://www.linkedin.com/in/andre-lademann/" },
+    { name: "xing", url: "https://www.xing.com/profile/Andre_Lademann" },
     { name: "mail", url: "info@andrelademann.de" },
   ],
   shareLinks: [

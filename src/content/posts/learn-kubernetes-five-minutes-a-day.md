@@ -6,7 +6,7 @@ slug: learn-kubernetes-five-minutes-a-day
 featured: false
 draft: false
 ogImage: /images/posts/learn-kubernetes-five-minutes-a-day/kubernetes-labs-opengraph.gif
-heroImage: /images/posts/learn-kubernetes-five-minutes-a-day/kubernetes-labs-opengraph.gif
+heroImage: /images/posts/learn-kubernetes-five-minutes-a-day/kubernauten-killer.gif
 tags:
   - tools
 description: "Kubernetes has a reputation for being hard to get into. I built a free, browser-based learning path so you can start from zero and make real progress…"
