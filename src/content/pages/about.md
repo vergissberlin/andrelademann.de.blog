@@ -16,5 +16,6 @@ Outside of work, I enjoy tinkering with microcontrollers (ESP32, Arduino), contr
 ## Connect
 
 - **GitHub**: [vergissberlin](https://github.com/vergissberlin)
-- **LinkedIn**: [andre.lademann](https://www.linkedin.com/in/andre.lademann/)
+- **LinkedIn**: [andre-lademann](https://www.linkedin.com/in/andre-lademann/)
+- **Xing**: [Andre_Lademann](https://www.xing.com/profile/Andre_Lademann)
 - **Email**: [vergissberlin@gmail.com](mailto:vergissberlin@gmail.com)
