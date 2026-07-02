@@ -14,9 +14,9 @@ description: "Last night The Pixies played the Parkbühne Leipzig without a sing
 canonicalURL: https://blog.andrelademann.de/pixies-parkbuhne-leipzig-concert-reflection
 ---
 
-Last night I stood in a crowd at the Parkbühne, the open-air stage tucked into Clara-Zetkin-Park, watching The Pixies play a set that didn't let up for a single second. I went with a friend I've known since we were teenagers — the kind you don't need any warm-up small talk with, you just pick up where you left off. No support-act chatter, no "how are you doing tonight, Leipzig", no pause between songs long enough to catch your breath. Just music, start to finish.
+Last night I stood in a crowd at the Parkbühne, the open-air stage tucked into Clara-Zetkin-Park, watching The Pixies play a set that didn't let up for a single second. No support-act chatter, no "how are you doing tonight, Leipzig", no pause between songs long enough to catch your breath. Just music, start to finish.
 
-I'd half-expected a pleasant, slightly faded nostalgia trip. Instead I got something closer to a physics lesson, and a genuinely lovely evening with an old friend — I felt completely at ease all night, and properly glad I finally got to see this band live after listening to them for so long.
+I'd half-expected a pleasant, slightly faded nostalgia trip. Instead I got something closer to a physics lesson. I felt completely at ease all night, and properly glad I finally got to see this band live after listening to them for so long.
 
 ## Music as fuel for a spaceship you didn't know you'd boarded
 
