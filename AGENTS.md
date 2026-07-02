@@ -2,13 +2,40 @@
 
 All blog post content must be written in **British English** — spelling, vocabulary, and punctuation conventions (e.g. "colour", "organise", "whilst", "-ise" suffixes). Do not use American English variants.
 
-## Typography
+## Typography — Ellipsis
 
-Use the typographic ellipsis **…** (U+2026), not three full stops **...**, in prose, UI copy, and documentation. Do not replace `...` in code where it has syntactic meaning (e.g. rest/spread, shell globs).
+Use the typographic ellipsis character **…** (U+2026), not three full stops **...**.
 
-## Tone
+### Apply to
 
-Do not use emoticons or emoji in blog posts, UI copy, documentation, or assistant responses. Use plain text only.
+- Blog posts and other prose
+- UI copy, labels, and messages
+- Comments and documentation text
+
+### Examples
+
+- Good: "Wait for it…"
+- Good: "Loading…"
+- Bad: "Wait for it..."
+- Bad: "Loading..."
+
+### Exceptions
+
+Do not replace `...` in code where it has syntactic meaning (e.g. rest/spread in JavaScript, shell globs, placeholder syntax in APIs).
+
+## No Emoticons
+
+Do not use emoticons or emoji in blog posts, UI copy, documentation, comments, or assistant responses.
+
+### Avoid
+
+- Emoji: 😀 👍 🚀 etc.
+- Text emoticons: `:)` `:-)` `;)` `:D` etc.
+- Emoji-style symbols used for tone or decoration
+
+### Instead
+
+Use plain text. Convey tone through wording, not symbols.
 
 ## Image Prompts
 
