@@ -14,9 +14,9 @@ description: "Last night The Pixies played the Parkbühne Leipzig without a sing
 canonicalURL: https://blog.andrelademann.de/pixies-parkbuhne-leipzig-concert-reflection
 ---
 
-Last night I stood in a crowd at the Parkbühne Leipzig, watching The Pixies play a set that didn't let up for a single second. No support-act chatter, no "how are you doing tonight, Leipzig", no pause between songs long enough to catch your breath. Just music, start to finish, until the clock hit ten on the dot.
+Last night I stood in a crowd at the Parkbühne, the open-air stage tucked into Clara-Zetkin-Park, watching The Pixies play a set that didn't let up for a single second. I went with a friend I've known since we were teenagers — the kind you don't need any warm-up small talk with, you just pick up where you left off. No support-act chatter, no "how are you doing tonight, Leipzig", no pause between songs long enough to catch your breath. Just music, start to finish.
 
-I went with a friend, half-expecting a pleasant, slightly faded nostalgia trip. Instead I got something closer to a physics lesson.
+I'd half-expected a pleasant, slightly faded nostalgia trip. Instead I got something closer to a physics lesson, and a genuinely lovely evening with an old friend — I felt completely at ease all night, and properly glad I finally got to see this band live after listening to them for so long.
 
 ## Music as fuel for a spaceship you didn't know you'd boarded
 
@@ -26,11 +26,11 @@ That's when it struck me: for me, music works less like a soundtrack and more li
 
 ## The voice hadn't aged a day
 
-What genuinely surprised me was the singer. Decades on, and that voice still has exactly the same bite it must have had on the recordings I grew up with. No rasp, no compromise, no "well, it's still pretty good for his age" caveat needed. It was just good, full stop. I stood there slightly stunned, trying to work out how that's even possible after this many years and this many stages.
+What genuinely surprised me was the singer. Decades on, and that voice still has exactly the same bite it must have had on the recordings I grew up with. No rasp, no compromise, no "well, it's still pretty good for his age" caveat needed. It was just good, full stop. By the time they got to "Gigantic", I had proper goosebumps — not the figure-of-speech kind, the actual kind.
 
 ## No pause, no chat, no filler
 
-And then there was the pacing. From the first song to the last, there wasn't a single gap for banter — no "this next one's off the new album", nothing. They played straight through and stopped at exactly 22:00, as if someone somewhere had a schedule to keep and a band that respected it completely. It felt less like a gig and more like watching a well-built machine do exactly what it was designed to do, brilliantly.
+And then there was the pacing. From the first song to the last, there wasn't a single gap for banter — no "this next one's off the new album", nothing. They played straight through and stopped at exactly 22:00 on the dot (open-air curfew rules for a park venue, presumably, though it felt more like their own discipline). It felt less like a gig and more like watching a well-built machine do exactly what it was designed to do, brilliantly.
 
 I've been to plenty of concerts where the between-song chatter is half the charm. This was the opposite, and somehow it worked even better.
 
