@@ -19,6 +19,8 @@ The verdict: a few parts on the front suspension need replacing before it'll pas
 
 So I started calling around. First stop: the classic car specialists. Even they don't know a 304 particularly well — in Germany, it's exotic enough that few workshops have ever had one on the ramp. That unfamiliarity doesn't come cheap: one quoted **500 euros just for a wheel alignment**, on top of **150 euros an hour, net**, for labour. I paid 3,500 euros for the whole car. A single alignment eating into that isn't a number I can just shrug off.
 
+![And It's Gone meme showing money vanishing after paying for a single wheel alignment](/images/posts/2026/my-peugeot-304-vs-the-german-tuv/meme-1.png)
+
 On a whim, I tried ATU instead — not exactly known for vintage Peugeots. I half expected to be laughed out of the car park. Instead, they said yes, they can do the work. The catch: they don't have all the parts either. So I'm still hunting for that one suspension component, just with slightly better odds and a much cheaper labour rate on my side.
 
 There's something almost funny about a car this old exposing such a modern problem: not everything can be fixed with money if the part simply doesn't exist on a shelf anywhere. Classic car ownership, I'm learning, is as much about logistics as it is about mechanics.
