@@ -1,9 +1,4 @@
-import {
-  init,
-  trackError,
-  trackErrors,
-  trackViews,
-} from "swetrix";
+import { init, trackError, trackErrors, trackViews } from "swetrix";
 import { PUBLIC_SWETRIX_PID } from "astro:env/client";
 import { getSwetrixApiUrl } from "@/utils/swetrix";
 
@@ -31,8 +26,7 @@ if (PUBLIC_SWETRIX_PID) {
     const reason = event.reason;
     const message =
       reason instanceof Error ? reason.message : String(reason ?? "Unknown");
-    const stackTrace =
-      reason instanceof Error ? (reason.stack ?? null) : null;
+    const stackTrace = reason instanceof Error ? (reason.stack ?? null) : null;
 
     trackError({
       name: reason instanceof Error ? reason.name : "UnhandledRejection",

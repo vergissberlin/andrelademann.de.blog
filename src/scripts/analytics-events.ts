@@ -4,8 +4,7 @@ const POSTS_INDEX = "/posts/";
 
 function isPostPage(pathname: string): boolean {
   return (
-    pathname.startsWith(POSTS_INDEX) &&
-    pathname.length > POSTS_INDEX.length
+    pathname.startsWith(POSTS_INDEX) && pathname.length > POSTS_INDEX.length
   );
 }
 
@@ -32,7 +31,10 @@ function handleAnalyticsClick(event: MouseEvent): void {
   const platform = target.dataset.swetrixPlatform;
   if (platform) meta.platform = platform;
 
-  void track({ ev: eventName, meta: Object.keys(meta).length ? meta : undefined });
+  void track({
+    ev: eventName,
+    meta: Object.keys(meta).length ? meta : undefined,
+  });
 }
 
 let clickListenerBound = false;
