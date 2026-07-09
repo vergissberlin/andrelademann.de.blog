@@ -1,3 +1,6 @@
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import {
   defineConfig,
   envField,
@@ -19,8 +22,21 @@ import {
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import config from "./astro-paper.config";
 
+// The old Hashnode site served posts at the site root (e.g. `/lets-get-serial`).
+// Astro serves them under `/posts/` — redirect every known slug so old links
+// (bookmarks, backlinks, search results) still resolve.
+const postsDir = fileURLToPath(new URL("./src/content/posts", import.meta.url));
+const postRedirects = Object.fromEntries(
+  fs
+    .readdirSync(postsDir)
+    .filter(file => /\.mdx?$/.test(file))
+    .map(file => path.basename(file, path.extname(file)))
+    .map(slug => [`/${slug}`, `/posts/${slug}`])
+);
+
 export default defineConfig({
   site: config.site.url,
+  redirects: postRedirects,
   integrations: [
     mdx(),
     sitemap({

@@ -51,7 +51,7 @@ I've been in retros that felt genuinely useful. They shared a few things in comm
 
 The team left feeling like it had momentum. Not like it had filed a complaint report.
 
-## The format is fine. The culture around it isn't.
+## The format is fine. The culture around it isn't
 
 I don't think the retrospective format needs redesigning. I think we need to stop treating it as an audit and start treating it as a habit-forming ritual.
 
