@@ -4,7 +4,7 @@ pubDatetime: 2026-07-08T09:00:00.000Z
 title: "My Peugeot 304 vs. the German TÜV"
 slug: my-peugeot-304-vs-the-german-tuv
 featured: false
-draft: true
+draft: false
 tags:
   - personal
 ogImage: "/images/posts/2026/my-peugeot-304-vs-the-german-tuv/hero.jpg"
