@@ -7,7 +7,7 @@ featured: true
 draft: false
 tags:
   - agile
-heroImage: "/images/posts/why-good-retrospectives-feel-like-a-chore/scrum-retro.png" 
+heroImage: "/images/posts/why-good-retrospectives-feel-like-a-chore/scrum-retro.png"
 ogImage: "/images/posts/why-good-retrospectives-feel-like-a-chore/scrum-retro.png"
 
 description: "I genuinely believe in retrospectives. So why do I always leave feeling deflated? It's about what we choose to look at..."
