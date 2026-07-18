@@ -10,6 +10,8 @@ tags:
   - security
   - careers
   - architecture
+heroImage: public/images/posts/2026/ai-security-architect-why-this-might-be-the-most-valuable-tech-role-of-2026/hero.png
+ogImage: public/images/posts/2026/ai-security-architect-why-this-might-be-the-most-valuable-tech-role-of-2026/hero.png
 description: "Why the AI Security Architect is becoming one of the most in-demand tech roles: the skills, the stats, and how to position yourself for it."
 canonicalURL: https://blog.andrelademann.de/ai-security-architect-why-this-might-be-the-most-valuable-tech-role-of-2026
 ---
