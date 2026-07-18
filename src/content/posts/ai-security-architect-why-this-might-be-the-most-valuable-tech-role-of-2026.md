@@ -57,6 +57,10 @@ Take a bank that wants to use generative AI to summarise customer portfolios. Th
 
 "Can we build it?" is engineering. "Should we build it, and what could go wrong?" is architecture. Architecture is a *decision quality* job, not a tool knowledge job.
 
+![Layered AI security architecture with the AI Security Architect bridging executive oversight, AI application controls, and protected data sources](/images/posts/2026/ai-security-architect-why-this-might-be-the-most-valuable-tech-role-of-2026/architechture.png)
+
+In practice, that looks like a governance layer sitting between the board and the systems that actually touch customer data — policies, risk controls, monitoring, and incident response flowing down into identity, data governance, filtering, and audit logging.
+
 ## The five skills that actually matter
 
 According to Gibbs, the role rests on five capability areas:
