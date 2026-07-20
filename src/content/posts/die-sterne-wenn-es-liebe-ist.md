@@ -1,7 +1,7 @@
 ---
 author: André Lademann
 pubDatetime: 2026-07-20T15:00:00.000Z
-title: "Die Sterne's New Album Dragged Me Straight Back to the Early 2000s"
+title: "Die Sterne Put Out a New Album and I'm Glad to Be Listening Again"
 slug: die-sterne-wenn-es-liebe-ist
 featured: false
 draft: false
@@ -10,17 +10,19 @@ tags:
   - personal
 heroImage: "/images/posts/2026/die-sterne-wenn-es-liebe-ist/hero.jpg"
 ogImage: "/images/posts/2026/die-sterne-wenn-es-liebe-ist/hero.jpg"
-description: "I spent the early 2000s living inside German indie — Tocotronic, Blumfeld, Erdmöbel, Die Sterne. Then Wenn es Liebe ist showed up and rewound me…"
+description: "Wenn es Liebe ist is out, and I'm properly glad — not because it rewound me, but because Die Sterne have me hitting play again…"
 canonicalURL: https://blog.andrelademann.de/die-sterne-wenn-es-liebe-ist
 ---
 
-In the early 2000s I lived inside German indie the way some people live inside playlists now. Tocotronic. Blumfeld. Erdmöbel. Die Sterne. Those records weren't background; they were the room I was standing in. Sharp lyrics, dry humour, that Hamburg School shrug that somehow still felt urgent.
+In the early 2000s German indie was basically my operating system. Tocotronic. Blumfeld. Erdmöbel. Die Sterne. Those records sat next to ordinary evenings with friends, cheap trainers, and the feeling that singing in German could still sound sharp.
 
-Then life got louder. Jobs, cities, other music. The bands stayed on the shelf in my head — respected, archived, rarely pressed play.
+I also played in a band with mates back then. Nothing world-changing — just the good kind of loud. Rehearsals that ran too long. Songs that almost worked. Nights that still feel warm when I think about them. We loved Samba, too — the Münster band, not the dance — and of course we wore Adidas Samba trainers, because when a band names itself after the shoes, you do the obvious thing.
 
-## A new album shouldn't still be able to do that
+## Music still does both jobs for me
 
-And then [Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp) landed.
+I love music in a fairly undignified way. It can settle me down after a messy day. It can also flip a switch and make me want to move — properly dance, not the polite sway. I still go to concerts regularly for that reason. Live music is one of the few places where calming down and going a bit feral can happen in the same set.
+
+So when Die Sterne released *[Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp)*, I wasn't hunting for a time machine. I was just glad. Glad they're still making records. Glad the new songs made me want to listen again — not once politely, but properly, repeatedly, with the volume up.
 
 <!-- markdownlint-disable-next-line MD033 -->
 <iframe
@@ -36,18 +38,26 @@ And then [Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vS
   loading="lazy"
 ></iframe>
 
-I put it on expecting a polite reunion with a band I used to know. What I got instead was that rare, slightly unfair feeling: being *carried*. Swept up. Surprised. Properly glad. Not in a "ah, nostalgia, how quaint" way — more like someone opened a door I thought I'd locked from the other side.
+## "Ich nehme das Amt nicht an" hits harder than a shrug
 
-Die Sterne still sound like themselves, which is the point. The bite is there. The wit is there. But it doesn't play like a museum piece. Tracks like "Ich nehme das Amt nicht an" hit with a riff and a shrug that feel current, not curated. The title track goes full hymn without asking permission. And then "Immer noch sprachlos" just… keeps going for nearly ten minutes, as if the band decided the conversation was over and the instruments should finish the argument alone.
+The album opener is the track that keeps pulling me back. "Ich nehme das Amt nicht an" is riff-rock with the handbrake off — a big guitar figure, a beat that refuses to sit still, and that dry Sterne delivery on top. Spilker has called it a vent for the irrationality and discourse refusal of the moment, and you can hear why. The narrator is overwhelmed: the thing got too big, the situation too hot, the police and the tax office at the door. Personal chaos first. Then the wider mess: people who will not listen, will not argue in good faith, will not stay with facts long enough to notice they are human too.
 
-## Nostalgia is cheap — this wasn't
+What I like is that the refusal stays formal. He does not scream a slogan. He declines the office. Which office, exactly, the song never bothers to name — and that is the joke and the point. You fill it in yourself. Authority. Complicity. The job of pretending everything is fine. The invitation to keep performing competence in a room that has stopped making sense.
 
-![Change My Mind meme stating that nostalgia is cheap but this album was not](/images/posts/die-sterne-wenn-es-liebe-ist/meme-2.png)
+Instead of answers, it leaves the sticky questions hanging: what can I do with this? How do I behave towards it? That is classic Die Sterne — sharp observation, irony with a spine, and no cheap catharsis at the end.
 
-Here's what I keep turning over: nostalgia usually sells you the past at a discount. Soft edges. Familiar choruses. A warm filter over everything you used to feel.
+I have been putting the track on when I need both: something to move to, and something that names the ambient nonsense without turning into a lecture. The cowbell energy helps. So does the sense that declining the office might be a form of staying sane.
 
-This album didn't do that. It reminded me *why* I cared in the first place — the precision, the attitude, the sense that German indie could be clever without being cold. Tocotronic and Blumfeld taught me language could be a weapon. Erdmöbel made ordinary evenings feel cinematic. Die Sterne made irony sound like solidarity.
+## The rest of the album keeps me listening
 
-Hearing them again in 2026 didn't make me twenty again. It made the present feel briefly sharper.
+The title track goes full hymn without asking permission. "Immer noch sprachlos" just… keeps going for nearly ten minutes, as if the band decided the talking was done and the instruments should finish the night. Around those poles, the record keeps its bite and its wit.
 
-Have you got a band from that era who can still ambush you like that — or did *Wenn es Liebe ist* just do it for you too?
+What I like most, beyond any single reading, is simpler: it makes me want more of this music in my week again. Die Sterne are back in rotation. The old favourites sit next to the new ones without needing a ceremony.
+
+## Maybe I'll see them live
+
+Who knows — maybe I'll catch a gig. I've never stopped going to concerts, but seeing Die Sterne again would feel like connecting a wire that has been dangling for a while: the records I grew up on, the band I once played in with friends, and the version of me who still needs music to calm down *and* to dance.
+
+If you're looking for an excuse to put German indie back on, *[Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp)* is a very good one.
+
+Have you got an album that quietly pulled you back into listening — not as a memory exercise, just because it felt good?
