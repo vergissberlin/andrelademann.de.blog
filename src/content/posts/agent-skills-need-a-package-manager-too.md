@@ -10,6 +10,7 @@ tags:
   - tools
   - devops
   - enterprise
+heroImage: /images/posts/agent-skills-need-a-package-manager-too/hero.png
 description: "Skills are becoming how enterprises encode their processes for AI agents — but where does the code live, who owns it, and how does a repo declare which ones it needs? A package manager problem in disguise…"
 canonicalURL: https://blog.andrelademann.de/agent-skills-need-a-package-manager-too
 ---
