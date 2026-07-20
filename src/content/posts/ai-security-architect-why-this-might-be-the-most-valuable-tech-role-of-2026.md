@@ -41,7 +41,7 @@ The numbers Gibbs cites paint a rough picture:
 - An **IBM survey** (reported by ITPro) found only 11% of technology executives feel prepared to deploy AI agents at scale — and 77% admit AI adoption is outpacing their governance capabilities.
 - Per **CIO magazine**, 70% of CIOs discovered AI running on their systems that nobody had told them about. Shadow AI is real.
 
-That last point is worth sitting with. When AI moves into production, it stops being a technical curiosity and becomes a business dependency. AI systems now touch customer data, regulated workflows, and automated decisions — and AI agents can *act*, not just recommend. That's not just technical risk any more. It's legal risk, brand risk, operational risk, and financial risk.
+That last point is worth sitting with. When AI moves into production, it stops being a technical curiosity and becomes a business dependency. AI systems now touch customer data, regulated workflows, and automated decisions — and AI agents can _act_, not just recommend. That's not just technical risk any more. It's legal risk, brand risk, operational risk, and financial risk.
 
 ## Engineer vs. architect: a different kind of question
 
@@ -55,7 +55,7 @@ Take a bank that wants to use generative AI to summarise customer portfolios. Th
 - How do we validate outputs and prevent hallucinations from turning into bad financial advice?
 - Should we even build this — and if so, this way or another way?
 
-"Can we build it?" is engineering. "Should we build it, and what could go wrong?" is architecture. Architecture is a *decision quality* job, not a tool knowledge job.
+"Can we build it?" is engineering. "Should we build it, and what could go wrong?" is architecture. Architecture is a _decision quality_ job, not a tool knowledge job.
 
 ![Layered AI security architecture with the AI Security Architect bridging executive oversight, AI application controls, and protected data sources](/images/posts/2026/ai-security-architect-why-this-might-be-the-most-valuable-tech-role-of-2026/architechture.png)
 
@@ -79,7 +79,7 @@ That architecture never gets funded. What the CEO needs to hear:
 
 > "If we deploy this AI system without proper governance, confidential customer data could be exposed, regulators could get involved, and our reputation could be harmed. Here's a safer approach that still lets us move quickly."
 
-Same substance, completely different outcome. Translate *prompt injection* into *business process compromise*. Translate *data leakage* into *regulatory and reputational risk*. Translate *shadow AI* into *uncontrolled enterprise exposure*. That's how architects speak.
+Same substance, completely different outcome. Translate _prompt injection_ into _business process compromise_. Translate _data leakage_ into _regulatory and reputational risk_. Translate _shadow AI_ into _uncontrolled enterprise exposure_. That's how architects speak.
 
 ## Why certifications alone won't get you there
 
@@ -107,4 +107,4 @@ Engineers build. Architects decide. In the age of AI agents acting autonomously 
 
 ---
 
-*Source: ["AI Security Architect: The Hottest Tech Career of 2026"](https://www.youtube.com/watch?v=-IzN_X8DImM) by Mike Gibbs, Go Cloud Architects. All statistics referenced above are as cited in the video.*
+_Source: ["AI Security Architect: The Hottest Tech Career of 2026"](https://www.youtube.com/watch?v=-IzN_X8DImM) by Mike Gibbs, Go Cloud Architects. All statistics referenced above are as cited in the video._
