@@ -29,18 +29,20 @@ Get this wrong and you end up with either duplicated Skills drifting apart acros
 
 Here's the thing: "where does the code for this shared capability live, and how does a project declare which version it depends on" is not a new question. It's dependency management, just for agent capabilities instead of application code. We solved it for JavaScript with npm, for Python with pip, for Rust with cargo. The pattern is always the same — a registry, a manifest that declares what you need, a lock file that pins exactly what you got, and a CLI that reconciles the two.
 
-Skills need exactly that, and the ecosystem is starting to converge on it. The most promising entry right now is [`npx skills`](https://github.com/vercel-labs/skills) from Vercel Labs — genuinely "npm, but for agent Skills". You add a Skill to a project, and it writes an entry into a `.skills.json` manifest plus a `skills-lock.json` lock file, the same two-file split npm uses:
+Skills need exactly that, and the ecosystem is starting to converge on it. The most promising entry right now is [`pnpx skills`](https://github.com/vercel-labs/skills) from Vercel Labs — genuinely "npm, but for agent Skills". You add a Skill to a project, and it writes an entry into a `.skills.json` manifest plus a `skills-lock.json` lock file, the same two-file split npm uses:
 
 ```bash
 # Add a skill to the current project
-npx skills add playwright-cli
+pnpx skills add playwright-cli
 
 # See what's installed
-npx skills list
+pnpx skills list
 
 # Search the registry
-npx skills find incident-response
+pnpx skills find incident-response
 ```
+
+(All examples here use `pnpm`'s `pnpx`, since that's what I run day to day — swap in `npx` if that's your package runner of choice; both resolve the same published package.)
 
 Crucially, it installs Skills as symlinks into a canonical location by default, rather than copying `SKILL.md` files into every repo that needs them. That's the detail that matters most for a company-wide rollout: your security-incident Skill lives in one place, gets updated in one place, and every repo that references it picks up the update — instead of forty stale copies pasted around your organisation, each one silently diverging from the version someone actually reviewed.
 
@@ -48,7 +50,7 @@ Crucially, it installs Skills as symlinks into a canonical location by default, 
 
 Here's where "experimental" becomes the honest word for where this stands today. `skills-lock.json` records exactly which Skills — and which versions — a project depends on. That's the equivalent of `package-lock.json`. What's still missing is the equivalent of `npm ci`: a reliable, idempotent command that takes a fresh clone and a lock file and reproduces the exact same set of Skills, with a non-zero exit code if it can't.
 
-`npx skills update` only works on a machine that already has the Skills installed — which is precisely useless for a new team member's laptop, a CI runner, or a freshly cloned repo. That gap is tracked and known ([vercel-labs/skills#549](https://github.com/vercel-labs/skills/issues/549)), and the interim answer is the aptly-named `experimental_install`:
+`pnpx skills update` only works on a machine that already has the Skills installed — which is precisely useless for a new team member's laptop, a CI runner, or a freshly cloned repo. That gap is tracked and known ([vercel-labs/skills#549](https://github.com/vercel-labs/skills/issues/549)), and the interim answer is the aptly-named `experimental_install`:
 
 ```bash
 # Restore every skill listed in skills-lock.json — for now, experimental
