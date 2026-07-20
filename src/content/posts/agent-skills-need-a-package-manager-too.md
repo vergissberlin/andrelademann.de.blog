@@ -1,6 +1,6 @@
 ---
 author: André Lademann
-pubDatetime: 2026-07-20T09:00:00.000Z
+pubDatetime: 2026-07-21T09:00:00.000Z
 title: "Agent Skills Need a Package Manager Too"
 slug: agent-skills-need-a-package-manager-too
 featured: false
