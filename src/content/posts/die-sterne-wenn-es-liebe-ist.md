@@ -18,8 +18,6 @@ In the early 2000s I lived inside German indie the way some people live inside p
 
 Then life got louder. Jobs, cities, other music. The bands stayed on the shelf in my head — respected, archived, rarely pressed play.
 
-![Drake meme rejecting soft nostalgia playlists and approving a new Die Sterne album that actually hits](/images/posts/die-sterne-wenn-es-liebe-ist/meme-1.png)
-
 ## A new album shouldn't still be able to do that
 
 And then [Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp) landed.
