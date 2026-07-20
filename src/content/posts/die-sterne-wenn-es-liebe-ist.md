@@ -4,10 +4,12 @@ pubDatetime: 2026-07-20T15:00:00.000Z
 title: "Die Sterne's New Album Dragged Me Straight Back to the Early 2000s"
 slug: die-sterne-wenn-es-liebe-ist
 featured: false
-draft: true
+draft: false
 tags:
   - music
   - personal
+heroImage: "/images/posts/2026/die-sterne-wenn-es-liebe-ist/hero.jpg"
+ogImage: "/images/posts/2026/die-sterne-wenn-es-liebe-ist/hero.jpg"
 description: "I spent the early 2000s living inside German indie — Tocotronic, Blumfeld, Erdmöbel, Die Sterne. Then Wenn es Liebe ist showed up and rewound me…"
 canonicalURL: https://blog.andrelademann.de/die-sterne-wenn-es-liebe-ist
 ---
