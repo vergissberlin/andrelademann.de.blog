@@ -93,6 +93,13 @@ Here's that exact loop, recorded on my own machine rather than staged for the po
 
 <!-- markdownlint-disable MD033 -->
 <link rel="stylesheet" href="/vendor/asciinema-player/asciinema-player.css" />
+<style>
+  /* Fixes a zero-height collapse in the vendored player's internal text
+     layer wrapper, which otherwise clips all terminal glyphs to nothing. */
+  .ap-term > div {
+    height: 100% !important;
+  }
+</style>
 <div id="cast-pnpx-skills"></div>
 <script src="/vendor/asciinema-player/asciinema-player.min.js"></script>
 <script>
