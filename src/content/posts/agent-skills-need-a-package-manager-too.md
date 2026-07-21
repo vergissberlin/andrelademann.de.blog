@@ -10,7 +10,6 @@ tags:
   - tools
   - devops
   - enterprise
-heroImage: /images/posts/agent-skills-need-a-package-manager-too/hero.png
 description: "Skills are becoming how enterprises encode their processes for AI agents — but where does the code live, who owns it, and how does a repo declare which ones it needs? A package manager problem in disguise…"
 canonicalURL: https://blog.andrelademann.de/agent-skills-need-a-package-manager-too
 ---
@@ -58,6 +57,64 @@ pnpx skills experimental_install -y
 ```
 
 That command name is doing useful work by telling the truth. It's the load-bearing feature for any team that wants to check in a manifest instead of copies of the files — and it isn't stable yet.
+
+### A worked example: add, lock, restore
+
+Here's the full loop, from the machine that first adds a Skill to the fresh clone that needs to reproduce it. First, on whoever's machine is introducing the Skill:
+
+```bash
+# Add the skill and inspect what got written
+pnpx skills add incident-response-runbook
+cat .skills.json
+cat skills-lock.json
+```
+
+Commit both files — not the Skill's own content, just the manifest and the lock file:
+
+```bash
+git add .skills.json skills-lock.json
+git commit -m "chore: add incident-response-runbook skill"
+git push
+```
+
+Then, on a fresh clone — a new hire's laptop, a CI runner, anywhere that has never seen this Skill before:
+
+```bash
+git clone git@github.com:your-org/your-repo.git
+cd your-repo
+pnpx skills experimental_install -y
+pnpx skills list   # confirms it matches skills-lock.json
+```
+
+That's the entire point of treating this as dependency management rather than copy-paste: nobody hand-copies `SKILL.md` files, and nobody has to remember which Skills a repo needs by asking around. The lock file is the source of truth, and — for now — `experimental_install` is the only command that can read it back onto a machine that doesn't already have the Skill installed.
+
+<!-- markdownlint-disable-next-line MD033 -->
+<iframe
+  src="https://asciinema.org/a/REPLACE_WITH_CAST_ID/iframe"
+  title="pnpx skills add, lock file, and experimental_install walkthrough"
+  style="border-radius:12px"
+  width="100%"
+  height="450"
+  frameBorder="0"
+  loading="lazy"
+></iframe>
+
+## It's not just npx skills
+
+While digging into this, I ran into [asm](https://github.com/luongnv89/asm), the "universal skill manager" — a different tack entirely. Rather than betting on one registry, it manages Skills that are already scattered across whichever tool configs you happen to have (Claude Code, Gemini CLI, OpenClaw, and around a dozen more), from a single CLI, with `--json` output and non-interactive flags built for agents to chain. Point it at a real machine and `asm list` turns up exactly the kind of sprawl you'd expect once Skills have been in use for a while — dozens of them, spread across half a dozen tools, split between global and per-project scope, several installed twice under slightly different names.
+
+That's one more entrant in a field that's already busier than a single post can do justice to:
+
+| Tool                                                              | Approach                                                    | What's distinctive                                                                                                                                                                                                     |
+| ----------------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **[asm](https://github.com/luongnv89/asm)**                       | Manages Skill folders you already have, across ~19 tools    | No registry of its own — syncs global/project scope across Claude Code, Gemini CLI, OpenClaw and more; agent-first with `--json`/`--yes`                                                                               |
+| **[pnpx skills](https://github.com/vercel-labs/skills) (Vercel)** | GitHub as the registry                                      | Any public repo with a `SKILL.md` at its root is a valid source — no central package index required                                                                                                                    |
+| **[Paks](https://github.com/stakpak/paks) (stakpak)**             | Own CLI + registry, Git-tag-based semantic versioning       | CLI-first package manager for the emerging "AgentSkills" standard; targets Claude Code, Codex, Gemini CLI, OpenCode                                                                                                    |
+| **[Skilldex](https://arxiv.org/abs/2604.16911)**                  | TypeScript CLI (`skillpm`/`spm`) + Supabase-backed registry | Three-tier scope system (global/shared/project), a human-in-the-loop suggestion loop, and a native MCP server exposing every operation to agents directly                                                              |
+| **[SkillUse](https://skilluse.dev/)**                             | GitHub-based, built for teams                               | Public, private, or company-internal repos all work as registries, with auth gating private installs                                                                                                                   |
+| **FastSkill**                                                     | Python/Rust, reportedly embedding-based                     | Said to use semantic search over Skill descriptions rather than plain keyword matching — I couldn't independently confirm the implementation details, so take this one as a name to watch rather than a recommendation |
+
+None of that weakens the argument — it sharpens it. Six tools, at least three genuinely different registry philosophies (npm-style central index, GitHub-as-registry, and a metadata-only backend), all converging on the same underlying problem within months of each other. That's precisely the pattern that precedes consolidation in every other package-management story our industry has already lived through.
 
 ## Why a standard needs to land soon
 
