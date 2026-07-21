@@ -22,7 +22,7 @@ I also played in a band with friends back then. Nothing world-famous — just th
 
 I love music in a very direct way. It can calm me down after a hard day. It can also flip a switch and make me want to move — really dance, not just stand there and nod. I still go to concerts regularly for that reason. Live music is one of the few places where calming down and going a bit wild can happen in the same set.
 
-So when Die Sterne released *[Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp)*, I was not looking for a time machine. I was just glad. Glad they still make records. Glad the new songs made me want to listen again — not once out of politeness, but again and again, with the volume up.
+So when Die Sterne released _[Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp)_, I was not looking for a time machine. I was just glad. Glad they still make records. Glad the new songs made me want to listen again — not once out of politeness, but again and again, with the volume up.
 
 <!-- markdownlint-disable-next-line MD033 -->
 <iframe
@@ -56,8 +56,8 @@ What I like most is simpler: it makes me want more of this music in my week agai
 
 ## Maybe I'll see them live
 
-Who knows — maybe I will go to a concert. I never stopped going to shows, but seeing Die Sterne again would feel like connecting a cable that has been loose for a while: the records I grew up with, the band I once played in with friends, and the version of me who still needs music to calm down *and* to dance.
+Who knows — maybe I will go to a concert. I never stopped going to shows, but seeing Die Sterne again would feel like connecting a cable that has been loose for a while: the records I grew up with, the band I once played in with friends, and the version of me who still needs music to calm down _and_ to dance.
 
-If you need a reason to put German indie back on, *[Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp)* is a very good one.
+If you need a reason to put German indie back on, _[Wenn es Liebe ist](https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp)_ is a very good one.
 
 Do you have an album that quietly pulled you back into listening — not as homework about the past, just because it felt good?
