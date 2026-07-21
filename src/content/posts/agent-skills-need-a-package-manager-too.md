@@ -89,20 +89,37 @@ pnpx skills list   # confirms it matches skills-lock.json
 
 That's the entire point of treating this as dependency management rather than copy-paste: nobody hand-copies `SKILL.md` files, and nobody has to remember which Skills a repo needs by asking around. The lock file is the source of truth, and — for now — `experimental_install` is the only command that can read it back onto a machine that doesn't already have the Skill installed.
 
-<!-- markdownlint-disable-next-line MD033 -->
-<iframe
-  src="https://asciinema.org/a/REPLACE_WITH_CAST_ID/iframe"
-  title="pnpx skills add, lock file, and experimental_install walkthrough"
-  style="border-radius:12px"
-  width="100%"
-  height="450"
-  frameBorder="0"
-  loading="lazy"
-></iframe>
+Here's that exact loop, recorded on my own machine rather than staged for the post:
+
+<!-- markdownlint-disable MD033 -->
+<link rel="stylesheet" href="/vendor/asciinema-player/asciinema-player.css" />
+<div id="cast-pnpx-skills"></div>
+<script src="/vendor/asciinema-player/asciinema-player.min.js"></script>
+<script>
+  AsciinemaPlayer.create(
+    "/casts/agent-skills-need-a-package-manager-too/pnpx-skills-experimental-install.cast",
+    document.getElementById("cast-pnpx-skills"),
+    { theme: "monokai" }
+  );
+</script>
+<!-- markdownlint-enable MD033 -->
+
+_Recorded and self-hosted with the [asciinema player](https://github.com/asciinema/asciinema-player) — no dependency on asciinema.org's own hosting to play it back._
 
 ## It's not just npx skills
 
-While digging into this, I ran into [asm](https://github.com/luongnv89/asm), the "universal skill manager" — a different tack entirely. Rather than betting on one registry, it manages Skills that are already scattered across whichever tool configs you happen to have (Claude Code, Gemini CLI, OpenClaw, and around a dozen more), from a single CLI, with `--json` output and non-interactive flags built for agents to chain. Point it at a real machine and `asm list` turns up exactly the kind of sprawl you'd expect once Skills have been in use for a while — dozens of them, spread across half a dozen tools, split between global and per-project scope, several installed twice under slightly different names.
+While digging into this, I ran into [asm](https://github.com/luongnv89/asm), the "universal skill manager" — a different tack entirely. Rather than betting on one registry, it manages Skills that are already scattered across whichever tool configs you happen to have (Claude Code, Gemini CLI, OpenClaw, and around a dozen more), from a single CLI, with `--json` output and non-interactive flags built for agents to chain. Point it at a real machine and `asm list` turns up exactly the kind of sprawl you'd expect once Skills have been in use for a while — dozens of them, spread across half a dozen tools, split between global and per-project scope, several installed twice under slightly different names:
+
+<!-- markdownlint-disable MD033 -->
+<div id="cast-asm-list"></div>
+<script>
+  AsciinemaPlayer.create(
+    "/casts/agent-skills-need-a-package-manager-too/asm-list.cast",
+    document.getElementById("cast-asm-list"),
+    { theme: "monokai" }
+  );
+</script>
+<!-- markdownlint-enable MD033 -->
 
 That's one more entrant in a field that's already busier than a single post can do justice to:
 
