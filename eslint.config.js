@@ -24,5 +24,7 @@ export default [
       "no-console": "off",
     },
   },
-  { ignores: ["dist/**", ".astro/**", "public/pagefind/**"] },
+  {
+    ignores: ["dist/**", ".astro/**", "public/pagefind/**", "public/vendor/**"],
+  },
 ];
