@@ -15,3 +15,6 @@
 
 # Ignore MDX files
 *.mdx
+
+# Third-party vendored bundles — not ours to reformat
+/public/vendor
