@@ -19,9 +19,9 @@ sources:
   - title: "Wenn es Liebe ist — album on Spotify"
     url: "https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp"
     note: "Released 9 January 2026, [PIAS] Recordings Germany"
-  - title: "\"Wenn es Liebe ist\": Die Sterne mit neuem Album"
+  - title: '"Wenn es Liebe ist": Die Sterne mit neuem Album'
     url: "https://www.ndr.de/kultur/musik/pop/wenn-es-liebe-ist-die-sterne-mit-neuem-album,diesterne-102.html"
-    note: "NDR — Spilker on \"Ich nehme das Amt nicht an\""
+    note: 'NDR — Spilker on "Ich nehme das Amt nicht an"'
   - title: "Frank Spilker über große Gefühle und das neue Album"
     url: "https://jungle.world/artikel/2026/03/die-sterne-frank-spilker-neues-album-liebe-ist-nicht-das-gegenteil-von-krieg"
     note: "Jungle World interview, March 2026"
