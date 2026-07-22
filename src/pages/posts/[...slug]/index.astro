@@ -14,6 +14,7 @@ import ShareLinks from "./_components/ShareLinks.astro";
 import BackButton from "./_components/BackButton.astro";
 import BackToTopButton from "./_components/BackToTopButton.astro";
 import AdjacentPostNav from "./_components/AdjacentPostNav.astro";
+import Sources from "@/components/Sources.astro";
 import config from "@/config";
 
 export async function getStaticPaths() {
@@ -70,6 +71,7 @@ const {
   timezone,
   tags,
   hideEditPost,
+  sources,
 } = post.data;
 
 const { Content } = await render(post);
@@ -173,6 +175,7 @@ const ogImage = ogImageUrl
       ]}
     >
       <Content />
+      {sources && sources.length > 0 && <Sources items={sources} />}
     </article>
 
     <hr class="my-8 border-dashed" />
