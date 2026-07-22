@@ -92,23 +92,10 @@ That's the entire point of treating this as dependency management rather than co
 Here's that exact loop, recorded on my own machine rather than staged for the post:
 
 <!-- markdownlint-disable MD033 -->
-<link rel="stylesheet" href="/vendor/asciinema-player/asciinema-player.css" />
-<style>
-  /* Fixes a zero-height collapse in the vendored player's internal text
-     layer wrapper, which otherwise clips all terminal glyphs to nothing. */
-  .ap-term > div {
-    height: 100% !important;
-  }
-</style>
-<div id="cast-pnpx-skills"></div>
-<script src="/vendor/asciinema-player/asciinema-player.min.js"></script>
-<script>
-  AsciinemaPlayer.create(
-    "/casts/agent-skills-need-a-package-manager-too/pnpx-skills-experimental-install.cast",
-    document.getElementById("cast-pnpx-skills"),
-    { theme: "monokai" }
-  );
-</script>
+<div
+  data-asciinema-cast="/casts/agent-skills-need-a-package-manager-too/pnpx-skills-experimental-install.cast"
+  data-asciinema-theme="monokai"
+></div>
 <!-- markdownlint-enable MD033 -->
 
 _Recorded and self-hosted with the [asciinema player](https://github.com/asciinema/asciinema-player) — no dependency on asciinema.org's own hosting to play it back._
@@ -118,14 +105,10 @@ _Recorded and self-hosted with the [asciinema player](https://github.com/asciine
 While digging into this, I ran into [asm](https://github.com/luongnv89/asm), the "universal skill manager" — a different tack entirely. Rather than betting on one registry, it manages Skills that are already scattered across whichever tool configs you happen to have (Claude Code, Gemini CLI, OpenClaw, and around a dozen more), from a single CLI, with `--json` output and non-interactive flags built for agents to chain. Point it at a real machine and `asm list` turns up exactly the kind of sprawl you'd expect once Skills have been in use for a while — dozens of them, spread across half a dozen tools, split between global and per-project scope, several installed twice under slightly different names:
 
 <!-- markdownlint-disable MD033 -->
-<div id="cast-asm-list"></div>
-<script>
-  AsciinemaPlayer.create(
-    "/casts/agent-skills-need-a-package-manager-too/asm-list.cast",
-    document.getElementById("cast-asm-list"),
-    { theme: "monokai" }
-  );
-</script>
+<div
+  data-asciinema-cast="/casts/agent-skills-need-a-package-manager-too/asm-list.cast"
+  data-asciinema-theme="monokai"
+></div>
 <!-- markdownlint-enable MD033 -->
 
 That's one more entrant in a field that's already busier than a single post can do justice to:

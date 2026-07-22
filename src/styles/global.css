@@ -36,3 +36,9 @@
 :target {
   scroll-margin-block: 1rem;
 }
+
+/* Fixes a zero-height collapse in the vendored asciinema-player's internal
+   text layer wrapper, which otherwise clips all terminal glyphs to nothing. */
+.ap-term > div {
+  height: 100% !important;
+}
