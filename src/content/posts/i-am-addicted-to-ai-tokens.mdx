@@ -14,6 +14,8 @@ description: "Claude, Copilot, Cursor — three subscriptions, endless side idea
 canonicalURL: https://blog.andrelademann.de/i-am-addicted-to-ai-tokens
 ---
 
+import Sources from "@/components/Sources.astro";
+
 I am token-addicted. Not in a cute, ironic way — in the "ideas keep turning into real things whilst I'm selling my time for money" way.
 
 Billable work is running. A client call. A review. Something sensible. And next to it, a second stream of prompts is chewing through Claude, Copilot, and Cursor like snacks at a desk that never empties. Side projects that used to live in a notes app for years now ship in an afternoon. That part is genuinely exciting. The bill is less exciting.
@@ -28,7 +30,7 @@ You know the feeling if you've ever stared at a gym membership you barely used a
 
 I use [ClaudeBar](https://tddworks.github.io/ClaudeBar/) — a free, open-source macOS menu bar app that tracks usage quotas across Claude, Copilot, and friends. It doesn't fix the habit. It just makes the burn rate visible enough that I can't pretend it's "only a few prompts".
 
-ClaudeBar showing session, weekly, and model usage quotas in the macOS menu bar
+![ClaudeBar showing session, weekly, and model usage quotas in the macOS menu bar](/images/posts/2026/i-am-addicted-to-ai-tokens/claudebar.png)
 
 Visibility is useful. It also turns every glance into a tiny hit of dopamine or mild panic, depending on the day.
 
@@ -40,6 +42,39 @@ At home there's another trick. For analysing private documents I run a local LLM
 
 The awkward bit remains. The more I use these tools for real work *and* for the idea pile, the harder it is to tell which spend is leverage and which is just filling the quota. Shipping faster is real. So is the urge to burn what's "already paid for".
 
-I don't have a clean answer yet. I know the stack is expensive. I know the side ideas becoming reality is the best part of this moment in software. And I know "use it or lose it" is a terrible way to decide what deserves attention.
+## What happens when the subsidy ends?
 
-Are you on the big models until the limit bites — or have you already moved side work onto something local?
+Here's the bit that keeps me up longer than the usage meter: I fear that **autumn 2026** is when the market consolidates, and the heavily subsidised tokens I've been mainlining get repriced into something closer to their real cost.
+
+The pattern is already visible. Flat-rate plans have been acting like discounted token bundles for power users — people burning API-equivalent value far above what they pay.³ Labs are still losing money at a scale that only makes sense in a land-grab phase.¹ ² And vendors are already shifting from soft unlimited vibes toward usage-based billing as inference bills climb.⁴
+
+If that squeeze lands hard, my "included tokens" habit stops being a quirk and starts being a budget problem. Do I push more work onto local models? Ration harder? Or just pay the new sticker price and pretend it's fine?
+
+I don't have a clean answer yet. I know the stack is expensive. I know the side ideas becoming reality is the best part of this moment in software. And I know "use it or lose it" is a terrible way to decide what deserves attention — especially if "lose it" soon means "couldn't afford it anyway".
+
+Are you preparing for the subsidy cliff — or still racing the reset like nothing will change?
+
+<Sources
+  items={[
+    {
+      title: "Leaked financial docs show OpenAI is losing billions of dollars a year",
+      url: "https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year/",
+      note: "Ars Technica, June 2026",
+    },
+    {
+      title: "Exclusive: OpenAI losses increased nearly 8× in 2025",
+      url: "https://www.wheresyoured.at/exclusive-openai-financials/",
+      note: "Ed Zitron / FT-verified documents, 2026",
+    },
+    {
+      title: "Tokenomics, Part 3: The Subsidy Ledger",
+      url: "https://trilogyai.substack.com/p/tokenomics-part-3-the-subsidy-ledger",
+      note: "David Proctor / Trilogy AI",
+    },
+    {
+      title: "The End of the AI Subsidy: How Token Pricing Forces a Reckoning on Data Architecture",
+      url: "https://www.zlti.com/blog/ai-subsidy-token-pricing/",
+      note: "ZLTI, 2026",
+    },
+  ]}
+/>
