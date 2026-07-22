@@ -13,6 +13,19 @@ tags:
 heroImage: /images/posts/mcp-servers-speed-vs-security-enterprise/hero.png
 description: "New MCP servers drop every day, and they're genuinely useful — but in an enterprise context, every one of them is a door you're propping open..."
 canonicalURL: https://blog.andrelademann.de/mcp-servers-speed-vs-security-enterprise
+sources:
+  - title: "Model Context Protocol — Security Best Practices"
+    url: "https://modelcontextprotocol.io/docs/tutorials/security/security_best_practices"
+    note: "Official MCP security guidance"
+  - title: "Protecting against indirect prompt injection attacks in MCP"
+    url: "https://developer.microsoft.com/blog/protecting-against-indirect-injection-attacks-mcp"
+    note: "Microsoft for Developers"
+  - title: "MCP Tool Poisoning"
+    url: "https://owasp.org/www-community/attacks/MCP_Tool_Poisoning"
+    note: "OWASP — prompt injection via malicious tool responses"
+  - title: "The MCP Attack Surface: Top-20 Documented Attacks (2026)"
+    url: "https://agyn.io/blog/mcp-attack-surface"
+    note: "Documented real-world MCP attack cases"
 ---
 
 I've written a handful of MCP servers myself. It's honestly one of the more satisfying things you can build right now — a few hundred lines of code, and suddenly your AI assistant can talk to your ticketing system, pull data from your monitoring stack, or push commits on your behalf. The feedback loop from "idea" to "working tool" is absurdly short.

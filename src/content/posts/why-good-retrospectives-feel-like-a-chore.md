@@ -12,6 +12,16 @@ ogImage: "/images/posts/why-good-retrospectives-feel-like-a-chore/scrum-retro.pn
 
 description: "I genuinely believe in retrospectives. So why do I always leave feeling deflated? It's about what we choose to look at..."
 canonicalURL: https://blog.andrelademann.de/why-good-retrospectives-feel-like-a-chore
+sources:
+  - title: "The 2020 Scrum Guide — Sprint Retrospective"
+    url: "https://scrumguides.org/scrum-guide.html#sprint-retrospective"
+    note: "Official Scrum Guide definition of the retrospective"
+  - title: "Conducting the Sprint Retrospective"
+    url: "https://www.scrum.org/resources/conducting-sprint-retrospective"
+    note: "Scrum.org — make improvements visible in the Sprint Backlog"
+  - title: "Retrospective Action Items Guide"
+    url: "https://www.nextretro.io/blog/retrospective-action-items-guide"
+    note: "On ownership, caps, and reviewing prior commitments first"
 ---
 
 I like retrospectives. _(Yea … click bait but hold on!)_ I genuinely do. The idea — stop, reflect, adjust — is one of the few Scrum rituals I'd keep even if I abandoned everything else. And yet, when the calendar reminder pops up, I notice a small dread settling in.

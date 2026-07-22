@@ -11,6 +11,16 @@ tags:
   - tools
 description: "Kubernetes has a reputation for being hard to get into. I built a free, browser-based learning path so you can start from zero and make real progress…"
 canonicalURL: https://blog.andrelademann.de/learn-kubernetes-five-minutes-a-day
+sources:
+  - title: "Kubernetes Labs by Kubernauten"
+    url: "https://killercoda.com/kubernauten"
+    note: "The free learning path described in this post"
+  - title: "Killercoda Interactive Environments"
+    url: "https://killercoda.com/learn"
+    note: "Browser-based labs with no local cluster setup"
+  - title: "Kubernetes learning environments"
+    url: "https://kubernetes.io/docs/setup/learning-environment/"
+    note: "Official Kubernetes docs — online playgrounds including Killercoda"
 ---
 
 Kubernetes has a reputation for being hard to get into. That reputation is not entirely undeserved. The documentation is thorough, the concepts are interconnected, and the gap between "I read about it" and "I actually understand it" can feel enormous.

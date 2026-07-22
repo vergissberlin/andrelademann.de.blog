@@ -12,6 +12,19 @@ heroImage: "/images/posts/2026/die-sterne-wenn-es-liebe-ist/hero.jpg"
 ogImage: "/images/posts/2026/die-sterne-wenn-es-liebe-ist/hero.jpg"
 description: "Wenn es Liebe ist is out, and I'm really glad — not because it sent me back in time, but because Die Sterne have me hitting play again…"
 canonicalURL: https://blog.andrelademann.de/die-sterne-wenn-es-liebe-ist
+sources:
+  - title: "Album „Wenn es Liebe ist“ — 09.01.2026"
+    url: "https://www.diesterne.de/diskografie/album-wenn-es-liebe-ist-09-01-2026/"
+    note: "Official Die Sterne discography"
+  - title: "Wenn es Liebe ist — album on Spotify"
+    url: "https://open.spotify.com/album/5R929lONRwU1zbHxr8vSCp"
+    note: "Released 9 January 2026, [PIAS] Recordings Germany"
+  - title: "\"Wenn es Liebe ist\": Die Sterne mit neuem Album"
+    url: "https://www.ndr.de/kultur/musik/pop/wenn-es-liebe-ist-die-sterne-mit-neuem-album,diesterne-102.html"
+    note: "NDR — Spilker on \"Ich nehme das Amt nicht an\""
+  - title: "Frank Spilker über große Gefühle und das neue Album"
+    url: "https://jungle.world/artikel/2026/03/die-sterne-frank-spilker-neues-album-liebe-ist-nicht-das-gegenteil-von-krieg"
+    note: "Jungle World interview, March 2026"
 ---
 
 In the early 2000s German indie was basically my operating system. Tocotronic. Blumfeld. Erdmöbel. Die Sterne. Those records belonged to normal evenings with friends, cheap sneakers, and the feeling that singing in German could still sound sharp.

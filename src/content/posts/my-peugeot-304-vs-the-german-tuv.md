@@ -11,6 +11,19 @@ ogImage: "/images/posts/2026/my-peugeot-304-vs-the-german-tuv/hero.jpg"
 heroImage: "/images/posts/2026/my-peugeot-304-vs-the-german-tuv/hero.jpg"
 description: "My 1974 Peugeot 304 sailed through the French roadworthiness test. The German TÜV is proving to be a different beast entirely…"
 canonicalURL: https://blog.andrelademann.de/my-peugeot-304-vs-the-german-tuv
+sources:
+  - title: "Oldtimer — TÜV-Verband"
+    url: "https://www.tuev-verband.de/mobilitaet/strasse/oldtimer"
+    note: "HU requirements for classic cars in Germany"
+  - title: "Hauptuntersuchung (HU) für Oldtimer und Youngtimer"
+    url: "https://www.dekra.de/de/hauptuntersuchung-oldtimer-und-youngtimer/"
+    note: "DEKRA — periodic inspection rules for classics"
+  - title: "Auto aus Frankreich importieren — Schritt für Schritt"
+    url: "https://autoholly.com/de/post/auto-aus-frankreich-importieren-anleitung"
+    note: "French Contrôle Technique is not accepted as a German HU"
+  - title: "Oldtimer & H-Kennzeichen: Voraussetzungen"
+    url: "https://www.tuev-nord.de/de/wissen/ratgeber-und-tipps-mobilitaet/oldtimer/"
+    note: "TÜV NORD — § 21 / § 23 StVZO for imports and H plates"
 ---
 
 Today I took my 1974 Peugeot 304 to the German TÜV. It's already passed its French roadworthiness test, but I knew better than to expect an easy ride here too. The German TÜV, as I suspected, is the harder hurdle.

@@ -13,6 +13,25 @@ tags:
 heroImage: "/images/posts/2026/agent-skills-need-a-package-manager-too/hero.png"
 description: "Skills are becoming how enterprises encode their processes for AI agents — but where does the code live, who owns it, and how does a repo declare which ones it needs? A package manager problem in disguise…"
 canonicalURL: https://blog.andrelademann.de/agent-skills-need-a-package-manager-too
+sources:
+  - title: "Introducing Agent Skills"
+    url: "https://www.anthropic.com/news/skills"
+    note: "Anthropic — Agent Skills open standard"
+  - title: "Agent Skills Overview"
+    url: "https://agentskills.io/home"
+    note: "Official Agent Skills format documentation"
+  - title: "vercel-labs/skills — the open agent skills CLI"
+    url: "https://github.com/vercel-labs/skills"
+    note: "pnpx skills / npx skills package manager"
+  - title: "[Feature]: npx skills install — restore all skills from skills-lock.json"
+    url: "https://github.com/vercel-labs/skills/issues/549"
+    note: "vercel-labs/skills#549 — missing npm ci equivalent"
+  - title: "asm — universal skill manager"
+    url: "https://github.com/luongnv89/asm"
+    note: "Cross-tool Skill manager (Claude Code, Gemini CLI, and more)"
+  - title: "Skilldex: A Package Manager and Registry for Agent Skills"
+    url: "https://arxiv.org/abs/2604.16911"
+    note: "arXiv preprint"
 ---
 
 In a professional setting, Skills stop being a personal convenience trick and start being infrastructure. You're not writing a Skill so your own agent remembers how you like your commit messages formatted — you're encoding an actual company process: how your team triages incidents, how a specific client's deployment pipeline works, how your organisation wants pull requests reviewed. Once that's true, a new question shows up immediately: who owns this, and where does the code for it actually live?

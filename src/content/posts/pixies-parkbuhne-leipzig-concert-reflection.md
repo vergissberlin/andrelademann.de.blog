@@ -12,6 +12,16 @@ heroImage: "/images/posts/pixies-parkbuhne-leipzig-concert-reflection/hero.png"
 ogImage: "/images/posts/pixies-parkbuhne-leipzig-concert-reflection/hero.png"
 description: "Last night The Pixies played the Parkbühne Leipzig without a single pause, and I couldn't stop thinking about why old songs pull us backwards so hard..."
 canonicalURL: https://blog.andrelademann.de/pixies-parkbuhne-leipzig-concert-reflection
+sources:
+  - title: "PIXIES — P40 Celebrating 40 Years at Parkbühne Leipzig"
+    url: "https://www.parkbuehne-leipzig.com/konzerte/pixies-p40-celebrating-40-years-e66780"
+    note: "Venue listing — Parkbühne im Clara-Zetkin-Park"
+  - title: "Pixies Concert Setlist at Parkbühne im Clara-Zetkin-Park, Leipzig"
+    url: "https://www.setlist.fm/setlist/pixies/2026/parkbuhne-im-clara-zetkin-park-leipzig-germany-3b4138dc.html"
+    note: "setlist.fm — 1 July 2026, ended 22:00"
+  - title: "PIXIES tour dates — FKP Scorpio"
+    url: "https://fkpscorpio.de/artists/detail/pixies/"
+    note: "Promoter page for the German P40 dates"
 ---
 
 Last night I stood in a crowd at the Parkbühne, the open-air stage tucked into Clara-Zetkin-Park, watching The Pixies play a set that didn't let up for a single second. No support-act chatter, no "how are you doing tonight, Leipzig", no pause between songs long enough to catch your breath. Just music, start to finish.
