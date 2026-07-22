@@ -139,3 +139,6 @@ function disposeAll(): void {
 
 document.addEventListener("astro:page-load", mountCasts);
 document.addEventListener("astro:before-swap", disposeAll);
+
+// Make this file a module so the `declare global` Window augmentation above is valid.
+export {};
