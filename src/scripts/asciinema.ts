@@ -64,7 +64,12 @@ function loadLibrary(): Promise<AsciinemaPlayerApi> {
     script.src = PLAYER_JS;
     script.addEventListener("load", () => {
       if (window.AsciinemaPlayer) resolve(window.AsciinemaPlayer);
-      else reject(new Error("asciinema-player loaded but window.AsciinemaPlayer is missing"));
+      else
+        reject(
+          new Error(
+            "asciinema-player loaded but window.AsciinemaPlayer is missing"
+          )
+        );
     });
     script.addEventListener("error", () =>
       reject(new Error(`Failed to load ${PLAYER_JS}`))
@@ -90,6 +95,7 @@ function parseOptions(el: HTMLElement): Record<string, unknown> {
     try {
       Object.assign(options, JSON.parse(el.dataset.asciinemaOptions));
     } catch (error) {
+      // eslint-disable-next-line no-console -- surface authoring mistakes in the browser console
       console.error("Invalid data-asciinema-options JSON", el, error);
     }
   }
@@ -109,6 +115,7 @@ async function mountCasts(): Promise<void> {
   try {
     api = await loadLibrary();
   } catch (error) {
+    // eslint-disable-next-line no-console -- surface player load failures in the browser console
     console.error(error);
     return;
   }

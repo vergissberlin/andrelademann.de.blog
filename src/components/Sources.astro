@@ -1,0 +1,60 @@
+---
+import {
+  formatSourceNote,
+  getSourceHostname,
+  normaliseSources,
+  type Source,
+} from "@/utils/sources";
+
+type Props = {
+  /** Section heading. Defaults to "Sources". */
+  heading?: string;
+  items: Source[];
+  class?: string;
+};
+
+const { heading = "Sources", items, class: className } = Astro.props;
+const sources = normaliseSources(items);
+---
+
+{
+  sources.length > 0 && (
+    <aside
+      class:list={[
+        "sources not-prose border-border my-10 border-t pt-6",
+        className,
+      ]}
+      aria-labelledby="sources-heading"
+    >
+      <h2
+        id="sources-heading"
+        class="text-foreground mb-4 text-lg font-semibold"
+      >
+        {heading}
+      </h2>
+      <ol class="m-0 list-decimal space-y-3 ps-5">
+        {sources.map(source => {
+          const note =
+            formatSourceNote(source.note) ?? getSourceHostname(source.url);
+          return (
+            <li class="text-foreground marker:text-accent ps-1">
+              <a
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-foreground hover:text-accent wrap-break-word underline decoration-dashed underline-offset-4 focus-visible:no-underline"
+              >
+                {source.title}
+              </a>
+              {note && (
+                <span class="text-foreground/70 mt-0.5 block text-sm">
+                  {note}
+                </span>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </aside>
+  )
+}
