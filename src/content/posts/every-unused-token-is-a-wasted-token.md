@@ -10,6 +10,8 @@ tags:
   - personal
   - enterprise
   - learning
+heroImage: "/images/posts/2026/every-unused-token-is-a-wasted-token/hero.png"
+ogImage: "/images/posts/2026/every-unused-token-is-a-wasted-token/hero.png"
 description: "Thinkport gave everyone a Claude Team seat two months ago. Then our boss published the usage numbers and praised the biggest spender — which is exactly the right instinct and exactly the wrong metric…"
 canonicalURL: https://blog.andrelademann.de/every-unused-token-is-a-wasted-token
 sources:
