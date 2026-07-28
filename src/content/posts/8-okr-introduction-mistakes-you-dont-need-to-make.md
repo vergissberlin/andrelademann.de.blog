@@ -7,6 +7,7 @@ featured: false
 draft: true
 tags:
   - agile
+heroImage: /images/posts/8-okr-introduction-mistakes-you-dont-need-to-make/hero.png
 description: "I'm not an OKR expert — but I've watched the same eight mistakes kill rollouts. Here's how to skip them…"
 canonicalURL: https://blog.andrelademann.de/8-okr-introduction-mistakes-you-dont-need-to-make
 ---
