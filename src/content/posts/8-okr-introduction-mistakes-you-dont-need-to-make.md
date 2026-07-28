@@ -11,7 +11,7 @@ description: "I'm not an OKR expert — but I've watched the same eight mistakes
 canonicalURL: https://blog.andrelademann.de/8-okr-introduction-mistakes-you-dont-need-to-make
 ---
 
-I'm not an OKR expert. I won't pretend otherwise. What I *have* done is watch several companies try to introduce Objectives and Key Results — and trip over the same stones. Different industries, different sizes, same eight mistakes. If you're about to roll OKRs out (or dust them off after a quiet failure), you don't need to make them. A second attempt costs money, trust, and attention you won't get back easily.
+I'm not an OKR expert. I won't pretend otherwise. What I _have_ done is watch several companies try to introduce Objectives and Key Results — and trip over the same stones. Different industries, different sizes, same eight mistakes. If you're about to roll OKRs out (or dust them off after a quiet failure), you don't need to make them. A second attempt costs money, trust, and attention you won't get back easily.
 
 ## 1. Forgetting why you introduced OKRs
 
