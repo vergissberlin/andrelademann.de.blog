@@ -3,7 +3,7 @@ author: André Lademann
 pubDatetime: 2026-06-28T12:24:00.000Z
 title: "Why Good Retrospectives Still Feel Like a Chore"
 slug: why-good-retrospectives-feel-like-a-chore
-featured: true
+featured: false
 draft: false
 tags:
   - agile
