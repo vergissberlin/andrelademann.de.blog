@@ -1,10 +1,10 @@
 ---
 author: André Lademann
-pubDatetime: 2026-07-28T09:00:00.000Z
+pubDatetime: 2026-07-28T09:12:00.000Z
 title: "8 OKR introduction mistakes you don't need to make"
 slug: 8-okr-introduction-mistakes-you-dont-need-to-make
 featured: false
-draft: true
+draft: false
 tags:
   - agile
 heroImage: /images/posts/8-okr-introduction-mistakes-you-dont-need-to-make/hero.png
