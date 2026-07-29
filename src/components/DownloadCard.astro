@@ -1,0 +1,103 @@
+---
+import { statSync } from "node:fs";
+import path from "node:path";
+import IconDownload from "@/assets/icons/IconDownload.svg";
+import LinkButton from "@/components/LinkButton.astro";
+import { useTranslations } from "@/i18n";
+import { resolveDownload, type DownloadInput } from "@/utils/download";
+import { getAssetPath } from "@/utils/withBase";
+
+type Props = DownloadInput & {
+  /** Section heading. Defaults to the localised "Free download". */
+  heading?: string;
+  /** Base for the heading and description element ids. Bump it for a second card on one page. */
+  id?: string;
+  class?: string;
+};
+
+const { heading, id = "download", class: className, ...download } = Astro.props;
+
+const t = useTranslations(Astro.currentLocale);
+
+/**
+ * Byte size of a file in `public/`, read at build time so the announced size can
+ * never drift from the actual file. A missing file yields `undefined`, which
+ * simply omits the size rather than failing the build.
+ */
+function getPublicFileSize(publicPath: string): number | undefined {
+  try {
+    const absolute = path.join(
+      process.cwd(),
+      "public",
+      publicPath.replace(/^\/+/, "")
+    );
+    const stats = statSync(absolute);
+    return stats.isFile() ? stats.size : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+const resolved = resolveDownload({
+  ...download,
+  fileSize: download.fileSize ?? getPublicFileSize(download.file),
+});
+
+const headingId = `${id}-heading`;
+const metaId = `${id}-meta`;
+---
+
+{
+  resolved && (
+    <aside
+      class:list={[
+        "not-prose border-accent/40 bg-muted/40 my-10 rounded-lg border-2 border-dashed p-6",
+        "hover:border-accent/70 transition-colors",
+        className,
+      ]}
+      aria-labelledby={headingId}
+      data-pagefind-ignore
+    >
+      {/* Deliberately not a heading: the card is a call to action, not an
+          article section, so it must stay out of the document outline — and out
+          of reach of the heading-anchor script on the post page. */}
+      <p
+        id={headingId}
+        class="text-accent font-app mb-3 text-xs font-semibold tracking-widest uppercase"
+      >
+        {heading ?? t.post.downloadHeading}
+      </p>
+
+      <p class="text-foreground text-lg font-semibold">{resolved.title}</p>
+
+      {resolved.description && (
+        <p class="text-foreground/70 mt-1">{resolved.description}</p>
+      )}
+
+      <div class="mt-5 flex flex-wrap items-center gap-x-4 gap-y-2">
+        <LinkButton
+          href={getAssetPath(resolved.href)}
+          download={resolved.fileName}
+          type={resolved.mimeType}
+          aria-describedby={resolved.metaLabel ? metaId : undefined}
+          data-swetrix-event="DOWNLOAD_CLICK"
+          data-swetrix-meta-file={resolved.fileName}
+          data-swetrix-meta-file-type={resolved.fileType}
+          class="bg-accent text-accent-foreground dark:text-background hover:text-accent-foreground dark:hover:text-background rounded-md px-4 py-2 font-semibold no-underline transition-transform hover:-translate-y-0.5"
+        >
+          <IconDownload
+            class="inline-block size-5 transition-transform group-hover:translate-y-0.5"
+            aria-hidden="true"
+          />
+          {t.post.downloadCtaLabel}
+        </LinkButton>
+
+        {resolved.metaLabel && (
+          <span id={metaId} class="text-muted-foreground font-app text-sm">
+            {resolved.metaLabel}
+          </span>
+        )}
+      </div>
+    </aside>
+  )
+}

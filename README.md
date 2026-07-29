@@ -130,6 +130,35 @@ Page views and client-side errors are tracked with [Swetrix](https://swetrix.com
 
 Dashboard: [analytics.kieks.me/projects/6LH65qU3KYkF](https://analytics.kieks.me/projects/6LH65qU3KYkF)
 
+### Custom events
+
+Fired from [`src/scripts/analytics-events.ts`](./src/scripts/analytics-events.ts):
+
+| Event            | Meta               | Trigger                               |
+| ---------------- | ------------------ | ------------------------------------- |
+| `POST_READ`      | `slug`             | Automatic on any `/posts/<slug>` page |
+| `DOWNLOAD_CLICK` | `file`, `fileType` | `DownloadCard` call to action         |
+| `SHARE_CLICK`    | `platform`         | Share links below a post              |
+| `SOCIAL_CLICK`   | `platform`         | Social icons                          |
+| `RSS_CLICK`      | —                  | RSS link on the home page             |
+| `SEARCH_USED`    | `query`            | Search input                          |
+
+Any element can report a click by carrying `data-swetrix-event="EVENT_NAME"`. Attach meta with
+`data-swetrix-meta-<key>` attributes — `data-swetrix-meta-file-type="PDF"` arrives as
+`{ fileType: "PDF" }`. A delegated listener on `document` handles all of them, so no per-component
+JavaScript is needed.
+
+> Swetrix's SDK refuses to send anything from `localhost` unless `devMode` is set, so custom events
+> cannot be observed with `pnpm preview` alone. Verify against production, or temporarily pass
+> `devMode: true` to `init()` in [`src/scripts/analytics.ts`](./src/scripts/analytics.ts).
+
+### Funnels
+
+Funnel steps mix page paths and custom event names. `Download OKR cheatsheet` measures
+`/posts/8-okr-introduction-mistakes-you-dont-need-to-make/` → `DOWNLOAD_CLICK`, deliberately using
+the specific post path rather than `POST_READ` — the latter fires on every post and would dilute the
+conversion rate with each unrelated article published.
+
 ## CI / deployment
 
 - **CI** (`.github/workflows/ci.yml`) — lint, format check, and build on pull requests.

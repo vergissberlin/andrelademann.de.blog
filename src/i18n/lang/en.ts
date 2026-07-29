@@ -21,6 +21,8 @@ export default {
     editPage: "Edit page",
     previousPost: "Previous Post",
     nextPost: "Next Post",
+    downloadHeading: "Free download",
+    downloadCtaLabel: "Download",
   },
   pagination: {
     prev: "Prev",
