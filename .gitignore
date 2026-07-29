@@ -31,3 +31,6 @@ public/pagefind
 
 # docker compose
 compose.override.yaml
+
+# agent config: machine-local overrides only, shared config is tracked
+.agents/*.local.json

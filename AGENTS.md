@@ -52,6 +52,13 @@ Photorealistic <subject>, <framing>, <lighting>, <environment detail>, shot on <
 
 **When a post has no `heroImage` set:** generate a ready-to-use image prompt and include it in your response. Do not leave the post without a visual suggestion. Place the prompt in a fenced code block labelled `image-prompt` so it is easy to copy.
 
+## Agent configuration
+
+All coding-agent configuration lives in `.agents/`. The vendor directories in the project
+root (`.claude`, `.cursor`) are symlinks to it, in the same way `CLAUDE.md` is a symlink to
+this file. Put new agent config in `.agents/` — never in a vendor directory directly. See
+`.agents/README.md` for the layout and for how to wire up another vendor.
+
 ## Development
 
 When starting the dev server, use background mode:
