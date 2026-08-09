@@ -19,11 +19,16 @@ const THEME = {
 
 const SITE = "blog.andrelademann.de";
 
-/** Exported so the generator can pass the matching format to Chromium. */
-export const PAGE_SIZES = {
-  A4: { width: "210mm", height: "297mm" },
-  A5: { width: "148mm", height: "210mm" },
-};
+/**
+ * A4, and generous margins on purpose.
+ *
+ * Consumer printers refuse to print into a non-printable border that reaches
+ * 10–13 mm on the long edges, so a footer sitting 9 mm from the paper edge came
+ * out clipped. The bottom margin is the largest of the three because that is
+ * where the footer lives.
+ */
+const PAGE = { width: "210mm", height: "297mm" };
+const PAGE_PADDING = "15mm 16mm 18mm";
 
 /** Escape the five characters that can break out of HTML text or an attribute. */
 export function escapeHtml(value) {
@@ -187,9 +192,6 @@ export function renderCheatSheet(sheet, fontCss = "") {
     .map((page, index) => renderPage(page, sheet, index + 1, pageCount))
     .join("");
 
-  // A short card printed on A4 is mostly blank paper. A5 keeps it a card.
-  const { width, height } = PAGE_SIZES[sheet.pageSize ?? "A4"] ?? PAGE_SIZES.A4;
-
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -197,7 +199,7 @@ export function renderCheatSheet(sheet, fontCss = "") {
 <title>${escapeHtml(sheet.title)}</title>
 <style>
 ${fontCss}
-@page { size: ${sheet.pageSize ?? "A4"}; margin: 0; }
+@page { size: A4; margin: 0; }
 
 * { box-sizing: border-box; }
 
@@ -214,9 +216,9 @@ html, body {
 }
 
 .sheet {
-  width: ${width};
-  height: ${height};
-  padding: 11mm 12mm 9mm;
+  width: ${PAGE.width};
+  height: ${PAGE.height};
+  padding: ${PAGE_PADDING};
   display: flex;
   flex-direction: column;
   page-break-after: always;

@@ -37,7 +37,7 @@ export default {
       blocks: [
         {
           kind: "note",
-          text: "Installing an MCP server gives an AI system — and whoever controls it — a tool that can act in your name. This is the middle ground between **ship it** and a full penetration test: minutes, not days.",
+          text: "Installing an MCP server gives an AI system — and whoever controls it — a tool that can act in your name. This is the middle ground between **ship it** and a full penetration test.",
         },
         {
           kind: "checklist",
@@ -61,7 +61,7 @@ export default {
             {
               term: "Source availability and activity",
               detail:
-                "Is the code open? Is it maintained? A single-file project with no issues, no pull requests and a two-year-old last commit is a different risk profile from an actively maintained one with a transparent changelog.",
+                "Is the code open? Is it maintained? A single-file project with no issues, no pull requests and a two-year-old last commit is a very different risk from an actively maintained one.",
             },
             {
               term: "Dependencies",
@@ -118,7 +118,7 @@ export default {
             {
               term: "Make reporting safe",
               detail:
-                "Aim for a culture where “I added a new MCP server” is something developers say out loud rather than hide.",
+                "Aim for a culture where “I added a new MCP server” is said out loud, not hidden.",
             },
           ],
         },

@@ -70,19 +70,22 @@ describe("renderCheatSheet", () => {
     expect(html).toContain('<code class="inline">npm audit</code>');
   });
 
-  it("uses the requested page size in both the @page rule and the box", () => {
-    const html = renderCheatSheet(sheet({ pageSize: "A5" }));
+  it("declares the same A4 box in the @page rule and the sheet element", () => {
+    const html = renderCheatSheet(sheet());
 
-    expect(html).toContain("@page { size: A5;");
-    expect(html).toContain("width: 148mm");
-    expect(html).toContain("height: 210mm");
-  });
-
-  it("defaults to A4 for an unknown page size rather than rendering a broken box", () => {
-    const html = renderCheatSheet(sheet({ pageSize: "A9" }));
-
+    expect(html).toContain("@page { size: A4;");
     expect(html).toContain("width: 210mm");
     expect(html).toContain("height: 297mm");
+  });
+
+  it("keeps the footer clear of the printer's non-printable border", () => {
+    const bottomPadding = renderCheatSheet(sheet()).match(
+      /\.sheet \{[^}]*padding: [\d.]+mm [\d.]+mm ([\d.]+)mm/
+    )?.[1];
+
+    // Consumer printers refuse to print into a border reaching 10-13 mm, which
+    // is what clipped the footer when this was 9 mm.
+    expect(Number(bottomPadding)).toBeGreaterThanOrEqual(15);
   });
 
   it("appends the sources to the last page only", () => {

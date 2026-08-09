@@ -80,6 +80,11 @@ async function loadFontCss() {
   return faces.join("\n");
 }
 
+/** Page objects in the PDF body. `/Type /Pages` is the tree node, not a page. */
+function countPdfPages(pdf) {
+  return (pdf.toString("latin1").match(/\/Type\s*\/Page[^s]/g) ?? []).length;
+}
+
 /** Chromium's PDFs embed a timestamp, which would rewrite every file on every run. */
 function withoutTimestamps(pdf) {
   return pdf
@@ -163,10 +168,23 @@ try {
     }
 
     const pdf = await page.pdf({
-      format: sheet.pageSize ?? "A4",
+      format: "A4",
       printBackground: true,
       preferCSSPageSize: true,
     });
+
+    /**
+     * A sheet box that ends up a hair taller than the paper spills onto a second
+     * page, which takes the footer with it. The overflow check above cannot see
+     * that — it measures the layout, not the pagination — so verify the PDF.
+     */
+    const renderedPages = countPdfPages(pdf);
+    if (renderedPages !== sheet.pages.length) {
+      throw new Error(
+        `${sheet.fileName}: rendered ${renderedPages} PDF page(s) for ` +
+          `${sheet.pages.length} sheet page(s). The page box does not match the paper.`
+      );
+    }
 
     const outputDir = join(root, "public", "downloads", sheet.slug);
     const outputPath = join(outputDir, sheet.fileName);

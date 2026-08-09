@@ -182,15 +182,21 @@ For a card at a specific point in the text rather than at the end, import
 ### Cheat sheets
 
 The printable PDFs are generated from data in [`scripts/cheatsheets/`](./scripts/cheatsheets/):
-one file per sheet under `sheets/`, rendered through a shared A4/A5 `template.mjs`.
+one file per sheet under `sheets/`, rendered through a shared A4 `template.mjs`.
 
 ```bash
 pnpm cheatsheets
 ```
 
-Content is plain data so it stays reviewable in a diff, and a sheet whose content no longer fits its
-page fails the run rather than silently losing its last section. Output is byte-stable, so re-running
-without a content change rewrites nothing.
+Content is plain data so it stays reviewable in a diff. Two things are checked rather than trusted:
+a sheet whose content no longer fits its page fails the run instead of silently losing its last
+section, and the finished PDF must have exactly as many pages as the sheet declares — a box a hair
+taller than the paper would otherwise spill onto a second page and take the footer with it. Output
+is byte-stable, so re-running without a content change rewrites nothing.
+
+Margins are deliberately generous (15 mm top, 16 mm sides, 18 mm bottom). Consumer printers refuse
+to print into a non-printable border that reaches 10–13 mm, so a footer closer to the edge than that
+comes out clipped.
 
 The script is deliberately **not** part of `pnpm build` — the PDFs are committed, so neither the
 build nor the deploy needs a browser. That is also why the dependency is `playwright-core`, which

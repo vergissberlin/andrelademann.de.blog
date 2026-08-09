@@ -8,8 +8,6 @@
 export default {
   slug: "git-rebase-theirs-probleme-beim-rebase-beheben",
   fileName: "git-ours-theirs-cheatsheet.pdf",
-  // A5: the content is a card, and a card on A4 is mostly blank paper.
-  pageSize: "A5",
   title: "git ours and theirs",
   subtitle: "Which side wins a conflict",
   articleUrl:
