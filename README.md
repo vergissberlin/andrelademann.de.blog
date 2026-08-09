@@ -159,6 +159,44 @@ Funnel steps mix page paths and custom event names. `Download OKR cheatsheet` me
 the specific post path rather than `POST_READ` — the latter fires on every post and would dilute the
 conversion rate with each unrelated article published.
 
+## Downloads
+
+A post can offer a file with a `download` block in its frontmatter. It works in plain `.md` — the
+card is rendered by the post route, after the article and before the sources:
+
+```yaml
+download:
+  file: /downloads/<post-slug>/<file>.pdf
+  title: "What the reader gets"
+  description: "One line on why it is worth the click."
+```
+
+The file lives in `public/downloads/<post-slug>/`. Its size is read from disk at build time, so the
+announced size can never drift. A path that does not resolve to a readable file **fails the
+production build** and warns in dev — a typo would otherwise ship as a 404.
+
+For a card at a specific point in the text rather than at the end, import
+[`DownloadCard`](./src/components/DownloadCard.astro) in an `.mdx` body instead, as
+`8-okr-introduction-mistakes-you-dont-need-to-make.mdx` does. Both routes work.
+
+### Cheat sheets
+
+The printable PDFs are generated from data in [`scripts/cheatsheets/`](./scripts/cheatsheets/):
+one file per sheet under `sheets/`, rendered through a shared A4/A5 `template.mjs`.
+
+```bash
+pnpm cheatsheets
+```
+
+Content is plain data so it stays reviewable in a diff, and a sheet whose content no longer fits its
+page fails the run rather than silently losing its last section. Output is byte-stable, so re-running
+without a content change rewrites nothing.
+
+The script is deliberately **not** part of `pnpm build` — the PDFs are committed, so neither the
+build nor the deploy needs a browser. That is also why the dependency is `playwright-core`, which
+downloads no browser on install. Point it at one with `CHROME_PATH`, or set
+`PLAYWRIGHT_BROWSERS_PATH` to a directory containing `chromium-<build>/chrome-linux/chrome`.
+
 ## CI / deployment
 
 - **CI** (`.github/workflows/ci.yml`) — lint, format check, and build on pull requests.

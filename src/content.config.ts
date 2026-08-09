@@ -30,6 +30,20 @@ const posts = defineCollection({
         })
       )
       .optional(),
+    // Field names mirror `DownloadInput` in src/utils/download.ts so the object
+    // can be spread straight into <DownloadCard> without a mapping layer.
+    // `fileSize` is deliberately absent: the size is read from disk at build
+    // time, so it cannot drift from the file the reader actually gets.
+    download: z
+      .object({
+        /** Root-relative path inside `public/`, e.g. "/downloads/<slug>/file.pdf". */
+        file: z.string(),
+        title: z.string(),
+        description: z.string().optional(),
+        fileType: z.string().optional(),
+        fileName: z.string().optional(),
+      })
+      .optional(),
   }),
 });
 

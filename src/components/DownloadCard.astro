@@ -4,7 +4,11 @@ import path from "node:path";
 import IconDownload from "@/assets/icons/IconDownload.svg";
 import LinkButton from "@/components/LinkButton.astro";
 import { useTranslations } from "@/i18n";
-import { resolveDownload, type DownloadInput } from "@/utils/download";
+import {
+  normaliseDownloadPath,
+  resolveDownload,
+  type DownloadInput,
+} from "@/utils/download";
 import { getAssetPath } from "@/utils/withBase";
 
 type Props = DownloadInput & {
@@ -21,8 +25,8 @@ const t = useTranslations(Astro.currentLocale);
 
 /**
  * Byte size of a file in `public/`, read at build time so the announced size can
- * never drift from the actual file. A missing file yields `undefined`, which
- * simply omits the size rather than failing the build.
+ * never drift from the actual file. `undefined` means the path does not point at
+ * a readable file, which doubles as the existence check below.
  */
 function getPublicFileSize(publicPath: string): number | undefined {
   try {
@@ -38,9 +42,28 @@ function getPublicFileSize(publicPath: string): number | undefined {
   }
 }
 
+const href = normaliseDownloadPath(download.file);
+const actualFileSize = href ? getPublicFileSize(href) : undefined;
+
+/**
+ * `resolveDownload` never touches the filesystem, so on its own a mistyped path
+ * ships as a link that 404s — or, for an unusable path, as a silently missing
+ * card. Fail the production build instead. In dev it only warns, so an author
+ * can write the frontmatter before the artefact exists.
+ */
+if (!href || actualFileSize === undefined) {
+  const reason = href
+    ? `no readable file at public${href}`
+    : "path is unusable (absolute or protocol-relative URLs cannot be downloads)";
+  const message = `DownloadCard: ${reason} — file: ${JSON.stringify(download.file)}`;
+  if (import.meta.env.PROD) throw new Error(message);
+  // eslint-disable-next-line no-console -- surface authoring mistakes in the dev server output
+  console.warn(`[DownloadCard] ${message}`);
+}
+
 const resolved = resolveDownload({
   ...download,
-  fileSize: download.fileSize ?? getPublicFileSize(download.file),
+  fileSize: download.fileSize ?? actualFileSize,
 });
 
 const headingId = `${id}-heading`;
