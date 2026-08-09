@@ -26,6 +26,10 @@ sources:
   - title: "The MCP Attack Surface: Top-20 Documented Attacks (2026)"
     url: "https://agyn.io/blog/mcp-attack-surface"
     note: "Documented real-world MCP attack cases"
+download:
+  file: /downloads/mcp-servers-speed-vs-security-enterprise/mcp-server-security-review-checklist.pdf
+  title: "MCP server security review checklist"
+  description: "The five checks on one page, with the enterprise pressures and the audit command. Print it and keep it next to the next MCP server someone asks you to approve."
 ---
 
 I've written a handful of MCP servers myself. It's honestly one of the more satisfying things you can build right now — a few hundred lines of code, and suddenly your AI assistant can talk to your ticketing system, pull data from your monitoring stack, or push commits on your behalf. The feedback loop from "idea" to "working tool" is absurdly short.

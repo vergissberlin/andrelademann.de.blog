@@ -9,6 +9,10 @@ tags:
   - git
 heroImage: /images/posts/git-rebase-theirs-probleme-beim-rebase-beheben/hero.png
 description: "How -Xtheirs and -Xours work in git rebase — and why they mean the exact opposite of what you'd expect."
+download:
+  file: /downloads/git-rebase-theirs-probleme-beim-rebase-beheben/git-ours-theirs-cheatsheet.pdf
+  title: "git ours and theirs cheat sheet"
+  description: "Which side wins in a merge and in a rebase, on one A5 card. The rule of thumb worth pinning up, so you stop looking it up."
 ---
 
 You've been working on a feature branch for a couple of weeks. Master has moved on. You run `git rebase master` and get a wall of conflicts — even though you know your branch is correct and you just want its changes to win. Resolving each file by hand is tedious and error-prone.

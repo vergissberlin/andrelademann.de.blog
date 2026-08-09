@@ -30,6 +30,10 @@ sources:
   - title: "CIOs are being held accountable for AI they don't fully control, IBM study finds"
     url: "https://www.cio.com/article/4182288/cios-are-being-held-accountable-for-ai-they-dont-fully-control-ibm-study-finds.html"
     note: "CIO magazine coverage of the IBM study / shadow AI"
+download:
+  file: /downloads/ai-security-architect-why-this-might-be-the-most-valuable-tech-role-of-2026/ai-security-architect-onepager.pdf
+  title: "AI Security Architect one-pager"
+  description: "The five capability areas as a self-assessment, and the translation table that turns technical risk into something an executive will fund. Two pages, made to print double-sided."
 ---
 
 Everyone is talking about AI engineers. Almost nobody is talking about the people who have to make AI safe to run in production. That gap is quietly turning into one of the biggest career opportunities in tech: the **AI Security Architect**.
