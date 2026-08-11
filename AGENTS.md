@@ -59,6 +59,11 @@ root (`.claude`, `.cursor`) are symlinks to it, in the same way `CLAUDE.md` is a
 this file. Put new agent config in `.agents/` — never in a vendor directory directly. See
 `.agents/README.md` for the layout and for how to wire up another vendor.
 
+## Git
+
+Never push commits directly to `main`. All changes go through a feature branch and a pull
+request — including documentation-only or configuration changes.
+
 ## Development
 
 When starting the dev server, use background mode:
