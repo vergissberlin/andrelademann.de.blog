@@ -21,7 +21,7 @@ Gilden sind nicht gescheitert, nur weil einzelne von ihnen aufgelöst werden. Si
 
 Die wichtigere Frage ist deshalb, wie die verbleibenden Gilden gestaltet werden. Das zeigt sich auch bei Thinkport: Nach zwei Jahren sind von ursprünglich 13 Gilden noch vier aktiv. Die Aktivität ist insgesamt zu gering für ein Unternehmen, dessen wesentlicher Wert im Wissen seiner Mitarbeiterinnen und Mitarbeiter liegt. Gilden sollen Wissen zwischen Kolleginnen und Kollegen, zwischen Teams und zwischen Projekten bewegen. Wenn dort zu wenig passiert, bleibt ein wichtiger Teil dieses Werts ungenutzt.
 
-Das ist inzwischen die dritte Überarbeitung des Skillkonzepts bei Thinkport. Die Gilden werden also nicht abgeschafft. Sie bleiben ein wichtiger Ort für Wissenstransfer in Unternehmen, müssen aber so gestaltet werden, dass ihre Aktivität nicht allein von freiwilligem Engagement und gut gefüllten Kalendern abhängt.
+Das ist inzwischen die dritte Überarbeitung des Skillkonzepts bei Thinkport. Gilden bleiben ein wichtiger Ort für Wissenstransfer in Unternehmen, müssen aber so gestaltet werden, dass ihre Aktivität nicht allein von freiwilligem Engagement und gut gefüllten Kalendern abhängt.
 
 ## Eine Gilde ist der Ort, an dem Projektarbeit ehrlich werden kann
 

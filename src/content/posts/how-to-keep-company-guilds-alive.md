@@ -22,7 +22,7 @@ Guilds have not failed simply because some of them dissolve. They change. When a
 
 The more important question is how the remaining guilds should be shaped. Thinkport is one example: after two years, four of its original thirteen guilds remain active. Overall activity is too low for a company whose main value comes from the knowledge of its people. Guilds are meant to move knowledge between colleagues, teams, and projects. When too little happens there, an important part of that value remains unused.
 
-This is now Thinkport's third revision of the skills concept. The guilds are not being removed. They remain an important place for knowledge transfer in companies, but they need to be shaped so that activity does not depend only on voluntary effort and already crowded calendars.
+This is now Thinkport's third revision of the skills concept. Guilds remain an important place for knowledge transfer in companies, but they need to be shaped so that activity does not depend only on voluntary effort and already crowded calendars.
 
 ## A guild is where project work can become honest
 
