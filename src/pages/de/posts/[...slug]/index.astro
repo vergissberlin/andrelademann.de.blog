@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import PostPage from "../../../posts/[...slug]/index.astro";
+import { filterPostsByLocale } from "@/utils/postLocale";
+import { getSortedPosts } from "@/utils/getSortedPosts";
+
+export const getStaticPaths = (async () => {
+  const posts = filterPostsByLocale(await getCollection("posts"), "de");
+  const sortedPosts = getSortedPosts(posts);
+
+  return sortedPosts.map((post, index) => ({
+    params: { slug: post.id },
+    props: {
+      post,
+      prevPost:
+        index > 0
+          ? {
+              id: sortedPosts[index - 1].id,
+              title: sortedPosts[index - 1].data.title,
+              filePath: sortedPosts[index - 1].filePath,
+            }
+          : null,
+      nextPost:
+        index < sortedPosts.length - 1
+          ? {
+              id: sortedPosts[index + 1].id,
+              title: sortedPosts[index + 1].data.title,
+              filePath: sortedPosts[index + 1].filePath,
+            }
+          : null,
+    },
+  }));
+}) satisfies GetStaticPaths;
+
+const { post, prevPost, nextPost } = Astro.props;
+---
+
+<PostPage {post} {prevPost} {nextPost} />

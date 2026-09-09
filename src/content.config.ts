@@ -9,6 +9,8 @@ const posts = defineCollection({
   loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: `./${BLOG_PATH}` }),
   schema: z.object({
     author: z.string().default(config.site.author),
+    locale: z.enum(["en", "de"]).default("en"),
+    translationKey: z.string().optional(),
     pubDatetime: z.date(),
     modDatetime: z.date().optional().nullable(),
     title: z.string(),
@@ -50,6 +52,7 @@ const posts = defineCollection({
 const pages = defineCollection({
   loader: glob({ pattern: "**/[^_]*.{md,mdx}", base: "./src/content/pages" }),
   schema: z.object({
+    locale: z.enum(["en", "de"]).default("en"),
     title: z.string(),
     description: z.string().optional(),
     ogImage: z.string().optional(),

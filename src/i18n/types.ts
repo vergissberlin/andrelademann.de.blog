@@ -62,6 +62,7 @@ export interface UIStrings {
     noResults: string;
     goToPreviousPage: string;
     goToNextPage: string;
+    languageSwitcher: string;
   };
   notFound: {
     title: string;

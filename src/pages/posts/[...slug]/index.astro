@@ -17,9 +17,11 @@ import AdjacentPostNav from "./_components/AdjacentPostNav.astro";
 import Sources from "@/components/Sources.astro";
 import DownloadCard from "@/components/DownloadCard.astro";
 import config from "@/config";
+import LanguageSwitcher from "@/components/LanguageSwitcher.astro";
+import { filterPostsByLocale, getPostLocale } from "@/utils/postLocale";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("posts");
+  const posts = filterPostsByLocale(await getCollection("posts"), "en");
   const sortedPosts = getSortedPosts(posts);
 
   return sortedPosts.map((post, index) => ({
@@ -76,6 +78,23 @@ const {
   download,
 } = post.data;
 
+const allPosts = await getCollection("posts");
+const translationPosts = post.data.translationKey
+  ? allPosts.filter(
+      candidate => candidate.data.translationKey === post.data.translationKey
+    )
+  : [];
+const alternateLinks = translationPosts.map(candidate => ({
+  locale: getPostLocale(candidate),
+  url: new URL(
+    getPostUrl(candidate.id, candidate.filePath, getPostLocale(candidate)),
+    Astro.site
+  ).href,
+}));
+const pageCanonicalURL =
+  canonicalURL ??
+  new URL(getPostUrl(post.id, post.filePath, locale), Astro.site).href;
+
 const { Content } = await render(post);
 
 const postImage = heroImage ?? ogImageField;
@@ -99,7 +118,9 @@ const ogImage = ogImageUrl
   title={`${title} | ${config.site.title}`}
   description={description}
   ogImage={ogImage}
-  canonicalURL={canonicalURL}
+  canonicalURL={pageCanonicalURL}
+  alternateLinks={alternateLinks}
+  inLanguage={locale}
   pubDatetime={pubDatetime}
   modDatetime={modDatetime}
 >
@@ -142,6 +163,8 @@ const ogImage = ogImageUrl
     >
       {title}
     </h1>
+
+    {translationPosts.length > 1 && <LanguageSwitcher {post} />}
 
     <div class="my-2 flex items-center gap-2">
       <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />

@@ -3,6 +3,8 @@ author: André Lademann
 pubDatetime: 2026-09-09T09:00:00.000Z
 title: "Guilds Do Not Run on Goodwill Forever"
 slug: how-to-keep-company-guilds-alive
+locale: en
+translationKey: guilds-do-not-run-on-goodwill-forever
 featured: false
 draft: false
 tags:
@@ -11,7 +13,7 @@ tags:
 heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 description: "Company guilds create room for honest learning beyond client projects, but only when someone keeps the fire supplied."
-canonicalURL: https://blog.andrelademann.de/how-to-keep-company-guilds-alive
+canonicalURL: https://blog.andrelademann.de/posts/how-to-keep-company-guilds-alive
 ---
 
 Continuing education at a company is never finished. Courses and certificates matter, but the real work starts when colleagues share where they got stuck, what they tried, and what they would do differently next time.

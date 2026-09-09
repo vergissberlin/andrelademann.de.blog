@@ -1,0 +1,20 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import PostsPage from "../../posts/[...page].astro";
+import { filterPostsByLocale } from "@/utils/postLocale";
+import { getSortedPosts } from "@/utils/getSortedPosts";
+import config from "@/config";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const posts = filterPostsByLocale(
+    await getCollection("posts", ({ data }) => !data.draft),
+    "de"
+  );
+  return paginate(getSortedPosts(posts), { pageSize: config.posts.perPage });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<PostsPage {page} />

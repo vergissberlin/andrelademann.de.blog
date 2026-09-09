@@ -30,6 +30,10 @@ const postRedirects = Object.fromEntries(
   fs
     .readdirSync(postsDir)
     .filter(file => /\.mdx?$/.test(file))
+    .filter(file => {
+      const source = fs.readFileSync(path.join(postsDir, file), "utf8");
+      return !/^locale:\s*de\s*$/m.test(source);
+    })
     .map(file => path.basename(file, path.extname(file)))
     .map(slug => [`/${slug}`, `/posts/${slug}`])
 );
@@ -45,7 +49,7 @@ export default defineConfig({
     }),
   ],
   i18n: {
-    locales: ["en"],
+    locales: ["en", "de"],
     defaultLocale: "en",
     routing: {
       prefixDefaultLocale: false,

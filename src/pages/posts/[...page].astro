@@ -11,9 +11,13 @@ import Pagination from "@/components/Pagination.astro";
 import { getSortedPosts } from "@/utils/getSortedPosts";
 import { useTranslations } from "@/i18n";
 import config from "@/config";
+import { filterPostsByLocale } from "@/utils/postLocale";
 
 export const getStaticPaths = (async ({ paginate }) => {
-  const posts = await getCollection("posts", ({ data }) => !data.draft);
+  const posts = filterPostsByLocale(
+    await getCollection("posts", ({ data }) => !data.draft),
+    "en"
+  );
   return paginate(getSortedPosts(posts), { pageSize: config.posts.perPage });
 }) satisfies GetStaticPaths;
 

@@ -3,6 +3,8 @@ author: André Lademann
 pubDatetime: 2026-06-28T12:24:00.000Z
 title: "Why Good Retrospectives Still Feel Like a Chore"
 slug: why-good-retrospectives-feel-like-a-chore
+locale: en
+translationKey: good-retrospectives-feel-like-a-chore
 featured: false
 draft: false
 tags:
@@ -11,7 +13,7 @@ heroImage: "/images/posts/why-good-retrospectives-feel-like-a-chore/scrum-retro.
 ogImage: "/images/posts/why-good-retrospectives-feel-like-a-chore/scrum-retro.png"
 
 description: "I genuinely believe in retrospectives. So why do I always leave feeling deflated? It's about what we choose to look at..."
-canonicalURL: https://blog.andrelademann.de/why-good-retrospectives-feel-like-a-chore
+canonicalURL: https://blog.andrelademann.de/posts/why-good-retrospectives-feel-like-a-chore
 sources:
   - title: "The 2020 Scrum Guide — Sprint Retrospective"
     url: "https://scrumguides.org/scrum-guide.html#sprint-retrospective"

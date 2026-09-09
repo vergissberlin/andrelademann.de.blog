@@ -3,13 +3,15 @@ author: André Lademann
 pubDatetime: 2021-07-28T08:44:12.000Z
 title: "Pair programming"
 slug: pair-programming
+locale: en
+translationKey: pair-programming
 featured: false
 draft: false
 tags:
   - collaboration
 ogImage: "/images/posts/pair-programming/hero.jpeg"
 description: "In pair programming, two developers work simultaneously on one source code. The method helps to develop better software products. Advantages At Netresearch, we use this method and derive many advantages from it: Direct knowledge exchange about meth..."
-canonicalURL: https://blog.andrelademann.de/pair-programming
+canonicalURL: https://blog.andrelademann.de/posts/pair-programming
 ---
 
 In pair programming, two developers work simultaneously on one source code. The method helps to develop better software products.
