@@ -12,14 +12,14 @@ tags:
   - lernen
 heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
-description: "Bei Thinkport sind nach zwei Jahren noch vier von ursprünglich 13 Gilden aktiv. Die Gilden sind nicht gescheitert, aber ihre nächste Form braucht mehr Verbindlichkeit für echten Wissenstransfer."
+description: "Gilden schaffen Raum für Wissenstransfer, aber ihre nächste Form braucht oft mehr Verbindlichkeit als freiwilliges Engagement allein bieten kann."
 ---
 
-Die Gilden bei Thinkport sind nicht gescheitert. Sie existieren weiter. Nach zwei Jahren sind von ursprünglich 13 Gilden heute noch vier aktiv. Das ist zunächst völlig in Ordnung: Wenn sich eine Gilde auflöst, kann das auch bedeuten, dass ihr Thema für die Menschen nicht mehr relevant genug ist. Eine Gilde muss nicht um jeden Preis am Leben gehalten werden.
+Gilden sind nicht gescheitert, nur weil einzelne von ihnen aufgelöst werden. Sie verändern sich. Wenn eine Gilde nach einiger Zeit nicht mehr aktiv ist, kann das auch bedeuten, dass ihr Thema für die Menschen nicht mehr relevant genug ist. Eine Gilde muss nicht um jeden Preis am Leben gehalten werden.
 
-Die wichtigere Frage ist deshalb, wie die verbleibenden Gilden gestaltet werden. Die Aktivität ist insgesamt zu gering für ein Unternehmen, dessen wesentlicher Wert im Wissen seiner Mitarbeiterinnen und Mitarbeiter liegt. Gilden sollen Wissen zwischen Kolleginnen und Kollegen, zwischen Teams und zwischen Projekten bewegen. Wenn dort zu wenig passiert, bleibt ein wichtiger Teil dieses Werts ungenutzt.
+Die wichtigere Frage ist deshalb, wie die verbleibenden Gilden gestaltet werden. Das zeigt sich auch bei Thinkport: Nach zwei Jahren sind von ursprünglich 13 Gilden noch vier aktiv. Die Aktivität ist insgesamt zu gering für ein Unternehmen, dessen wesentlicher Wert im Wissen seiner Mitarbeiterinnen und Mitarbeiter liegt. Gilden sollen Wissen zwischen Kolleginnen und Kollegen, zwischen Teams und zwischen Projekten bewegen. Wenn dort zu wenig passiert, bleibt ein wichtiger Teil dieses Werts ungenutzt.
 
-Das ist inzwischen die dritte Überarbeitung des Skillkonzepts bei Thinkport. Die Gilden werden also nicht abgeschafft. Sie bleiben ein wichtiger Ort für Wissenstransfer, müssen aber so gestaltet werden, dass ihre Aktivität nicht allein von freiwilligem Engagement und gut gefüllten Kalendern abhängt.
+Das ist inzwischen die dritte Überarbeitung des Skillkonzepts bei Thinkport. Die Gilden werden also nicht abgeschafft. Sie bleiben ein wichtiger Ort für Wissenstransfer in Unternehmen, müssen aber so gestaltet werden, dass ihre Aktivität nicht allein von freiwilligem Engagement und gut gefüllten Kalendern abhängt.
 
 ## Eine Gilde ist der Ort, an dem Projektarbeit ehrlich werden kann
 
@@ -63,7 +63,7 @@ Ebenso wichtig: Die Moderation kann diese Arbeit sichtbar machen. Ein kurzer int
 
 Sichtbarkeit sollte nicht bei Applaus enden. Gilden brauchen eine klare Verbindung zu der Arbeit, die den Menschen und dem Unternehmen tatsächlich wichtig ist.
 
-Für Kolleginnen und Kollegen kann das ein besseres Netzwerk, ein sicherer Ort für schwierige Fragen oder die Möglichkeit sein, eine Idee zunächst intern auszuprobieren, bevor sie beim Kunden vorgestellt wird. Für Thinkport kann es bessere Projektergebnisse, breiteres Fachwissen, wiederverwendbare Ansätze und glaubwürdige Geschichten darüber bedeuten, wobei das Unternehmen Kunden unterstützen kann.
+Für Kolleginnen und Kollegen kann das ein besseres Netzwerk, ein sicherer Ort für schwierige Fragen oder die Möglichkeit sein, eine Idee zunächst intern auszuprobieren, bevor sie bei einem Kunden vorgestellt wird. Für ein Unternehmen kann es bessere Projektergebnisse, breiteres Fachwissen, wiederverwendbare Ansätze und glaubwürdige Geschichten darüber bedeuten, wie es Kunden unterstützen kann.
 
 Diese Verbindung sollte ausdrücklich gemacht werden. Wenn aus einer Gilden-Session eine wiederverwendbare Vorlage, ein besserer Onboarding-Prozess, ein kleines internes Tool oder ein neuer Beratungsansatz entsteht, sollte man dieses Ergebnis zeigen. So wird klar: Wissensaustausch ist keine Ablenkung vom Umsatz. Er ist ein Teil davon, warum eine Beratung relevant genug bleibt, um Umsatz zu erzielen.
 

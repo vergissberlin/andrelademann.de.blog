@@ -12,15 +12,15 @@ tags:
   - learning
 heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
-description: "After two years, four of Thinkport's original thirteen guilds remain active. The guilds have not failed, but their next shape needs more commitment to make knowledge transfer work."
+description: "Guilds create room for knowledge transfer, but their next shape often needs more commitment than voluntary effort alone can provide."
 canonicalURL: https://blog.andrelademann.de/posts/how-to-keep-company-guilds-alive
 ---
 
-The guilds at Thinkport have not failed. They still exist. After two years, four of the original thirteen guilds are active today. That is not necessarily a problem: when a guild dissolves, it can also mean that its topic is no longer relevant enough to the people involved. A guild does not need to be kept alive at any cost.
+Guilds have not failed simply because some of them dissolve. They change. When a guild is no longer active after a while, it can also mean that its topic is no longer relevant enough to the people involved. A guild does not need to be kept alive at any cost.
 
-The more important question is how the remaining guilds should be shaped. Overall activity is too low for a company whose main value comes from the knowledge of its people. Guilds are meant to move knowledge between colleagues, teams, and projects. When too little happens there, an important part of that value remains unused.
+The more important question is how the remaining guilds should be shaped. Thinkport is one example: after two years, four of its original thirteen guilds remain active. Overall activity is too low for a company whose main value comes from the knowledge of its people. Guilds are meant to move knowledge between colleagues, teams, and projects. When too little happens there, an important part of that value remains unused.
 
-This is now Thinkport's third revision of the skills concept. The guilds are not being removed. They remain an important place for knowledge transfer, but they need to be shaped so that activity does not depend only on voluntary effort and already crowded calendars.
+This is now Thinkport's third revision of the skills concept. The guilds are not being removed. They remain an important place for knowledge transfer in companies, but they need to be shaped so that activity does not depend only on voluntary effort and already crowded calendars.
 
 ## A guild is where project work can become honest
 
@@ -64,7 +64,7 @@ Just as importantly, the facilitator can make the work visible. A short internal
 
 Visibility should not stop at applause. Guilds need a clear connection to the work people and the business actually care about.
 
-For colleagues, that can mean a better network, a safer place to ask difficult questions, or a chance to build confidence by presenting an idea before bringing it to a client. For Thinkport, it can mean stronger project delivery, broader expertise, more reusable approaches, and credible stories about what the company can help clients with.
+For colleagues, that can mean a better network, a safer place to ask difficult questions, or a chance to build confidence by presenting an idea before bringing it to a client. For a company, it can mean stronger project delivery, broader expertise, more reusable approaches, and credible stories about how it can help clients.
 
 The link should be explicit. When a guild session leads to a reusable template, a better onboarding path, a small internal tool, or a new consulting angle, show that outcome. It proves that knowledge exchange is not a distraction from revenue. It is one of the ways a consultancy stays relevant enough to earn revenue in the first place.
 
