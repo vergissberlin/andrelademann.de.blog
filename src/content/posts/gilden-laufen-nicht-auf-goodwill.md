@@ -12,14 +12,14 @@ tags:
   - lernen
 heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
-description: "Unternehmensgilden schaffen Raum für ehrliches Lernen jenseits von Kundenprojekten – aber nur, wenn jemand das Feuer weiter versorgt."
+description: "Bei Thinkport sind sieben von ursprünglich 13 Gilden aktiv. Die Gilden sind nicht gescheitert, aber ihre nächste Form braucht mehr Verbindlichkeit für echten Wissenstransfer."
 ---
 
-Weiterbildung im Unternehmen ist nie abgeschlossen. Kurse und Zertifikate sind wichtig, aber die eigentliche Arbeit beginnt, wenn Kolleginnen und Kollegen teilen, woran sie gescheitert sind, was sie ausprobiert haben und was sie beim nächsten Mal anders machen würden.
+Die Gilden bei Thinkport sind nicht gescheitert. Sie existieren weiter. Von ursprünglich 13 Gilden sind heute noch sieben aktiv. Das ist zunächst völlig in Ordnung: Wenn sich eine Gilde auflöst, kann das auch bedeuten, dass ihr Thema für die Menschen nicht mehr relevant genug ist. Eine Gilde muss nicht um jeden Preis am Leben gehalten werden.
 
-Deshalb haben wir bei Thinkport Gilden eingeführt: einen Ort, an dem Wissen projektübergreifend geteilt, Erfahrungen verglichen und neue Ideen entwickelt werden können. Beim Kunden kann es sich teuer anfühlen, zuzugeben, dass ein Ansatz nicht funktioniert hat oder man die Antwort nicht kennt. Intern sollte das normal sein.
+Die wichtigere Frage ist deshalb, wie die verbleibenden Gilden gestaltet werden. Die Aktivität ist insgesamt zu gering für ein Unternehmen, dessen wesentlicher Wert im Wissen seiner Mitarbeiterinnen und Mitarbeiter liegt. Gilden sollen Wissen zwischen Kolleginnen und Kollegen, zwischen Teams und zwischen Projekten bewegen. Wenn dort zu wenig passiert, bleibt ein wichtiger Teil dieses Werts ungenutzt.
 
-Nach zwei Jahren ist die erste Begeisterung jedoch abgeklungen. Die Menschen, denen das Thema wirklich wichtig ist, kommen weiterhin. Alle anderen haben Projektdeadlines, volle Kalender und einen völlig nachvollziehbaren Grund, dieses eine Treffen auszulassen. Genau das ist die Herausforderung bei Gilden: Der Wert ist real, aber die Motivation erhält sich nicht von selbst.
+Das ist inzwischen die dritte Überarbeitung des Skillkonzepts bei Thinkport. Die Gilden werden also nicht abgeschafft. Sie bleiben ein wichtiger Ort für Wissenstransfer, müssen aber so gestaltet werden, dass ihre Aktivität nicht allein von freiwilligem Engagement und gut gefüllten Kalendern abhängt.
 
 ## Eine Gilde ist der Ort, an dem Projektarbeit ehrlich werden kann
 
@@ -33,13 +33,21 @@ Das ist kein nettes Extra neben der eigentlichen Arbeit. So wird eine Beratung l
 
 Die typische Antwort auf sinkende Beteiligung lautet: Die Leute sollen sich einfach mehr kümmern. Das funktioniert selten. Den meisten Kolleginnen und Kollegen ist das Thema durchaus wichtig. Sie müssen sich nur zwischen einer sichtbaren Kundenverpflichtung und einer Aktivität entscheiden, deren Nutzen vielleicht erst später sichtbar wird.
 
-Wenn Gildenarbeit nur auf Begeisterung beruht, wird sie still und leise zur unbezahlten emotionalen Arbeit einer kleinen Gruppe zuverlässiger Menschen. Sie bereiten Sessions vor, suchen Vortragende, reservieren Räume, schreiben Follow-ups und sorgen dafür, dass sich das Treffen angenehm anfühlt. Irgendwann fragen sich selbst die engagiertesten Organisatorinnen und Organisatoren, warum sie das alles allein tragen.
+Wenn Gildenarbeit nur auf Begeisterung beruht, wird sie still und leise zur unbezahlten emotionalen Arbeit einer kleinen Gruppe zuverlässiger Menschen. Sie bereiten Sessions vor, suchen Vortragende, reservieren Räume, schreiben Follow-ups und sorgen dafür, dass sich das Treffen angenehm anfühlt. Gleichzeitig bleibt die Beteiligung der übrigen Kolleginnen und Kollegen niedrig. Irgendwann fragen sich selbst die engagiertesten Organisatorinnen und Organisatoren, warum sie das alles allein tragen.
 
 Das ist kein Motivationsproblem dieser Menschen. Es ist ein Organisationsproblem.
 
-## Die Community braucht eine echte Betreuung
+## Die nächste Überarbeitung braucht mehr Verbindlichkeit
 
-Die praktischste Massnahme ist eine feste Person für die Moderation der Gilden. Man kann sich diese Rolle wie einen Scrum Master für das Gildensystem vorstellen: Diese Person besitzt nicht jedes Thema, macht es aber für Menschen mit Ideen leichter, sich einzubringen.
+Eine naheliegende Antwort ist ein Top-down-Prinzip: Themen werden vorgegeben, und bestimmte Personen werden verbindlich verpflichtet, Aufgaben für eine Gilde zu übernehmen. Das kann helfen, wenn freiwillige Teilnahme allein nicht mehr ausreicht. Regelmässige Beiträge, feste Verantwortlichkeiten und ein gemeinsamer Themenrahmen machen sichtbar, dass Wissenstransfer Teil der Arbeit ist.
+
+Dieser Ansatz ist trotzdem nicht automatisch die perfekte Lösung. Verpflichtungen können Aktivität erzeugen, aber noch keine echte Neugier. Wenn Gilden nur zusätzliche Pflichttermine werden, verlieren sie genau den offenen Charakter, der sie wertvoll macht. Die Herausforderung der dritten Überarbeitung besteht deshalb darin, Verbindlichkeit und inhaltliche Eigenverantwortung zusammenzubringen.
+
+Dazu gehören realistisch eingeplante Zeit, klare Erwartungen an die Beiträge und Themen, die einen Bezug zu den Projekten und Fähigkeiten im Unternehmen haben. Ein Top-down-Rahmen kann den Start und den Rhythmus vorgeben. Die Qualität der Gespräche und die konkreten Erkenntnisse müssen aber weiterhin von den Menschen kommen, die in den Gilden zusammenarbeiten.
+
+## Auch ein verbindliches Modell braucht Betreuung
+
+Die praktischste Ergänzung ist eine feste Person für die Moderation der Gilden. Man kann sich diese Rolle wie einen Scrum Master für das Gildensystem vorstellen: Diese Person besitzt nicht jedes Thema, sorgt aber dafür, dass Vorgaben, Verantwortlichkeiten und Beiträge nicht im Alltag verschwinden.
 
 Diese Person kann den organisatorischen Druck von den Freiwilligen nehmen:
 
@@ -71,4 +79,4 @@ Das wichtigste Ritual ist gleichzeitig das einfachste: den Kreis schliessen. Jed
 
 Technologie entwickelt sich zu schnell, als dass ein Unternehmen seine gesamte Weiterbildung an externe Kurse und Newsletter von Anbietern auslagern könnte. Wir brauchen Orte, an denen Menschen ihre Erfahrungen austauschen können, während der Wandel noch stattfindet – nicht erst sechs Monate später, wenn der Trend zum Pflichtfeld geworden ist.
 
-Wenn wir möchten, dass Kolleginnen und Kollegen Energie über das unmittelbare Projekt hinaus investieren, müssen wir diese Investition zu einem Teil der Arbeit machen. Gilden brauchen Zeit, Unterstützung, Aufmerksamkeit und eine Person, die das System in Bewegung hält. Goodwill kann das erste Feuer entzünden, aber allein wird er es nicht am Brennen halten.
+Die Gilden sind also nicht am Ende. Sie stehen an einem Punkt, an dem ihre nächste Form bewusst gestaltet werden muss. Wenn wir möchten, dass Kolleginnen und Kollegen Energie über das unmittelbare Projekt hinaus investieren, müssen wir diese Investition zu einem Teil der Arbeit machen. Gilden brauchen Zeit, Unterstützung, Aufmerksamkeit und eine klare Balance aus verbindlichem Rahmen und gemeinsamer Verantwortung. Goodwill kann das erste Feuer entzünden, aber allein wird er es nicht am Brennen halten.

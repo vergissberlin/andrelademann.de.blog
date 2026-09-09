@@ -12,15 +12,15 @@ tags:
   - learning
 heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
-description: "Company guilds create room for honest learning beyond client projects, but only when someone keeps the fire supplied."
+description: "Seven of Thinkport's original thirteen guilds remain active. The guilds have not failed, but their next shape needs more commitment to make knowledge transfer work."
 canonicalURL: https://blog.andrelademann.de/posts/how-to-keep-company-guilds-alive
 ---
 
-Continuing education at a company is never finished. Courses and certificates matter, but the real work starts when colleagues share where they got stuck, what they tried, and what they would do differently next time.
+The guilds at Thinkport have not failed. They still exist. Of the original thirteen guilds, seven are active today. That is not necessarily a problem: when a guild dissolves, it can also mean that its topic is no longer relevant enough to the people involved. A guild does not need to be kept alive at any cost.
 
-That is why we introduced guilds at Thinkport: a place to share knowledge across projects, compare experiences, and think about what comes next. At a client, admitting that an approach failed or that you do not know the answer can feel expensive. Internally, it should feel normal.
+The more important question is how the remaining guilds should be shaped. Overall activity is too low for a company whose main value comes from the knowledge of its people. Guilds are meant to move knowledge between colleagues, teams, and projects. When too little happens there, an important part of that value remains unused.
 
-Two years in, though, the first excitement has faded. The people who cared deeply still turn up. Everyone else has a project deadline, a full calendar, and a perfectly reasonable reason to skip this one meeting. That is the hard part about guilds: the value is real, but the motivation does not maintain itself.
+This is now Thinkport's third revision of the skills concept. The guilds are not being removed. They remain an important place for knowledge transfer, but they need to be shaped so that activity does not depend only on voluntary effort and already crowded calendars.
 
 ## A guild is where project work can become honest
 
@@ -38,9 +38,17 @@ When guild work relies purely on enthusiasm, it quietly becomes unpaid emotional
 
 That is not a motivation problem in those people. It is a design problem in the organisation.
 
-## Give the community an actual caretaker
+## The next revision needs more commitment
 
-The most practical intervention is a dedicated guild facilitator. Think of the role as a Scrum Master for the guild system: someone who does not own every topic, but makes it easier for the people with ideas to contribute.
+One obvious answer is a top-down model: topics are set in advance, and specific people are required to take on defined tasks for a guild. That can help when voluntary participation alone is no longer enough. Regular contributions, clear ownership, and a shared topic framework make it visible that knowledge transfer is part of the work.
+
+That approach is not automatically the perfect solution, though. Obligations can create activity, but they cannot create genuine curiosity. If guilds become nothing more than extra mandatory meetings, they lose the open character that makes them valuable. The challenge of this third revision is to combine commitment with meaningful ownership of the content.
+
+That means protected time, clear expectations for contributions, and topics connected to the projects and skills in the company. A top-down framework can set the starting point and the rhythm. The quality of the conversations and the useful insights still need to come from the people working together in the guilds.
+
+## Even a committed model needs a caretaker
+
+The most practical addition is a dedicated guild facilitator. Think of the role as a Scrum Master for the guild system: someone who does not own every topic, but makes sure that expectations, ownership, and contributions do not disappear into day-to-day work.
 
 That person can take the organisational weight off volunteers:
 
@@ -72,4 +80,4 @@ The useful ritual is also the simplest one: close the loop. Start each session w
 
 Technology is moving too quickly for a company to outsource all of its learning to external courses and vendor newsletters. We need spaces where people can compare notes while the change is still happening, not six months later when the trend has become a checkbox.
 
-If we want colleagues to invest energy beyond the immediate project, we have to make that investment part of the work. Give guilds time, support, attention, and a person who keeps the system moving. Goodwill may light the first fire, but it will not keep it burning on its own.
+The guilds are not at the end. They are at a point where their next shape needs to be designed deliberately. If we want colleagues to invest energy beyond the immediate project, we have to make that investment part of the work. Give guilds time, support, attention, and a clear balance between a committed framework and shared responsibility. Goodwill may light the first fire, but it will not keep it burning on its own.
