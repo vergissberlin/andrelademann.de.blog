@@ -15,6 +15,8 @@ ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 description: "Gilden schaffen Raum für Wissenstransfer, aber ihre nächste Form braucht oft mehr Verbindlichkeit als freiwilliges Engagement allein bieten kann."
 ---
 
+Es ist nicht das erste Mal, dass ich in einem Unternehmen die Einführung von Gilden zum horizontalen Wissensaustausch unterstützt oder geleitet habe. Und es ist auch nicht das erste Mal, dass ich gesehen habe, wie die Aktivität nach der ersten Euphorie nachlässt und man nach Konzepten sucht, um die Motivation hochzuhalten.
+
 Gilden sind nicht gescheitert, nur weil einzelne von ihnen aufgelöst werden. Sie verändern sich. Wenn eine Gilde nach einiger Zeit nicht mehr aktiv ist, kann das auch bedeuten, dass ihr Thema für die Menschen nicht mehr relevant genug ist. Eine Gilde muss nicht um jeden Preis am Leben gehalten werden.
 
 Die wichtigere Frage ist deshalb, wie die verbleibenden Gilden gestaltet werden. Das zeigt sich auch bei Thinkport: Nach zwei Jahren sind von ursprünglich 13 Gilden noch vier aktiv. Die Aktivität ist insgesamt zu gering für ein Unternehmen, dessen wesentlicher Wert im Wissen seiner Mitarbeiterinnen und Mitarbeiter liegt. Gilden sollen Wissen zwischen Kolleginnen und Kollegen, zwischen Teams und zwischen Projekten bewegen. Wenn dort zu wenig passiert, bleibt ein wichtiger Teil dieses Werts ungenutzt.

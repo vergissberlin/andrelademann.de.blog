@@ -16,6 +16,8 @@ description: "Guilds create room for knowledge transfer, but their next shape of
 canonicalURL: https://blog.andrelademann.de/posts/how-to-keep-company-guilds-alive
 ---
 
+This is not the first time I have supported or led the introduction of guilds for horizontal knowledge exchange in a company. Nor is it the first time I have seen activity fade after the initial excitement and an organisation start looking for ways to keep motivation high.
+
 Guilds have not failed simply because some of them dissolve. They change. When a guild is no longer active after a while, it can also mean that its topic is no longer relevant enough to the people involved. A guild does not need to be kept alive at any cost.
 
 The more important question is how the remaining guilds should be shaped. Thinkport is one example: after two years, four of its original thirteen guilds remain active. Overall activity is too low for a company whose main value comes from the knowledge of its people. Guilds are meant to move knowledge between colleagues, teams, and projects. When too little happens there, an important part of that value remains unused.
