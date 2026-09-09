@@ -37,6 +37,11 @@ export default defineAstroPaperConfig({
   shareLinks: [
     { name: "x", url: "https://x.com/intent/post?url=" },
     { name: "linkedin", url: "https://www.linkedin.com/shareArticle?url=" },
+    {
+      name: "dailydev",
+      url: "https://daily.dev/",
+      linkTitle: "Share this post on daily.dev",
+    },
     { name: "telegram", url: "https://t.me/share/url?url=" },
     { name: "mail", url: "mailto:?subject=See%20this%20post&body=" },
     { name: "xing", url: "https://www.xing.com/spi/shares/new?url=" },
