@@ -8,8 +8,8 @@ draft: false
 tags:
   - collaboration
   - learning
-heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero.png"
-ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero.png"
+heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v2.png"
+ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v2.png"
 description: "Company guilds create room for honest learning beyond client projects, but only when someone keeps the fire supplied."
 canonicalURL: https://blog.andrelademann.de/how-to-keep-company-guilds-alive
 ---
