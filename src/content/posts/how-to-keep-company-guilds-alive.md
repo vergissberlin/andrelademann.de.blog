@@ -4,7 +4,7 @@ pubDatetime: 2026-09-09T09:00:00.000Z
 title: "Guilds Do Not Run on Goodwill Forever"
 slug: how-to-keep-company-guilds-alive
 featured: false
-draft: true
+draft: false
 tags:
   - collaboration
   - learning

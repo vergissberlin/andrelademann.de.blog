@@ -13,6 +13,13 @@ Generate the actual header image for a blog post, not merely a prompt. This skil
 - Build the image around the article's central claim, not just its broad category. A post about an AI usage habit, for example, needs a meaningful human or workspace moment rather than a stock robot.
 - Respect user-supplied visual direction. If no direction is given, make a tasteful choice that serves the article without adding invented products, companies, events, or claims.
 
+## André Lademann reference images
+
+- `assets/andre-lademann-reference/portrait.png` is the image-generation-ready primary identity reference for André; `portrait.heic` preserves the original source photo.
+- `assets/andre-lademann-reference/workspace.png` is a supporting reference for his appearance and working environment.
+- When the user asks to show André, inspect the relevant references and provide them to the image-generation flow as identity references. Preserve his recognisable appearance without copying the reference scene, outfit, or screen content unless requested.
+- These files are private skill assets. Keep them outside `public/` and do not link them from a post.
+
 ## Generate with Codex or ChatGPT
 
 - In Codex or ChatGPT, use the built-in image-generation capability directly. Do not stop at an `image-prompt` or ask the user to generate the image elsewhere.
