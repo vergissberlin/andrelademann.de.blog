@@ -12,10 +12,10 @@ tags:
   - lernen
 heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
-description: "Bei Thinkport sind sieben von ursprünglich 13 Gilden aktiv. Die Gilden sind nicht gescheitert, aber ihre nächste Form braucht mehr Verbindlichkeit für echten Wissenstransfer."
+description: "Bei Thinkport sind nach zwei Jahren noch vier von ursprünglich 13 Gilden aktiv. Die Gilden sind nicht gescheitert, aber ihre nächste Form braucht mehr Verbindlichkeit für echten Wissenstransfer."
 ---
 
-Die Gilden bei Thinkport sind nicht gescheitert. Sie existieren weiter. Von ursprünglich 13 Gilden sind heute noch sieben aktiv. Das ist zunächst völlig in Ordnung: Wenn sich eine Gilde auflöst, kann das auch bedeuten, dass ihr Thema für die Menschen nicht mehr relevant genug ist. Eine Gilde muss nicht um jeden Preis am Leben gehalten werden.
+Die Gilden bei Thinkport sind nicht gescheitert. Sie existieren weiter. Nach zwei Jahren sind von ursprünglich 13 Gilden heute noch vier aktiv. Das ist zunächst völlig in Ordnung: Wenn sich eine Gilde auflöst, kann das auch bedeuten, dass ihr Thema für die Menschen nicht mehr relevant genug ist. Eine Gilde muss nicht um jeden Preis am Leben gehalten werden.
 
 Die wichtigere Frage ist deshalb, wie die verbleibenden Gilden gestaltet werden. Die Aktivität ist insgesamt zu gering für ein Unternehmen, dessen wesentlicher Wert im Wissen seiner Mitarbeiterinnen und Mitarbeiter liegt. Gilden sollen Wissen zwischen Kolleginnen und Kollegen, zwischen Teams und zwischen Projekten bewegen. Wenn dort zu wenig passiert, bleibt ein wichtiger Teil dieses Werts ungenutzt.
 

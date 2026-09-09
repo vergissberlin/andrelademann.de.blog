@@ -12,11 +12,11 @@ tags:
   - learning
 heroImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
 ogImage: "/images/posts/2026/how-to-keep-company-guilds-alive/hero-v4.png"
-description: "Seven of Thinkport's original thirteen guilds remain active. The guilds have not failed, but their next shape needs more commitment to make knowledge transfer work."
+description: "After two years, four of Thinkport's original thirteen guilds remain active. The guilds have not failed, but their next shape needs more commitment to make knowledge transfer work."
 canonicalURL: https://blog.andrelademann.de/posts/how-to-keep-company-guilds-alive
 ---
 
-The guilds at Thinkport have not failed. They still exist. Of the original thirteen guilds, seven are active today. That is not necessarily a problem: when a guild dissolves, it can also mean that its topic is no longer relevant enough to the people involved. A guild does not need to be kept alive at any cost.
+The guilds at Thinkport have not failed. They still exist. After two years, four of the original thirteen guilds are active today. That is not necessarily a problem: when a guild dissolves, it can also mean that its topic is no longer relevant enough to the people involved. A guild does not need to be kept alive at any cost.
 
 The more important question is how the remaining guilds should be shaped. Overall activity is too low for a company whose main value comes from the knowledge of its people. Guilds are meant to move knowledge between colleagues, teams, and projects. When too little happens there, an important part of that value remains unused.
 
