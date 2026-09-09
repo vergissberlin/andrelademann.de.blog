@@ -17,7 +17,6 @@ import AdjacentPostNav from "./_components/AdjacentPostNav.astro";
 import Sources from "@/components/Sources.astro";
 import DownloadCard from "@/components/DownloadCard.astro";
 import config from "@/config";
-import LanguageSwitcher from "@/components/LanguageSwitcher.astro";
 import { filterPostsByLocale, getPostLocale } from "@/utils/postLocale";
 
 export async function getStaticPaths() {
@@ -91,6 +90,19 @@ const alternateLinks = translationPosts.map(candidate => ({
     Astro.site
   ).href,
 }));
+const alternatePost = translationPosts.find(
+  candidate => getPostLocale(candidate) !== locale
+);
+const languageTarget = alternatePost
+  ? {
+      url: getPostUrl(
+        alternatePost.id,
+        alternatePost.filePath,
+        getPostLocale(alternatePost)
+      ),
+      locale: getPostLocale(alternatePost),
+    }
+  : undefined;
 const pageCanonicalURL =
   canonicalURL ??
   new URL(getPostUrl(post.id, post.filePath, locale), Astro.site).href;
@@ -124,7 +136,7 @@ const ogImage = ogImageUrl
   pubDatetime={pubDatetime}
   modDatetime={modDatetime}
 >
-  <Header />
+  <Header {languageTarget} />
 
   <BackButton />
 
@@ -163,8 +175,6 @@ const ogImage = ogImageUrl
     >
       {title}
     </h1>
-
-    {translationPosts.length > 1 && <LanguageSwitcher {post} />}
 
     <div class="my-2 flex items-center gap-2">
       <Datetime {pubDatetime} {modDatetime} {timezone} size="lg" />
