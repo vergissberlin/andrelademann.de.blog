@@ -17,6 +17,7 @@ Generate the actual header image for a blog post, not merely a prompt. This skil
 
 - `assets/andre-lademann-reference/portrait.png` is the image-generation-ready primary identity reference for André; `portrait.heic` preserves the original source photo.
 - `assets/andre-lademann-reference/workspace.png` is a supporting reference for his appearance and working environment.
+- `assets/andre-lademann-reference/stickered-laptop-back.jpg` preserves the original photo of André's personal sticker-covered laptop; the matching `.png` is the image-generation-ready version. Use it when a blog image should include his laptop; preserve the distinctive lived-in sticker collage without reproducing readable third-party text or logos unless explicitly requested.
 - When the user asks to show André, inspect the relevant references and provide them to the image-generation flow as identity references. Preserve his recognisable appearance without copying the reference scene, outfit, or screen content unless requested.
 - These files are private skill assets. Keep them outside `public/` and do not link them from a post.
 
