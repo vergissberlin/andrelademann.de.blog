@@ -10,6 +10,8 @@ draft: false
 tags:
   - ai
   - learning
+heroImage: "/images/posts/2026/the-new-assembler-developers/hero-en.png"
+ogImage: "/images/posts/2026/the-new-assembler-developers/hero-en.png"
 description: "When I started coding, assembler was already history. Now I wonder whether trusting AI-written code is the same leap of faith my predecessors once made — only stranger, because the machine isn't deterministic."
 ---
 

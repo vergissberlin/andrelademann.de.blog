@@ -10,6 +10,8 @@ draft: false
 tags:
   - ki
   - lernen
+heroImage: "/images/posts/2026/the-new-assembler-developers/hero-de.png"
+ogImage: "/images/posts/2026/the-new-assembler-developers/hero-de.png"
 description: "Als ich anfing zu programmieren, war Assembler schon Geschichte. Jetzt frage ich mich, ob das Vertrauen in KI-geschriebenen Code derselbe Vertrauensvorschuss ist, den meine Vorgänger einst geben mussten — nur seltsamer, weil die Maschine nicht deterministisch ist."
 ---
 
@@ -19,7 +21,7 @@ Als ich um die Jahrtausendwende anfing zu programmieren, war Assembler für mich
 
 ## Vertrauen musste schon einmal erst verdient werden
 
-Der Sprung von maschinennahen Sprachen zu höheren Programmiersprachen wurde nicht überall bejubelt. Jede Entwicklergeneration, die diesen Sprung gemacht hat, musste einem Compiler vertrauen, den sie nicht vollständig kontrollierte — dem Vertrauen, dass er mit den geschriebenen Anweisungen das Richtige tut. Dieses Vertrauen gab es nicht geschenkt. Es musste erarbeitet werden, Compiler-Version für Compiler-Version, Projekt für Projekt, bis aus Skepsis irgendwann Routine wurde.
+Der Sprung von Maschinensprachen zu höheren Programmiersprachen wurde nicht überall bejubelt. Jede Entwicklergeneration, die diesen Sprung gemacht hat, musste einem Compiler vertrauen, den sie nicht vollständig kontrollierte — dem Vertrauen, dass er mit den geschriebenen Anweisungen das Richtige tut. Dieses Vertrauen gab es nicht geschenkt. Es musste erarbeitet werden, Compiler-Version für Compiler-Version, Projekt für Projekt, bis aus Skepsis irgendwann Routine wurde.
 
 Höhere Programmiersprachen haben sich durchgesetzt, weil man mit ihnen deutlich effizienter arbeiten kann. Der Preis dafür war eine Ebene der Kontrolle, die wir bereitwillig abgegeben haben — im Tausch gegen Geschwindigkeit.
 
