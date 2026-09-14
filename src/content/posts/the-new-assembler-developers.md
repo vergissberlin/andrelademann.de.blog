@@ -15,6 +15,8 @@ description: "When I started coding, assembler was already history. Now I wonder
 
 When I started coding around the turn of the millennium, assembler was already history for me. Turbo Pascal, Perl, Java, PHP, JavaScript — that was the toolbox. I learned, in theory, how memory works and how the binary system underneath it all behaves. I never set a register by hand. I never punched a single card. There was no need to: higher-level languages were simply a faster way to get things done.
 
+![Back to the Future Part II clip of two boys at an arcade cabinet, captioned "You mean you have to use your hands? That's like a baby's toy"](/images/posts/2026/the-new-assembler-developers/hands-for-this.gif)
+
 ## Trust Had to Be Earned Once Before
 
 That leap from close-to-the-machine languages to higher-level ones wasn't universally welcomed. Every generation of developers who made that jump had to place trust in a compiler they didn't fully control — trust that it would do the right thing with the instructions they wrote. That trust wasn't given freely. It was earned, compiler release by compiler release, project by project, until scepticism quietly gave way to habit.

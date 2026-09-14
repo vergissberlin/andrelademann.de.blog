@@ -15,6 +15,8 @@ description: "Als ich anfing zu programmieren, war Assembler schon Geschichte. J
 
 Als ich um die Jahrtausendwende anfing zu programmieren, war Assembler für mich bereits Geschichte. Turbo Pascal, Perl, Java, PHP, JavaScript — das war der Werkzeugkasten. Ich habe zwar gelernt, wie Speicher theoretisch funktioniert und wie das binäre System darunter arbeitet. Aber ich habe nie von Hand ein Register gesetzt. Ich habe nie eine einzige Lochkarte gestanzt. Es gab auch keine Notwendigkeit dafür: Höhere Programmiersprachen waren schlicht der schnellere Weg, um etwas zu entwickeln.
 
+![Filmausschnitt aus Zurück in die Zukunft II: Zwei Jungen an einem Spielautomaten, im Bild die Bildunterschrift „Man muss dafür die Hände benutzen? Das ist ja wie ein Baby-Spielzeug"](/images/posts/2026/the-new-assembler-developers/hands-for-this.gif)
+
 ## Vertrauen musste schon einmal erst verdient werden
 
 Der Sprung von maschinennahen Sprachen zu höheren Programmiersprachen wurde nicht überall bejubelt. Jede Entwicklergeneration, die diesen Sprung gemacht hat, musste einem Compiler vertrauen, den sie nicht vollständig kontrollierte — dem Vertrauen, dass er mit den geschriebenen Anweisungen das Richtige tut. Dieses Vertrauen gab es nicht geschenkt. Es musste erarbeitet werden, Compiler-Version für Compiler-Version, Projekt für Projekt, bis aus Skepsis irgendwann Routine wurde.
