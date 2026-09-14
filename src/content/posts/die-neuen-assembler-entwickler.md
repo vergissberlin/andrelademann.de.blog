@@ -6,7 +6,7 @@ slug: die-neuen-assembler-entwickler
 locale: de
 translationKey: the-new-assembler-developers
 featured: false
-draft: true
+draft: false
 tags:
   - ki
   - lernen

@@ -6,7 +6,7 @@ slug: the-new-assembler-developers
 locale: en
 translationKey: the-new-assembler-developers
 featured: false
-draft: true
+draft: false
 tags:
   - ai
   - learning
