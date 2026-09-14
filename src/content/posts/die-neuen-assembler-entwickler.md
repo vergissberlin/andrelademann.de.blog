@@ -10,8 +10,8 @@ draft: false
 tags:
   - ki
   - lernen
-heroImage: "/images/posts/2026/the-new-assembler-developers/hero-de.png"
-ogImage: "/images/posts/2026/the-new-assembler-developers/hero-de.png"
+heroImage: "/images/posts/2026/the-new-assembler-developers/hero.png"
+ogImage: "/images/posts/2026/the-new-assembler-developers/hero.png"
 description: "Als ich anfing zu programmieren, war Assembler schon Geschichte. Jetzt frage ich mich, ob das Vertrauen in KI-geschriebenen Code derselbe Vertrauensvorschuss ist, den meine Vorgänger einst geben mussten — nur seltsamer, weil die Maschine nicht deterministisch ist."
 ---
 
