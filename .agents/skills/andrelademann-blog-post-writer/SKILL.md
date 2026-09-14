@@ -49,6 +49,19 @@ canonicalURL: https://blog.andrelademann.de/concise-kebab-case-slug
 - Use two to four lowercase kebab-case tags. Keep `draft: true` unless the user explicitly asks otherwise.
 - Use the same generated file for `heroImage` and `ogImage`. These power the post's header and social metadata as one coherent visual.
 
+## Language and translations
+
+The default language is British English, with `locale: en` in frontmatter. Only add a German edition when the user asks for one or confirms it in the guided flow.
+
+When a post has both an English and a German edition:
+
+- Give each language its own file, its own kebab-case `slug` (German posts get a genuinely German slug, not a transliteration), and its own `locale` (`en` or `de`).
+- Both files share one `translationKey` — reuse the English slug as the key, since it's already stable and unique. This is how the site pairs the two editions of the same article.
+- The German edition is a fresh piece of writing in André's German voice (see `pair-programmierung.md`, `gilden-laufen-nicht-auf-goodwill.md`, or `gute-retrospektiven-fuhlen-sich-wie-pflicht-an.md` for tone), not a literal or mechanical translation of the English draft. Translate `title` and `description` accordingly, and use `du`-form direct address consistent with the rest of the German-language archive.
+- Translate tags into their established German equivalents where the archive already has one (`ai` → `ki`, `learning` → `lernen`, `collaboration` → `zusammenarbeit`, `agile` → `agil`); coin a sensible new German tag, rather than reusing the English one, when no precedent exists yet.
+- Both editions reuse the exact same `heroImage`/`ogImage` path — generate the header image once, not once per language.
+- Keep `pubDatetime` identical (or intentionally offset if the user wants staggered publication) across the pair, and keep both at the same `draft` status unless told otherwise.
+
 ## Generate the header image directly
 
 Every new post receives a header image in the same task unless the user supplies an asset, explicitly opts out, or asks to keep visual work separate.
