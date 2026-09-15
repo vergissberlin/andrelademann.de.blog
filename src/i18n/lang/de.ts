@@ -24,6 +24,14 @@ export default {
     downloadHeading: "Kostenloser Download",
     downloadCtaLabel: "Herunterladen",
   },
+  lightbox: {
+    title: "Bildergalerie",
+    close: "Bildergalerie schliessen",
+    next: "Nächstes Bild",
+    previous: "Vorheriges Bild",
+    openImage: "Bild in der Galerie öffnen",
+    counter: "Bild {{current}} von {{total}}",
+  },
   pagination: {
     prev: "Zurück",
     next: "Weiter",

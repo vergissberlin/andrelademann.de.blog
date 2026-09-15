@@ -24,6 +24,14 @@ export default {
     downloadHeading: "Free download",
     downloadCtaLabel: "Download",
   },
+  lightbox: {
+    title: "Image gallery",
+    close: "Close image gallery",
+    next: "Next image",
+    previous: "Previous image",
+    openImage: "Open image in gallery",
+    counter: "Image {{current}} of {{total}}",
+  },
   pagination: {
     prev: "Prev",
     next: "Next",

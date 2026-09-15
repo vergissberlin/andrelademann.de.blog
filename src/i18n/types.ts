@@ -22,6 +22,14 @@ export interface UIStrings {
     downloadHeading: string;
     downloadCtaLabel: string;
   };
+  lightbox: {
+    title: string;
+    close: string;
+    next: string;
+    previous: string;
+    openImage: string;
+    counter: string;
+  };
   pagination: {
     prev: string;
     next: string;

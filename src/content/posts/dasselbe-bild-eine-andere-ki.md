@@ -14,7 +14,7 @@ tags:
   - zukunft
 heroImage: "/images/posts/2026/the-same-image-a-different-ai/hero-split-view.png"
 ogImage: "/images/posts/2026/the-same-image-a-different-ai/hero-split-view.png"
-description: "Ein altes KI-Bild taucht in Edge wieder auf – und seine Neuauflage zeigt, wie absurd schnell sich Bildgenerierung entwickelt hat…"
+description: "Ein KI-Marktbild aus dem Jahr 2022 macht den Sprung von kaputter Anatomie zu glaubwürdigen Bildern sichtbar…"
 canonicalURL: https://blog.andrelademann.de/de/posts/dasselbe-bild-eine-andere-ki
 ---
 
@@ -24,11 +24,15 @@ Das klingt nach einem kleinen Experiment. Ist es aber nicht. Die beiden Bilder s
 
 ![Die Marktszene als Split View: 2022 links und 2026 rechts](/images/posts/2026/the-same-image-a-different-ai/hero-split-view.png)
 
-## Ein altes Bild in einem neuen Browser-Tab
-
-Ich habe neulich einen neuen Tab in Microsoft Edge geöffnet und plötzlich wieder dieses alte Bild gesehen. Ich habe es sofort erkannt: ein Markt, bunte Regale, frisches Obst und Gemüse, ein Mann, der nach einer Flasche greift, und eine Frau mit Einkaufswagen.
+## Warum Gesichter und Hände damals so oft entgleisten
 
 Das Bild stammt aus der frühen Phase der Bildgenerierung für die breite Masse, ungefähr aus dem Jahr 2022. Viele von uns haben damals Modelle von Hugging Face heruntergeladen und auf dem Spielerechner im Büro laufen lassen, bevor Midjourney den ganzen Prozess deutlich einfacher gemacht hat.
+
+Viele dieser frühen Systeme arbeiteten mit Diffusion. Sie starteten mit Rauschen und entfernten dieses Schritt für Schritt, indem sie aus ihren Trainingsdaten ableiteten, welche Muster wahrscheinlich an welche Stelle gehören. Das Modell zeichnete also keine Szene mit einem expliziten 3D-Verständnis und prüfte danach, ob die Anatomie stimmt. Es erzeugte ein Bild, das statistisch plausibel aussehen sollte.
+
+Bei Gesichtern zeigte sich diese Schwäche sofort. Augen, Nase und Mund müssen in einem sehr engen räumlichen Verhältnis zueinander stehen. Schon ein kleiner Fehler konnte ein Gesicht in eine Fratze verwandeln. Hände waren noch schwieriger: viele mögliche Posen, fünf Finger, Überlappungen, Berührungen mit Gegenständen und Finger, die sich gegenseitig verdecken. Ausserdem tauchten Hände in den Trainingsbildern oft nur sehr klein, abgeschnitten oder teilweise verdeckt auf.
+
+Das Modell konnte deshalb die Textur einer Hand überzeugend nachahmen, ohne zuverlässig zu wissen, wo ein Finger endet und der nächste beginnt. Es setzte lokal plausible Formen zusammen, die in der Gesamtkomposition fast passten, bei genauerem Hinsehen aber anatomisch unmöglich waren. Mehr Auflösung machte die Fehler oft nur schärfer.
 
 Die Ergebnisse sahen noch wild aus. Gesichter zerflossen. Hände hatten ihre eigene Anatomie. Beschriftungen verwandelten sich in dekorativen Unsinn. Ein Bild zu bekommen, das auch nur halbwegs realistisch aussah, fühlte sich schon wie ein kleiner Erfolg an.
 

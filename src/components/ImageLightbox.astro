@@ -1,0 +1,250 @@
+---
+import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
+import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
+import IconX from "@/assets/icons/IconX.svg";
+import { useTranslations } from "@/i18n";
+
+type Props = {
+  /** CSS selector for the image collection that this gallery controls. */
+  scopeSelector?: string;
+  /** Unique id for the dialog when a page contains more than one gallery. */
+  id?: string;
+};
+
+const { scopeSelector = "#article", id = "image-lightbox" } = Astro.props;
+const t = useTranslations(Astro.currentLocale);
+const labels = {
+  title: t.lightbox.title,
+  close: t.lightbox.close,
+  next: t.lightbox.next,
+  previous: t.lightbox.previous,
+  openImage: t.lightbox.openImage,
+  counter: t.lightbox.counter,
+};
+const titleId = `${id}-title`;
+const counterId = `${id}-counter`;
+---
+
+<dialog
+  id={id}
+  class="image-lightbox text-foreground"
+  aria-labelledby={titleId}
+  data-image-lightbox-modal
+  data-image-lightbox-scope={scopeSelector}
+  data-image-lightbox-counter={labels.counter}
+  data-image-lightbox-open-label={labels.openImage}
+>
+  <div class="image-lightbox__stage">
+    <div class="image-lightbox__toolbar">
+      <p id={titleId} class="image-lightbox__title">{labels.title}</p>
+      <button
+        type="button"
+        class="image-lightbox__button image-lightbox__close"
+        data-image-lightbox-close
+        aria-label={labels.close}
+      >
+        <IconX aria-hidden="true" />
+      </button>
+    </div>
+
+    <button
+      type="button"
+      class="image-lightbox__button image-lightbox__navigation image-lightbox__previous"
+      data-image-lightbox-previous
+      aria-label={labels.previous}
+    >
+      <IconChevronLeft aria-hidden="true" />
+    </button>
+
+    <figure class="image-lightbox__figure">
+      <img data-image-lightbox-image class="image-lightbox__image" alt="" />
+      <figcaption data-image-lightbox-caption></figcaption>
+    </figure>
+
+    <button
+      type="button"
+      class="image-lightbox__button image-lightbox__navigation image-lightbox__next"
+      data-image-lightbox-next
+      aria-label={labels.next}
+    >
+      <IconArrowRight aria-hidden="true" />
+    </button>
+
+    <p id={counterId} class="image-lightbox__counter" aria-live="polite"></p>
+  </div>
+</dialog>
+
+<script>
+  import { initialiseImageLightboxes } from "@/scripts/imageLightbox";
+
+  initialiseImageLightboxes();
+  document.addEventListener("astro:page-load", () =>
+    initialiseImageLightboxes()
+  );
+</script>
+
+<style>
+  .image-lightbox {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 1rem;
+    border: 0;
+    background: transparent;
+  }
+
+  .image-lightbox::backdrop {
+    background: rgb(4 7 12 / 0.9);
+    backdrop-filter: blur(0.5rem);
+  }
+
+  .image-lightbox__stage {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-lightbox__toolbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .image-lightbox__title,
+  .image-lightbox__counter {
+    margin: 0;
+    color: white;
+    font-family: var(--font-google-sans-code), monospace;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .image-lightbox__title {
+    padding: 0.65rem 0.9rem;
+    border: 1px solid rgb(255 255 255 / 0.25);
+    border-radius: 999px;
+    background: rgb(4 7 12 / 0.6);
+  }
+
+  .image-lightbox__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 1px solid rgb(255 255 255 / 0.35);
+    border-radius: 999px;
+    color: white;
+    background: rgb(4 7 12 / 0.65);
+    transition:
+      border-color 150ms ease,
+      background-color 150ms ease,
+      transform 150ms ease;
+  }
+
+  .image-lightbox__button:hover {
+    border-color: white;
+    background: rgb(255 255 255 / 0.16);
+    transform: scale(1.05);
+  }
+
+  .image-lightbox__button svg {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+
+  .image-lightbox__close {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .image-lightbox__navigation {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  .image-lightbox__navigation:hover {
+    transform: translateY(-50%) scale(1.05);
+  }
+
+  .image-lightbox__previous {
+    left: 0;
+  }
+
+  .image-lightbox__next {
+    right: 0;
+  }
+
+  .image-lightbox__figure {
+    display: flex;
+    max-width: min(88vw, 80rem);
+    max-height: calc(100dvh - 5.5rem);
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .image-lightbox__image {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100dvh - 8rem);
+    border-radius: 0.5rem;
+    object-fit: contain;
+    box-shadow: 0 1.5rem 5rem rgb(0 0 0 / 0.45);
+  }
+
+  .image-lightbox__figure figcaption {
+    max-width: min(88vw, 60rem);
+    color: rgb(255 255 255 / 0.78);
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .image-lightbox__counter {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    .image-lightbox {
+      padding: 0.75rem;
+    }
+
+    .image-lightbox__figure {
+      max-width: calc(100vw - 4.5rem);
+    }
+
+    .image-lightbox__navigation {
+      width: 2.35rem;
+      height: 2.35rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .image-lightbox__button {
+      transition: none;
+    }
+  }
+</style>

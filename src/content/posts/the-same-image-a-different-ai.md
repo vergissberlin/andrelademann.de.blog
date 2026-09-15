@@ -14,7 +14,7 @@ tags:
   - future
 heroImage: "/images/posts/2026/the-same-image-a-different-ai/hero-split-view.png"
 ogImage: "/images/posts/2026/the-same-image-a-different-ai/hero-split-view.png"
-description: "An old AI-generated market scene resurfaced in Edge, and its remake shows how absurdly fast image generation moved…"
+description: "A 2022 AI-generated market scene makes the leap in image quality visible, from broken anatomy to images that need a second look…"
 canonicalURL: https://blog.andrelademann.de/the-same-image-a-different-ai
 ---
 
@@ -24,11 +24,15 @@ It is a tiny time capsule for one of the fastest changes I have ever watched in 
 
 ![The market scene as a split view: 2022 on the left and 2026 on the right](/images/posts/2026/the-same-image-a-different-ai/hero-split-view.png)
 
-## An old image hiding in a new browser tab
-
-I recently opened a new tab in Microsoft Edge and suddenly saw the old picture again. It looked familiar immediately: a market, colourful shelves, fresh produce, a man reaching for a bottle, and a woman with a shopping trolley.
+## Why faces and hands kept falling apart
 
 The image came from that early wave of mass-market image generation, around 2022. Many of us downloaded models from Hugging Face and ran them on the gaming PC in the office before Midjourney made the whole process much easier.
+
+Many of those early systems used diffusion. They started with noise and removed it step by step, estimating from their training data which patterns probably belonged in each place. The model did not draw a scene with an explicit 3D understanding and then check whether the anatomy made sense. It generated an image that looked statistically plausible.
+
+Faces exposed the weakness immediately. Eyes, noses, and mouths have to sit in a very tight spatial relationship, so a small error can turn a face into a grimace. Hands were even harder: many poses, five fingers, occlusion, contact with objects, and fingers crossing one another. Hands also appeared small, cropped, or partly hidden in many training images.
+
+The model could imitate the texture of a hand without reliably knowing where one finger ended and the next began. It assembled locally plausible shapes that almost worked in the overall composition but fell apart when you looked closely. More resolution often only made the mistakes sharper.
 
 The results still looked wild. Faces melted. Hands negotiated their own anatomy. Labels turned into decorative nonsense. Getting anything that looked remotely realistic felt like a minor victory.
 

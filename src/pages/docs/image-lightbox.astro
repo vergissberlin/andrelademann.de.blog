@@ -1,0 +1,42 @@
+---
+import ImageLightbox from "@/components/ImageLightbox.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout
+  title="Image Lightbox"
+  description="Accessible image gallery with full-size viewing and keyboard navigation."
+>
+  <main class="app-layout py-10">
+    <p
+      class="text-accent font-app text-xs font-semibold tracking-widest uppercase"
+    >
+      Component demo
+    </p>
+    <h1 class="mt-3 text-3xl font-bold">Image Lightbox</h1>
+    <p class="text-foreground/70 mt-3 max-w-2xl">
+      Click an image to open it at full size. Use the arrow buttons or your
+      keyboard to move through the gallery, and press Escape to close it.
+    </p>
+
+    <div id="image-lightbox-demo" class="mt-8 grid gap-6 sm:grid-cols-3">
+      <img
+        src="/images/posts/2026/the-same-image-a-different-ai/hero-split-view.png"
+        alt="Split view comparing AI-generated market images from 2022 and 2026"
+        class="w-full rounded-lg object-cover"
+      />
+      <img
+        src="/images/posts/2026/the-same-image-a-different-ai/market-2022.png"
+        alt="Early AI-generated market scene from 2022"
+        class="w-full rounded-lg object-cover"
+      />
+      <img
+        src="/images/posts/2026/the-same-image-a-different-ai/market-2026.png"
+        alt="Newer AI-generated market scene from 2026"
+        class="w-full rounded-lg object-cover"
+      />
+    </div>
+  </main>
+
+  <ImageLightbox scopeSelector="#image-lightbox-demo" />
+</Layout>
