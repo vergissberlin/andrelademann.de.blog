@@ -20,50 +20,34 @@ canonicalURL: https://blog.andrelademann.de/the-same-image-a-different-ai
 
 One of the first AI models that could generate images painted this market. Four years later, I asked today’s technology to paint the same scene again.
 
-It is a tiny time capsule for one of the fastest changes I have ever watched in technology.
-
-![The market scene as a split view: 2022 on the left and 2026 on the right](/images/posts/2026/the-same-image-a-different-ai/hero-split-view.png)
+The comparison shows how quickly image generation changed.
 
 ## Why faces and hands kept falling apart
 
-The image came from that early wave of mass-market image generation, around 2022. Many of us downloaded models from Hugging Face and ran them on the gaming PC in the office before Midjourney made the whole process much easier.
+The old image came from the early mass-market phase of image generation, around 2022. Back then, models from Hugging Face still ran on gaming PCs before Midjourney made access easier.
 
-Many of those early systems used diffusion. They started with noise and removed it step by step, estimating from their training data which patterns probably belonged in each place. The model did not draw a scene with an explicit 3D understanding and then check whether the anatomy made sense. It generated an image that looked statistically plausible.
+Many of those systems used diffusion: they gradually removed noise and assembled statistically plausible patterns from training data. There was no explicit 3D model of the scene and no anatomy check.
 
-Faces exposed the weakness immediately. Eyes, noses, and mouths have to sit in a very tight spatial relationship, so a small error can turn a face into a grimace. Hands were even harder: many poses, five fingers, occlusion, contact with objects, and fingers crossing one another. Hands also appeared small, cropped, or partly hidden in many training images.
+Faces exposed the weakness immediately. Eyes, noses, and mouths have to align precisely, so small errors make a face look wrong. Hands were even harder because of their many poses, fingers, overlaps, and occlusion. In training images, they also often appeared small or cropped.
 
-The model could imitate the texture of a hand without reliably knowing where one finger ended and the next began. It assembled locally plausible shapes that almost worked in the overall composition but fell apart when you looked closely. More resolution often only made the mistakes sharper.
-
-The results still looked wild. Faces melted. Hands negotiated their own anatomy. Labels turned into decorative nonsense. Getting anything that looked remotely realistic felt like a minor victory.
+The models could imitate texture without reliably knowing where fingers began and ended. More resolution usually only made the mistakes sharper: faces melted, hands negotiated their own anatomy, and text turned into nonsense.
 
 Click either original to open it in full resolution.
 
 [![The 2022 version of the AI-generated market scene, from the early consumer image-generation era](/images/posts/2026/the-same-image-a-different-ai/market-2022.png)](/images/posts/2026/the-same-image-a-different-ai/market-2022.png)
 
-## The remake makes the progress impossible to ignore
+## Four years later
 
-The newer version keeps the basic idea: the shop, the shelves, the people, the trolley, and the bright natural light. But almost everything else has changed. The materials look convincing, the people have recognisable expressions, and the composition feels intentional.
+The newer version keeps the market, shelves, people, and trolley, but materials, expressions, and composition are far more convincing.
 
 [![The 2026 version of the AI-generated market scene, recreated with newer image-generation technology](/images/posts/2026/the-same-image-a-different-ai/market-2026.png)](/images/posts/2026/the-same-image-a-different-ai/market-2026.png)
 
-Generated text remains a stubborn problem, but that is a completely different category of problem from the old distorted faces and extra fingers.
+Generated text remains difficult. The most obvious anatomical failures, however, have largely disappeared. In just four years, “obviously generated” became an image that needs a second look.
 
-That is what makes the comparison so striking: the gap between “obviously generated” and “I had to look twice” disappeared incredibly quickly.
+For children, generated images will sit beside photographs, films, and illustrations as something normal. With every image, the important question becomes where it came from and what we are meant to believe.
 
-## A generation grows up with generated content
+Perhaps one day we will choose alternative film endings generated in real time with the same characters and voices.
 
-For children growing up now, generated images will not feel like a novelty. They will sit beside photographs, films, illustrations, adverts, and whatever comes after those categories.
-
-That changes the default question. We will not be able to look at every image and quietly assume that it records something that happened. We will have to ask where it came from, who made it, and what the creator wants us to believe.
-
-A convincing image of a family holiday is already enough to make that feel less certain than it used to.
-
-## The film ending you choose yourself
-
-The next step seems almost obvious, and that is the part that makes me slightly nervous. One day, you might watch a film and choose a different ending, generated in real time with the same characters, voices, world, and visual language.
-
-That future probably sounds further away than it is. When I look at the difference between these two market scenes, I am less confident about making long-term predictions. The distance from distorted faces to believable people was tiny in historical terms — just four years.
-
-The old image appeared in my browser for a few seconds. It left me thinking about the next few decades. Wahnsinn.
+That is why I am cautious about predictions. The distance from distorted faces to believable people was just four years. Wahnsinn.
 
 What is the oldest AI-generated image you still have, and what would you create if you could ask today’s models to remake it?
