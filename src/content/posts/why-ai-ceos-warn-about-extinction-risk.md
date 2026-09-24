@@ -14,6 +14,28 @@ description: "Altman warns Congress about AI risk, then ships the next model. Mu
 canonicalURL: https://blog.andrelademann.de/why-ai-ceos-warn-about-extinction-risk
 heroImage: "/images/posts/2026/why-ai-ceos-warn-about-extinction-risk/hero.png"
 ogImage: "/images/posts/2026/why-ai-ceos-warn-about-extinction-risk/hero.png"
+sources:
+  - title: "Sam Altman's Senate Testimony on Oversight of AI (2023)"
+    url: "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence"
+    note: "Calls for licensing and oversight of frontier AI"
+  - title: "Elon Musk's AI Warning to Tucker Carlson"
+    url: "https://www.cnn.com/2023/04/17/tech/elon-musk-ai-warning-tucker-carlson/index.html"
+    note: "Warns of \"civilisational destruction\""
+  - title: "Geoffrey Hinton on 60 Minutes"
+    url: "https://www.cbsnews.com/news/artificial-intelligence-risks-dangers-geoffrey-hinton-60-minutes/"
+    note: "Explains why he left Google to speak freely about AI risk"
+  - title: "Pause Giant AI Experiments: An Open Letter"
+    url: "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
+    note: "Calls for a six-month pause on frontier training runs, signed by Musk"
+  - title: "Statement on AI Risk (CAIS)"
+    url: "https://www.safe.ai/work/statement-on-ai-risk"
+    note: "Puts AI extinction risk on the same footing as pandemics and nuclear war, signed by Altman"
+  - title: "Yann LeCun Says AI Doomsaying Is Absurd"
+    url: "https://fortune.com/2023/06/15/yann-lecun-ai-godfather-destroy-humanity-threat"
+    note: "Meta's former chief AI scientist pushes back on extinction-risk claims"
+  - title: "Andrew Ng on AI Extinction Risk as Science Fiction"
+    url: "https://thenextweb.com/news/andrew-ng-extinction-science-fiction"
+    note: "Argues the narrative distracts from real, present-day AI harms"
 ---
 
 A LinkedIn poll landed in my feed this week asking why the people building the most powerful AI systems on the planet keep telling us those systems might end civilisation. Six options, one clear pattern in the votes: nobody picked "genuine concern" as the top answer. Regulatory capture and distraction from today's problems led the field.

@@ -14,6 +14,28 @@ description: "Altman warnt den US-Kongress vor KI-Risiken und bringt kurz danach
 canonicalURL: https://blog.andrelademann.de/warum-ki-chefs-vor-dem-weltuntergang-warnen
 heroImage: "/images/posts/2026/why-ai-ceos-warn-about-extinction-risk/hero.png"
 ogImage: "/images/posts/2026/why-ai-ceos-warn-about-extinction-risk/hero.png"
+sources:
+  - title: "Sam Altmans Senatsanhörung zur Aufsicht über KI (2023)"
+    url: "https://www.judiciary.senate.gov/committee-activity/hearings/oversight-of-ai-rules-for-artificial-intelligence"
+    note: "Fordert Lizenzpflicht und Aufsicht für Frontier-KI"
+  - title: "Elon Musks KI-Warnung bei Tucker Carlson"
+    url: "https://www.cnn.com/2023/04/17/tech/elon-musk-ai-warning-tucker-carlson/index.html"
+    note: "Warnt vor „ziviler Zerstörung“"
+  - title: "Geoffrey Hinton bei 60 Minutes"
+    url: "https://www.cbsnews.com/news/artificial-intelligence-risks-dangers-geoffrey-hinton-60-minutes/"
+    note: "Erklärt, warum er Google verließ, um frei über KI-Risiken zu sprechen"
+  - title: "Pause-Letter: Offener Brief gegen riesige KI-Experimente"
+    url: "https://futureoflife.org/open-letter/pause-giant-ai-experiments/"
+    note: "Fordert sechsmonatige Pause bei Frontier-Trainingsläufen, mitunterzeichnet von Musk"
+  - title: "Statement on AI Risk (CAIS)"
+    url: "https://www.safe.ai/work/statement-on-ai-risk"
+    note: "Stellt das Aussterberisiko durch KI auf eine Stufe mit Pandemien und Atomkrieg, mitunterzeichnet von Altman"
+  - title: "Yann LeCun nennt KI-Weltuntergangsszenarien absurd"
+    url: "https://fortune.com/2023/06/15/yann-lecun-ai-godfather-destroy-humanity-threat"
+    note: "Metas ehemaliger Chef-KI-Wissenschaftler widerspricht den Extinction-Warnungen"
+  - title: "Andrew Ng zum KI-Aussterberisiko als Science-Fiction"
+    url: "https://thenextweb.com/news/andrew-ng-extinction-science-fiction"
+    note: "Argumentiert, die Erzählung lenke von echten, heutigen KI-Schäden ab"
 ---
 
 Diese Woche ist mir eine LinkedIn-Umfrage in den Feed gespült worden: Warum warnen ausgerechnet die Leute, die die stärksten KI-Systeme der Welt bauen, ständig davor, dass genau diese Systeme die Zivilisation beenden könnten? Sechs Antwortmöglichkeiten, ein klares Muster in den Stimmen: „Echte Sorge" landete nicht auf Platz eins. Regulatory Capture und Ablenkung von den heutigen Problemen lagen vorn.
