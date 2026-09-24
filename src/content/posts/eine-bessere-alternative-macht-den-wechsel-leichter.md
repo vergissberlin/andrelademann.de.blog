@@ -41,6 +41,8 @@ Tesla begann mit seinem ersten Auto nicht mit einem kleinen, günstigen Elektro-
 
 Die Reihenfolge war clever. Ein Sportwagen machte elektrische Antriebe aufregend. Tempo und Design gaben Menschen einen Grund, das Auto haben zu wollen, noch bevor sie sich für die Umweltvorteile interessieren mussten. Die bessere Alternative bat nicht um Nachsicht. Sie überzeugte aus eigener Kraft.
 
+![Drake lehnt es ab, Diesel-Dieter zum Umstieg zu bewegen, und stimmt einem E-Auto zu, das er wirklich will](/images/posts/2026/the-better-alternative-makes-change-easier/meme-2.png)
+
 ## Die gute Wahl muss auch die attraktive sein
 
 Wir könnten öfter so denken. Wenn Menschen gesündere, sauberere oder nachhaltigere Optionen wählen sollen, müssen diese Optionen wirklich überzeugen. Das pflanzliche Gericht muss köstlich sein. Der öffentliche Nahverkehr muss bequem sein. Das reparierbare Produkt muss etwas sein, das man gern besitzt.

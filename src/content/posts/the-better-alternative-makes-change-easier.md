@@ -41,6 +41,8 @@ Tesla understood this with its first car. It did not begin with a small, inexpen
 
 That was a clever order. A sports car made electric power feel exciting. Its speed and design gave people a reason to want it before they had to care about its environmental benefits. The better alternative was not asking for sympathy. It was making its own case.
 
+![Drake rejects lecturing Diesel Dieter into switching and approves building an electric car he wants](/images/posts/2026/the-better-alternative-makes-change-easier/meme-1.png)
+
 ## Make the good choice the appealing one
 
 We could use more of that thinking. If we want people to choose healthier, cleaner or more sustainable options, we should make those options genuinely satisfying. Make the plant-based meal delicious. Make public transport convenient. Make the repairable product something people are proud to own.
