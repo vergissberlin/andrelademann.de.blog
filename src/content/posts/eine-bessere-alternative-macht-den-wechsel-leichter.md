@@ -1,7 +1,7 @@
 ---
 author: André Lademann
 pubDatetime: 2026-09-24T09:00:00.000Z
-title: "Eine bessere Alternative macht den Wechsel leichter"
+title: "Wenn sich der Umstieg wie ein Upgrade anfühlt"
 slug: eine-bessere-alternative-macht-den-wechsel-leichter
 locale: de
 translationKey: better-alternative-makes-change-easier
@@ -13,7 +13,7 @@ tags:
   - zukunft
 heroImage: "/images/posts/2026/the-better-alternative-makes-change-easier/hero.png"
 ogImage: "/images/posts/2026/the-better-alternative-makes-change-easier/hero.png"
-description: "Ein Sternburg-Plakat für alkoholfreies Bier zeigt mir, warum manche Alternativen leichtfallen und andere nicht."
+description: "Ein Plakat für alkoholfreies Sternburg brachte mich auf die Idee: Umsteigen fällt leichter, wenn es sich lohnt."
 canonicalURL: https://blog.andrelademann.de/de/posts/eine-bessere-alternative-macht-den-wechsel-leichter
 sources:
   - title: "The Secret Tesla Motors Master Plan (just between you and me)"

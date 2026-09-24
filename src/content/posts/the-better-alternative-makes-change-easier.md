@@ -1,7 +1,7 @@
 ---
 author: André Lademann
 pubDatetime: 2026-09-24T09:00:00.000Z
-title: "The Better Alternative Makes Change Easier"
+title: "When Switching Feels Like an Upgrade"
 slug: the-better-alternative-makes-change-easier
 locale: en
 translationKey: better-alternative-makes-change-easier
@@ -13,7 +13,7 @@ tags:
   - future
 heroImage: "/images/posts/2026/the-better-alternative-makes-change-easier/hero.png"
 ogImage: "/images/posts/2026/the-better-alternative-makes-change-easier/hero.png"
-description: "A poster for alcohol-free Sternburg made me realise why some alternatives are easy to choose, whilst others are not."
+description: "An alcohol-free Sternburg poster made me realise that switching is easier when the new choice feels like an upgrade."
 canonicalURL: https://blog.andrelademann.de/the-better-alternative-makes-change-easier
 sources:
   - title: "The Secret Tesla Motors Master Plan (just between you and me)"
