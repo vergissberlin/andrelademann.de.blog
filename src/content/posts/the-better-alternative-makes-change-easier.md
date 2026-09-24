@@ -45,7 +45,7 @@ That was a clever order. A sports car made electric power feel exciting. Its spe
 
 **Lecture Diesel Dieter? Let the electric sports car do the talking.**
 
-![Diesel Dieter first crosses his arms, then smiles at the sight of a turquoise electric sports car](/images/posts/2026/the-better-alternative-makes-change-easier/meme-electric-car.png)
+![Diesel Dieter ignores the lecture and books a test drive](/images/posts/2026/the-better-alternative-makes-change-easier/meme-electric-car.png)
 
 ## Make the good choice the appealing one
 

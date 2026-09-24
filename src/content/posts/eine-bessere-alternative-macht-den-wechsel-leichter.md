@@ -45,7 +45,7 @@ Die Reihenfolge war clever. Ein Sportwagen machte elektrische Antriebe aufregend
 
 **Diesel-Dieter belehren? Lieber den Elektroflitzer vorfahren lassen.**
 
-![Diesel-Dieter verschränkt erst die Arme und lächelt dann beim Anblick eines türkisen Elektroflitzers](/images/posts/2026/the-better-alternative-makes-change-easier/meme-electric-car.png)
+![Diesel-Dieter ignoriert die Standpauke und bucht die Probefahrt](/images/posts/2026/the-better-alternative-makes-change-easier/meme-electric-car.png)
 
 ## Die gute Wahl muss auch die attraktive sein
 
