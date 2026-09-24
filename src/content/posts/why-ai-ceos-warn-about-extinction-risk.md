@@ -3,13 +3,17 @@ author: André Lademann
 pubDatetime: 2026-09-24T09:00:00.000Z
 title: "Why AI CEOs Warn About Extinction Risk While Building the Models Anyway"
 slug: why-ai-ceos-warn-about-extinction-risk
+locale: en
+translationKey: ai-ceo-extinction-warnings
 featured: false
-draft: true
+draft: false
 tags:
   - ai
   - future
 description: "Altman warns Congress about AI risk, then ships the next model. Musk warns of civilisational destruction, then races to build one faster…"
 canonicalURL: https://blog.andrelademann.de/why-ai-ceos-warn-about-extinction-risk
+heroImage: "/images/posts/2026/why-ai-ceos-warn-about-extinction-risk/hero.png"
+ogImage: "/images/posts/2026/why-ai-ceos-warn-about-extinction-risk/hero.png"
 ---
 
 A LinkedIn poll landed in my feed this week asking why the people building the most powerful AI systems on the planet keep telling us those systems might end civilisation. Six options, one clear pattern in the votes: nobody picked "genuine concern" as the top answer. Regulatory capture and distraction from today's problems led the field.
