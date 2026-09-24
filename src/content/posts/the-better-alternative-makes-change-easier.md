@@ -21,9 +21,11 @@ sources:
     note: "Tesla's 2006 plan began with a high-performance electric sports car."
 ---
 
-I recently walked past a poster for alcohol-free Sternburg. It asked, with a hint of disbelief, whether Sternburg could even make a beer without alcohol. My first reaction was: I can imagine that being a fair question.
+Recently, I walked past a poster for alcohol-free Sternburg. It asked, with a hint of disbelief, whether Sternburg could even make a beer without alcohol. I laughed when I saw it. Then it hit me: I do not drink Sternburg because I think it tastes good.
 
-Please do not get me wrong. I like alcohol-free beer. I buy it from other breweries, and sometimes I prefer it to the alcoholic version. To my taste, alcohol leaves a bitter aftertaste. Take it away and the beer is simply better. But I do not drink Sternburg because I think it tastes especially good. An alcohol-free Sternburg is harder for me to picture.
+And that is perfectly fine sometimes. We do not always choose a brand because it tastes the best. But when I want a beer I really enjoy, I reach for a different one.
+
+Please do not get me wrong: I like alcohol-free beer. I buy it from other breweries, and sometimes I prefer it to the alcoholic version. To my taste, alcohol leaves a bitter aftertaste. Take it away and the beer is simply better. I find it harder to picture an alcohol-free version of Sternburg, though.
 
 That difference stuck with me. The easiest change is often the one where the alternative does not feel like a compromise.
 

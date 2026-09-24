@@ -21,9 +21,11 @@ sources:
     note: "Teslas Plan von 2006 begann mit einem leistungsstarken elektrischen Sportwagen."
 ---
 
-Neulich kam ich an einem Plakat für alkoholfreies Sternburg vorbei. Mit einer guten Portion Unglauben fragte es, ob Sternburg so etwas überhaupt könne. Mein erster Gedanke: Kann ich nachvollziehen.
+Neulich kam ich an einem Plakat für alkoholfreies Sternburg vorbei: „Ein alkoholfreies? Kann Sternburg so was überhaupt?!“ Ich musste lachen. Und in dem Moment wurde mir klar: Ich trinke Sternburg nicht, weil es so gut schmeckt.
 
-Nicht falsch verstehen: Ich mag alkoholfreies Bier. Von anderen Brauereien trinke ich es gern, manchmal lieber als die Variante mit Alkohol. Alkohol hinterlässt bei mir einen bitteren Nachgeschmack. Ohne schmeckt das Bier einfach besser. Sternburg trinke ich allerdings nicht, weil ich den Geschmack besonders gut finde. Alkoholfreies Sternburg kann ich mir deshalb nur schwer vorstellen.
+Und das ist manchmal auch völlig okay. Man greift nicht immer zu einer Marke, weil sie geschmacklich die beste ist. Aber wenn ich ein Bier möchte, das mir wirklich schmeckt, nehme ich lieber ein anderes.
+
+Nicht falsch verstehen: Ich mag alkoholfreies Bier. Von anderen Brauereien trinke ich es gern, manchmal lieber als die Variante mit Alkohol. Alkohol hinterlässt bei mir einen bitteren Nachgeschmack. Ohne schmeckt das Bier einfach besser. Bei Sternburg kann ich mir die alkoholfreie Variante dagegen nur schwer vorstellen.
 
 Der Unterschied ging mir nicht aus dem Kopf. Veränderung fällt oft dann am leichtesten, wenn sich die Alternative nicht wie Verzicht anfühlt.
 
