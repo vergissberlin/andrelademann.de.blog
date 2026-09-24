@@ -1,6 +1,10 @@
 ## Language
 
-All blog post content must be written in **British English** — spelling, vocabulary, and punctuation conventions (e.g. "colour", "organise", "whilst", "-ise" suffixes). Do not use American English variants.
+Every blog post must have two synchronised, standalone versions: one in **British English** and one in **German**. Keep the claims, examples, links, framing, and conclusions aligned, but write naturally for each language rather than translating line by line.
+
+Store the versions in separate Markdown files under `src/content/posts/`. Give the English version `locale: en` and the German version `locale: de`; use the same stable `translationKey` for both. Localise each version's title, slug, description, canonical URL, and tags. Use the same publication date, draft status, sources, and hero/OG image for both. The English canonical URL uses `https://blog.andrelademann.de/{slug}`; the German URL uses `https://blog.andrelademann.de/de/posts/{slug}`.
+
+Write English with British spelling, vocabulary, and punctuation (e.g. "colour", "organise", "whilst", "-ise" suffixes). Write German in standard German. Do not use American English variants.
 
 ## Typography — Ellipsis
 
