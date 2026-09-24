@@ -43,7 +43,9 @@ Tesla begann mit seinem ersten Auto nicht mit einem kleinen, günstigen Elektro-
 
 Die Reihenfolge war clever. Ein Sportwagen machte elektrische Antriebe aufregend. Tempo und Design gaben Menschen einen Grund, das Auto haben zu wollen, noch bevor sie sich für die Umweltvorteile interessieren mussten. Die bessere Alternative bat nicht um Nachsicht. Sie überzeugte aus eigener Kraft.
 
-![Drake lehnt es ab, Diesel-Dieter zum Umstieg zu bewegen, und stimmt einem E-Auto zu, das er wirklich will](/images/posts/2026/the-better-alternative-makes-change-easier/meme-2.png)
+**Diesel-Dieter belehren? Lieber den Elektroflitzer vorfahren lassen.**
+
+![Diesel-Dieter verschränkt erst die Arme und lächelt dann beim Anblick eines türkisen Elektroflitzers](/images/posts/2026/the-better-alternative-makes-change-easier/meme-electric-car.png)
 
 ## Die gute Wahl muss auch die attraktive sein
 
