@@ -184,6 +184,9 @@ const isActive = (path: string) => {
             lang={languageTarget?.locale ?? otherLocale}
             title={languageTitle}
             aria-label={languageTitle}
+            data-swetrix-event="LANGUAGE_SWITCH"
+            data-swetrix-meta-from={locale}
+            data-swetrix-meta-to={languageTarget?.locale ?? otherLocale}
             class="focus-outline group relative flex size-8 items-center justify-center"
           >
             <IconLanguage

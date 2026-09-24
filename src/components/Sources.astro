@@ -15,6 +15,8 @@ type Props = {
 
 const { heading = "Sources", items, class: className } = Astro.props;
 const sources = normaliseSources(items);
+const articlePath = Astro.url.pathname;
+const locale = Astro.currentLocale ?? "en";
 ---
 
 {
@@ -36,12 +38,25 @@ const sources = normaliseSources(items);
         {sources.map(source => {
           const note =
             formatSourceNote(source.note) ?? getSourceHostname(source.url);
+          let destination: URL | undefined;
+          try {
+            destination = new URL(source.url, Astro.url);
+          } catch {
+            // Keep malformed author-provided source URLs clickable, but omit
+            // destination metadata that cannot be parsed safely.
+          }
           return (
             <li class="text-foreground marker:text-accent ps-1">
               <a
                 href={source.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-swetrix-event="REFERENCE_CLICK"
+                data-swetrix-meta-title={source.title}
+                data-swetrix-meta-destination-host={destination?.hostname}
+                data-swetrix-meta-destination-path={destination?.pathname}
+                data-swetrix-meta-article={articlePath}
+                data-swetrix-meta-locale={locale}
                 class="text-foreground hover:text-accent wrap-break-word underline decoration-dashed underline-offset-4 focus-visible:no-underline"
               >
                 {source.title}
