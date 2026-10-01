@@ -112,7 +112,8 @@ const { Content } = await render(post);
 
 const postImage = heroImage ?? ogImageField;
 
-let ogImageUrl: string | undefined = postImage;
+// An explicit ogImage wins for social previews, e.g. a static fallback for an animated hero.
+let ogImageUrl: string | undefined = ogImageField ?? heroImage;
 
 if (!ogImageUrl && config.features.dynamicOgImage) {
   const postUrl = getPostUrl(post.id, post.filePath, locale).replace(
