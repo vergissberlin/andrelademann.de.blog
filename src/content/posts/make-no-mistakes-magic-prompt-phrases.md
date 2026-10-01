@@ -6,7 +6,7 @@ slug: make-no-mistakes-magic-prompt-phrases
 locale: en
 translationKey: make-no-mistakes-prompts
 featured: false
-draft: true
+draft: false
 tags:
   - ai
 description: "\"Build me a SaaS. Make no mistakes.\" If you ask an AI firmly enough, will it really try harder? I looked at where these phrases come from…"

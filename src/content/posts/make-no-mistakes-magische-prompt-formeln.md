@@ -6,7 +6,7 @@ slug: make-no-mistakes-magische-prompt-formeln
 locale: de
 translationKey: make-no-mistakes-prompts
 featured: false
-draft: true
+draft: false
 tags:
   - ki
 description: "„Bau mir ein SaaS. Make no mistakes.“ Strengt sich eine KI wirklich mehr an, wenn man sie nur nachdrücklich genug bittet? Ich habe nachgesehen…"
