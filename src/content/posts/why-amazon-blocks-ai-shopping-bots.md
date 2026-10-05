@@ -46,16 +46,28 @@ That intuition holds up. But a channel that delivers a customer can also take ov
 
 On **5 October 2026**, [Amazon.de's file](https://www.amazon.de/robots.txt) contained site-wide exclusions for `GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot` and `Claude-User`, among others. Its general `User-agent: *` rules instead restricted specific paths. That distinction matters: this is selective exclusion, not a universal ban. This snapshot concerns Amazon.de; it does not establish identical rules across every Amazon domain.
 
-A simplified selection from the file shows the pattern:
+The following excerpt reproduces selected entries from the file, in their original order and spelling. I have omitted the entries between them:
 
 ```text
-User-agent: ClaudeBot
+User-agent: GPTBot
+Disallow: /
+
+User-Agent: PerplexityBot
+Disallow: /
+
+User-agent: Claude-User
 Disallow: /
 
 User-agent: Claude-SearchBot
 Disallow: /
 
-User-agent: Claude-User
+User-agent: Perplexity-User
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
 Disallow: /
 ```
 

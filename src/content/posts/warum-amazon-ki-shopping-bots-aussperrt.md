@@ -46,16 +46,28 @@ Der Gedanke trägt. Aber ein Kanal, der einen Kunden vermittelt, kann auch die E
 
 Am **5. Oktober 2026** enthielt [Amazons deutsche Datei](https://www.amazon.de/robots.txt) vollständige Sperren für unter anderem `GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot` und `Claude-User`. Die allgemeinen Regeln unter `User-agent: *` beschränkten dagegen bestimmte Pfade. Amazon schließt also gezielt aus. Diese Momentaufnahme betrifft Amazon.de und belegt keine identischen Regeln für sämtliche Amazon-Domains.
 
-Eine gekürzte Auswahl aus der Datei zeigt das Muster:
+Der folgende Auszug übernimmt ausgewählte Einträge aus der Datei in ihrer ursprünglichen Reihenfolge und Schreibweise. Die Einträge dazwischen habe ich ausgelassen:
 
 ```text
-User-agent: ClaudeBot
+User-agent: GPTBot
+Disallow: /
+
+User-Agent: PerplexityBot
+Disallow: /
+
+User-agent: Claude-User
 Disallow: /
 
 User-agent: Claude-SearchBot
 Disallow: /
 
-User-agent: Claude-User
+User-agent: Perplexity-User
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
 Disallow: /
 ```
 
