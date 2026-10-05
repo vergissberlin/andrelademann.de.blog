@@ -6,7 +6,7 @@ slug: warum-amazon-ki-shopping-bots-aussperrt
 locale: de
 translationKey: amazon-ai-shopping-bots
 featured: false
-draft: true
+draft: false
 tags:
   - ki
   - technologie

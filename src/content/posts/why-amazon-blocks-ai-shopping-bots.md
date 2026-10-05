@@ -6,7 +6,7 @@ slug: why-amazon-blocks-ai-shopping-bots
 locale: en
 translationKey: amazon-ai-shopping-bots
 featured: false
-draft: true
+draft: false
 tags:
   - ai
   - technology
