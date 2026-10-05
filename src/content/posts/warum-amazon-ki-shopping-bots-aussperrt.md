@@ -14,6 +14,8 @@ tags:
   - security
 description: "KI-Assistenten könnten Amazon neue Käufer bringen. Die Bot-Sperren zeigen, welche Interessen hinter diesem Verkaufskanal stehen."
 canonicalURL: https://blog.andrelademann.de/de/posts/warum-amazon-ki-shopping-bots-aussperrt
+heroImage: "/images/posts/2026/why-amazon-blocks-ai-shopping-bots/hero.png"
+ogImage: "/images/posts/2026/why-amazon-blocks-ai-shopping-bots/hero.png"
 sources:
   - title: "Amazon.de robots.txt"
     url: "https://www.amazon.de/robots.txt"

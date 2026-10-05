@@ -14,6 +14,8 @@ tags:
   - security
 description: "AI assistants could bring Amazon more customers. Its bot restrictions reveal the trade-offs behind that tempting sales channel."
 canonicalURL: https://blog.andrelademann.de/why-amazon-blocks-ai-shopping-bots
+heroImage: "/images/posts/2026/why-amazon-blocks-ai-shopping-bots/hero.png"
+ogImage: "/images/posts/2026/why-amazon-blocks-ai-shopping-bots/hero.png"
 sources:
   - title: "Amazon.de robots.txt"
     url: "https://www.amazon.de/robots.txt"
