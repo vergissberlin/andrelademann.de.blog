@@ -73,6 +73,8 @@ User-agent: OAI-SearchBot
 Disallow: /
 ```
 
+![A bouncer with a gold chain and gold teeth refuses entry to a crawler robot, despite the robot bringing customers.](/images/posts/2026/why-amazon-blocks-ai-shopping-bots/meme-1-en.png)
+
 Those names cover different jobs. [Anthropic distinguishes](https://privacy.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) potential training-data collection, search indexing and retrieval at a user's request. A training crawl need not bring a buyer today. A shopping query might. Treating both as one category hides the strongest argument for opening access.
 
 Bot names also need careful interpretation. [Google-Extended](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers) controls certain Gemini training and grounding uses; it is not a separate HTTP crawler identity and does not control inclusion in Google Search. A list of exclusions therefore does not translate neatly into a list of blocked runtimes.

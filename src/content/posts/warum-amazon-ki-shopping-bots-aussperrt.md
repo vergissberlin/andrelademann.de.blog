@@ -73,6 +73,8 @@ User-agent: OAI-SearchBot
 Disallow: /
 ```
 
+![Ein Türsteher mit Goldkette und Goldzähnen verweigert einem Crawler-Roboter den Zutritt, obwohl dieser Käufer mitbringt.](/images/posts/2026/why-amazon-blocks-ai-shopping-bots/meme-1-de.png)
+
 Hinter diesen Namen stecken unterschiedliche Aufgaben. [Anthropic unterscheidet](https://privacy.anthropic.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler) das Sammeln möglicher Trainingsdaten, Suchindexierung und Abrufe auf Nutzerwunsch. Ein Trainingscrawl bringt heute nicht zwangsläufig einen Käufer. Eine Shopping-Anfrage vielleicht schon. Wer beides zusammenwirft, übersieht das stärkste Argument für eine Öffnung.
 
 Auch Bot-Namen brauchen eine genaue Einordnung. [Google-Extended](https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers) steuert bestimmte Trainings- und Grounding-Nutzungen für Gemini. Es bezeichnet keinen eigenen HTTP-Crawler und beeinflusst nicht die Aufnahme in die Google-Suche. Eine Liste von Sperren entspricht deshalb keiner eindeutigen Liste blockierter KI-Runtimes.
