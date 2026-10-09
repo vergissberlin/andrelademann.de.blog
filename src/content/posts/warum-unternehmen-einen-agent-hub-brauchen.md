@@ -1,6 +1,6 @@
 ---
 author: André Lademann
-pubDatetime: 2026-10-10T09:00:00.000Z
+pubDatetime: 2026-10-09T22:00:00.000Z
 title: "Warum Unternehmen einen Agent Hub brauchen, nicht nur ein Skill-Repository"
 slug: warum-unternehmen-einen-agent-hub-brauchen
 locale: de
