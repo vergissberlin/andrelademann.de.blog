@@ -1,0 +1,3 @@
+Model: gemini-3.1-flash-image (Figma image generation), 1376x768
+
+Photorealistic editorial photograph, wide angle close-up of a tidy server room patch panel with hand-labelled cables, labels blank and unreadable, flowing neatly into a single central rack cabinet, shallow depth of field with the nearest cable ends sharp and the rest softly blurred, cool overhead LED lighting with a warm desk lamp glow at the edge of the frame, brushed metal and matte black rack surfaces, subtle dust and fingerprints for realism, no text, no logos, no people, shot on a 50mm lens at f/2.8, high resolution
