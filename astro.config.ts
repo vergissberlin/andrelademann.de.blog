@@ -20,6 +20,7 @@ import {
   transformerNotationWordHighlight,
 } from "@shikijs/transformers";
 import { transformerFileName } from "./src/utils/transformers/fileName";
+import rehypeAffiliateLinks from "./src/utils/rehypeAffiliateLinks";
 import config from "./astro-paper.config";
 
 // The old Hashnode site served posts at the site root (e.g. `/lets-get-serial`).
@@ -65,7 +66,7 @@ export default defineConfig({
         remarkToc,
         [remarkCollapse, { test: "Table of contents" }],
       ],
-      rehypePlugins: [rehypeCallouts],
+      rehypePlugins: [rehypeCallouts, rehypeAffiliateLinks],
     }),
     shikiConfig: {
       themes: { light: "min-light", dark: "night-owl" },
