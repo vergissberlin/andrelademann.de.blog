@@ -63,31 +63,9 @@ Before I drill a single hole into a 50-year-old body, though, I wanted to unders
 
 So I built **[CAN-Lab](https://canlab.andrelademann.de/)**. Not entirely on my own, admittedly, but I am rather proud of how it turned out. The code is open source under GPL-3.0 on [GitHub](https://github.com/vergissberlin/example-canbus), and the repository contains the finished sketches.
 
-The hardware is deliberately cheap:
+The hardware is deliberately cheap: two [**ESP32-C3 SuperMini**](https://www.amazon.de/dp/B0FKH3RLXV?tag=thebeatles-21&linkCode=ll2&linkId=05ee94507f65c830feaa4207d27dec6f)\* boards, which have a CAN controller built in (Espressif calls it TWAI), and two [**SN65HVD230 transceiver** modules](https://www.amazon.de/dp/B0HJW4MVBJ?tag=thebeatles-21&linkCode=ll2&linkId=f60b0d920560a96ffa2ed3e55abd2a9f)\*, which turn the logic signals into bus levels. Add a breadboard, a few jumper wires and two USB cables, and that is the entire lab.
 
-- 2× [**ESP32-C3 SuperMini**](https://www.amazon.de/dp/B0FKH3RLXV?tag=thebeatles-21&linkCode=ll2&linkId=05ee94507f65c830feaa4207d27dec6f)\*, which has a CAN controller built in (Espressif calls it TWAI)
-- 2× [**SN65HVD230 transceiver** boards](https://www.amazon.de/dp/B0HJW4MVBJ?tag=thebeatles-21&linkCode=ll2&linkId=f60b0d920560a96ffa2ed3e55abd2a9f)\*, 3.3 V, termination usually already on board
-- GPIO 5 to CTX, GPIO 4 to CRX, then CANH to CANH, CANL to CANL and a shared ground
-
-If you measure about 60 Ω between CANH and CANL, both 120 Ω terminators are in place; around 120 Ω means one end is missing. Setting up the bus on the ESP32 takes only a few lines. This is the core of the sender sketch:
-
-```cpp
-#include "driver/twai.h"
-
-constexpr gpio_num_t CAN_TX_PIN = GPIO_NUM_5;
-constexpr gpio_num_t CAN_RX_PIN = GPIO_NUM_4;
-
-void setup() {
-  twai_general_config_t g = TWAI_GENERAL_CONFIG_DEFAULT(CAN_TX_PIN, CAN_RX_PIN, TWAI_MODE_NORMAL);
-  g.tx_queue_len = 32;
-  twai_timing_config_t t = TWAI_TIMING_CONFIG_500KBITS();
-  twai_filter_config_t f = TWAI_FILTER_CONFIG_ACCEPT_ALL();
-  twai_driver_install(&g, &t, &f);
-  twai_start();
-}
-```
-
-You then plug both boards into your computer and open CAN-Lab in Chrome or Edge. It uses the Web Serial API, which I [wrote about a while ago](/posts/lets-get-serial), so nothing leaves your machine. The website also links the wiring diagrams I drew, plus a [breadboard layout on Wokwi](https://wokwi.com/projects/478383260674919425) you can use as a wiring reference.
+CAN-Lab itself runs in Chrome or Edge. It uses the Web Serial API, which I [wrote about a while ago](/posts/lets-get-serial), to read both boards at once, so nothing leaves your machine.
 
 This project is aimed at IoT enthusiasts who have flashed an ESP32 before. If PlatformIO and a breadboard do not scare you, you will have it running in an evening.
 
@@ -105,10 +83,8 @@ I offered 10,000 frames per second on purpose. The sender's queue rejected every
 
 For my Peugeot this means bandwidth is the last thing I need to worry about. A handful of temperature, pressure and speed sensors will barely register.
 
-I have written up the full results, the measurement method and a step-by-step build guide in a **[white paper](/canlab-whitepaper/)**, including all the diagrams.
-
 ## Try it yourself
 
-Grab two ESP32-C3 boards and two transceivers, flash the sketches from the repository, and run the load test. I am curious whether you beat my 4,303 frames per second, and what you plan to put on the bus once you trust it.
+Everything you need to rebuild the test is in the **[CAN-Lab white paper](/canlab-whitepaper/)**: parts list, wiring diagrams, flashing, the load test step by step and a troubleshooting section, plus the full results and the measurement method. I am curious whether you beat my 4,303 frames per second, and what you plan to put on the bus once you trust it.
 
 _Links marked \* are affiliate links. As an Amazon Associate I earn from qualifying purchases. The price stays the same for you._

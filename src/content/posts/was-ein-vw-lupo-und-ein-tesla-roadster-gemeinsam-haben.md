@@ -63,31 +63,9 @@ Bevor ich aber auch nur ein Loch in eine 50 Jahre alte Karosserie bohre, wollte 
 
 Also habe ich **[CAN-Lab](https://canlab.andrelademann.de/)** gebaut. Zugegeben nicht ganz allein, aber ich bin ziemlich stolz darauf, was am Ende dabei herausgekommen ist. Der Code ist Open Source unter GPL-3.0 auf [GitHub](https://github.com/vergissberlin/example-canbus), und das Repository enthält die fertigen Sketches.
 
-Die Hardware ist bewusst günstig:
+Die Hardware ist bewusst günstig: zwei [**ESP32-C3 SuperMini**](https://www.amazon.de/dp/B0FKH3RLXV?tag=thebeatles-21&linkCode=ll2&linkId=05ee94507f65c830feaa4207d27dec6f)\* mit eingebautem CAN-Controller (bei Espressif heißt er TWAI) und zwei [**SN65HVD230-Transceiver**-Module](https://www.amazon.de/dp/B0HJW4MVBJ?tag=thebeatles-21&linkCode=ll2&linkId=f60b0d920560a96ffa2ed3e55abd2a9f)\*, die die Logiksignale auf Buspegel umsetzen. Dazu ein Steckbrett, ein paar Jumper-Kabel und zwei USB-Kabel, und das Labor ist komplett.
 
-- 2× [**ESP32-C3 SuperMini**](https://www.amazon.de/dp/B0FKH3RLXV?tag=thebeatles-21&linkCode=ll2&linkId=05ee94507f65c830feaa4207d27dec6f)\* mit eingebautem CAN-Controller (bei Espressif heißt er TWAI)
-- 2× [**SN65HVD230-Transceiver**-Boards](https://www.amazon.de/dp/B0HJW4MVBJ?tag=thebeatles-21&linkCode=ll2&linkId=f60b0d920560a96ffa2ed3e55abd2a9f)\*, 3,3 V, Terminierung meist schon auf der Platine
-- GPIO 5 an CTX, GPIO 4 an CRX, dann CANH an CANH, CANL an CANL und eine gemeinsame Masse
-
-Misst du zwischen CANH und CANL etwa 60 Ω, sind beide 120-Ω-Abschlusswiderstände vorhanden; rund 120 Ω heißt, an einem Ende fehlt einer. Den Bus auf dem ESP32 einzurichten, braucht nur ein paar Zeilen. Das ist der Kern des Sender-Sketches:
-
-```cpp
-#include "driver/twai.h"
-
-constexpr gpio_num_t CAN_TX_PIN = GPIO_NUM_5;
-constexpr gpio_num_t CAN_RX_PIN = GPIO_NUM_4;
-
-void setup() {
-  twai_general_config_t g = TWAI_GENERAL_CONFIG_DEFAULT(CAN_TX_PIN, CAN_RX_PIN, TWAI_MODE_NORMAL);
-  g.tx_queue_len = 32;
-  twai_timing_config_t t = TWAI_TIMING_CONFIG_500KBITS();
-  twai_filter_config_t f = TWAI_FILTER_CONFIG_ACCEPT_ALL();
-  twai_driver_install(&g, &t, &f);
-  twai_start();
-}
-```
-
-Dann steckst du beide Boards an deinen Rechner und öffnest CAN-Lab in Chrome oder Edge. Es nutzt die Web Serial API, über die ich [schon einmal geschrieben habe](/posts/lets-get-serial) (auf Englisch), es verlässt also nichts deinen Rechner. Auf der Website findest du außerdem die Schaltpläne, die ich gezeichnet habe, und ein [Steckbrett bei Wokwi](https://wokwi.com/projects/478383260674919425) als Vorlage für die Verkabelung.
+CAN-Lab selbst läuft in Chrome oder Edge. Es nutzt die Web Serial API, über die ich [schon einmal geschrieben habe](/posts/lets-get-serial) (auf Englisch), und liest beide Boards gleichzeitig aus. Es verlässt also nichts deinen Rechner.
 
 Das Projekt richtet sich an IoT-Enthusiasten, die schon einmal einen ESP32 geflasht haben. Wenn dich PlatformIO und ein Steckbrett nicht abschrecken, läuft das Ganze an einem Abend.
 
@@ -105,10 +83,8 @@ Ich habe bewusst 10.000 Frames pro Sekunde angeboten. Was der Bus nicht tragen k
 
 Für meinen Peugeot heißt das: Bandbreite ist meine geringste Sorge. Eine Handvoll Temperatur-, Druck- und Geschwindigkeitssensoren fällt kaum ins Gewicht.
 
-Die vollständigen Ergebnisse, die Messmethodik und eine Schritt-für-Schritt-Bauanleitung habe ich in einem **[White Paper](/de/canlab-whitepaper/)** zusammengefasst, inklusive aller Grafiken.
-
 ## Probier es selbst aus
 
-Besorg dir zwei ESP32-C3-Boards und zwei Transceiver, flash die Sketches aus dem Repository und starte den Lasttest. Ich bin gespannt, ob du meine 4.303 Frames pro Sekunde schlägst und was du auf den Bus legst, sobald du ihm vertraust.
+Alles, was du zum Nachbauen brauchst, steht im **[CAN-Lab White Paper](/de/canlab-whitepaper/)**: Stückliste, Schaltpläne, Flashen, der Lasttest Schritt für Schritt und eine Fehlersuche, dazu die vollständigen Ergebnisse und die Messmethodik. Ich bin gespannt, ob du meine 4.303 Frames pro Sekunde schlägst und was du auf den Bus legst, sobald du ihm vertraust.
 
 _Mit \* gekennzeichnete Links sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich der Preis nicht._

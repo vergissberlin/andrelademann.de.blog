@@ -143,6 +143,24 @@ pio run -c receiver.ini -e receiver -t upload
 
 Sind beide Boards gleichzeitig angeschlossen, wählst du den Port mit `--upload-port` aus.
 
+Der CAN-Teil der Firmware ist überschaubar. Das ist der Kern der Sender-Konfiguration: Pins, Sende-Warteschlange, 500 kbit/s und ein Filter, der alle IDs annimmt.
+
+```cpp
+#include "driver/twai.h"
+
+constexpr gpio_num_t CAN_TX_PIN = GPIO_NUM_5;
+constexpr gpio_num_t CAN_RX_PIN = GPIO_NUM_4;
+
+void setup() {
+  twai_general_config_t g = TWAI_GENERAL_CONFIG_DEFAULT(CAN_TX_PIN, CAN_RX_PIN, TWAI_MODE_NORMAL);
+  g.tx_queue_len = 32;
+  twai_timing_config_t t = TWAI_TIMING_CONFIG_500KBITS();
+  twai_filter_config_t f = TWAI_FILTER_CONFIG_ACCEPT_ALL();
+  twai_driver_install(&g, &t, &f);
+  twai_start();
+}
+```
+
 ### 4. CAN-Lab verbinden
 
 1. Öffne [canlab.andrelademann.de](https://canlab.andrelademann.de/) in **Chrome oder Edge**. Safari unterstützt Web Serial nicht.
