@@ -133,4 +133,62 @@ describe("renderCheatSheet", () => {
     expect(withScale).toContain('<span class="scale"');
     expect(withScale).not.toContain('<span class="box"');
   });
+
+  it("declares the sheet language and localises the sources heading", () => {
+    const html = renderCheatSheet(
+      sheet({
+        lang: "de",
+        sources: [{ title: "Eine Quelle", url: "https://example.com/a" }],
+      })
+    );
+
+    expect(html).toContain('<html lang="de">');
+    expect(html).toContain("<h2>Quellen</h2>");
+  });
+
+  it("renders http(s) links but leaves other schemes as text", () => {
+    const html = renderCheatSheet(
+      sheet({
+        pages: [
+          {
+            blocks: [
+              {
+                kind: "text",
+                paragraphs: [
+                  "See [the repo](https://github.com/x) or [this](javascript:alert(1))",
+                ],
+              },
+            ],
+          },
+        ],
+      })
+    );
+
+    expect(html).toContain('<a href="https://github.com/x">the repo</a>');
+    expect(html).not.toContain('href="javascript:');
+  });
+
+  it("renders numbered steps", () => {
+    const html = renderCheatSheet(
+      sheet({
+        pages: [{ blocks: [{ kind: "steps", items: ["One", "Two"] }] }],
+      })
+    );
+
+    expect(html).toContain('<ol class="steps"><li><p>One</p></li>');
+  });
+
+  it("only accepts images that are already inlined as data URIs", () => {
+    const render = src =>
+      renderCheatSheet(
+        sheet({
+          pages: [{ blocks: [{ kind: "image", src, alt: "A diagram" }] }],
+        })
+      );
+
+    expect(render("data:image/png;base64,AAAA")).toContain(
+      '<img src="data:image/png;base64,AAAA" alt="A diagram"'
+    );
+    expect(() => render("/images/diagram.png")).toThrow(/data URI/);
+  });
 });

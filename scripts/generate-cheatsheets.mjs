@@ -3,6 +3,7 @@
  * public/downloads/<post-slug>/.
  *
  * Run: pnpm cheatsheets
+ *      pnpm cheatsheets canlab   (only sheets whose file name contains "canlab")
  *
  * Deliberately NOT part of `pnpm build`. The PDFs are committed, so the site
  * build and the deploy never need a browser — and CI never has to install one,
@@ -13,7 +14,7 @@
  * PLAYWRIGHT_BROWSERS_PATH.
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { dirname, extname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright-core";
 import { renderCheatSheet } from "./cheatsheets/template.mjs";
@@ -80,6 +81,32 @@ async function loadFontCss() {
   return faces.join("\n");
 }
 
+const IMAGE_TYPES = {
+  ".png": "image/png",
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".webp": "image/webp",
+  ".svg": "image/svg+xml",
+};
+
+/**
+ * Replace each image block's `file` (a root-relative path inside `public/`,
+ * as used in posts) with a data URI, so the PDF renders without a server.
+ */
+function inlineImages(sheet) {
+  const pages = sheet.pages.map(page => ({
+    ...page,
+    blocks: page.blocks.map(block => {
+      if (block.kind !== "image") return block;
+      const type = IMAGE_TYPES[extname(block.file).toLowerCase()];
+      if (!type) throw new Error(`${sheet.fileName}: unsupported image ${block.file}`);
+      const data = readFileSync(join(root, "public", block.file.replace(/^\/+/, "")));
+      return { ...block, src: `data:${type};base64,${data.toString("base64")}` };
+    }),
+  }));
+  return { ...sheet, pages };
+}
+
 /** Page objects in the PDF body. `/Type /Pages` is the tree node, not a page. */
 function countPdfPages(pdf) {
   return (pdf.toString("latin1").match(/\/Type\s*\/Page[^s]/g) ?? []).length;
@@ -108,9 +135,10 @@ function resolveChromium() {
   return candidate;
 }
 
-async function loadSheets() {
+async function loadSheets(filter) {
   const files = readdirSync(sheetsDir)
     .filter(name => name.endsWith(".mjs"))
+    .filter(name => !filter || name.includes(filter))
     .sort();
 
   return Promise.all(
@@ -130,7 +158,10 @@ if (!executablePath) {
   process.exit(1);
 }
 
-const [sheets, fontCss] = await Promise.all([loadSheets(), loadFontCss()]);
+const [sheets, fontCss] = await Promise.all([
+  loadSheets(process.argv[2]),
+  loadFontCss(),
+]);
 
 const browser = await chromium.launch({ executablePath });
 const page = await browser.newPage();
@@ -139,7 +170,7 @@ let written = 0;
 
 try {
   for (const sheet of sheets) {
-    const html = renderCheatSheet(sheet, fontCss);
+    const html = renderCheatSheet(inlineImages(sheet), fontCss);
     await page.setContent(html, { waitUntil: "load" });
     await page.evaluate(() => document.fonts.ready);
 

@@ -31,6 +31,10 @@ sources:
     url: "https://canlab.andrelademann.de/"
   - title: "vergissberlin/example-canbus (GitHub)"
     url: "https://github.com/vergissberlin/example-canbus"
+download:
+  file: /downloads/was-ein-vw-lupo-und-ein-tesla-roadster-gemeinsam-haben/canlab-whitepaper-de.pdf
+  title: "CAN-Lab White Paper"
+  description: "Testergebnisse, Messmethodik und die komplette Bauanleitung: Stückliste, Verdrahtung, Flashen, Lasttest und Fehlersuche. Sechs Seiten mit allen Grafiken."
 ---
 
 Was hat ein VW Lupo 3L von 1999 mit dem neuen Tesla Roadster gemeinsam? Nicht die Reichweite, nicht die Beschleunigung und ganz sicher nicht den Preis. Aber wenn du die Leitungen hinter dem Armaturenbrett abhören könntest, würdest du bei beiden dieselbe Sprache hören: **CAN-Bus**.
@@ -85,6 +89,6 @@ Für meinen Peugeot heißt das: Bandbreite ist meine geringste Sorge. Eine Handv
 
 ## Probier es selbst aus
 
-Alles, was du zum Nachbauen brauchst, steht im **[CAN-Lab White Paper](/de/canlab-whitepaper/)**: Stückliste, Schaltpläne, Flashen, der Lasttest Schritt für Schritt und eine Fehlersuche, dazu die vollständigen Ergebnisse und die Messmethodik. Ich bin gespannt, ob du meine 4.303 Frames pro Sekunde schlägst und was du auf den Bus legst, sobald du ihm vertraust.
+Alles, was du zum Nachbauen brauchst, steht im **CAN-Lab White Paper**, das du unten kostenlos herunterladen kannst: Stückliste, Schaltpläne, Flashen, der Lasttest Schritt für Schritt und eine Fehlersuche, dazu die vollständigen Ergebnisse und die Messmethodik. Ich bin gespannt, ob du meine 4.303 Frames pro Sekunde schlägst und was du auf den Bus legst, sobald du ihm vertraust.
 
 _Mit \* gekennzeichnete Links sind Affiliate-Links. Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich ändert sich der Preis nicht._

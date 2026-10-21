@@ -40,11 +40,25 @@ export function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
-/** `**bold**` and `` `code` `` are the only markup the content data may use. */
+/** Labels the template itself prints, per sheet language. */
+const LABELS = {
+  en: { sources: "Sources" },
+  de: { sources: "Quellen" },
+};
+
+/**
+ * `**bold**`, `` `code` `` and `[text](https://…)` are the only markup the
+ * content data may use. Links are limited to http(s), so data cannot smuggle in
+ * a `javascript:` URL.
+ */
 function inline(value) {
   return escapeHtml(value)
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/`([^`]+)`/g, '<code class="inline">$1</code>');
+    .replace(/`([^`]+)`/g, '<code class="inline">$1</code>')
+    .replace(
+      /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,
+      '<a href="$2">$1</a>'
+    );
 }
 
 function renderTerm(item) {
@@ -125,7 +139,34 @@ function renderCompare(block) {
   return `<div class="compare">${panes}</div>`;
 }
 
+function renderText(block) {
+  return block.paragraphs.map(text => `<p class="text">${inline(text)}</p>`).join("");
+}
+
+function renderSteps(block) {
+  const rows = block.items.map(item => `<li><p>${inline(item)}</p></li>`).join("");
+  return `<ol class="steps">${rows}</ol>`;
+}
+
+/**
+ * `src` must already be a data URI — generate-cheatsheets.mjs inlines the file
+ * from `public/` — so the rendered page never depends on a server or a path.
+ */
+function renderImage(block) {
+  if (!block.src?.startsWith("data:")) {
+    throw new Error(`Image block needs an inlined data URI, got: ${block.src}`);
+  }
+  const caption = block.caption
+    ? `<figcaption class="caption">${inline(block.caption)}</figcaption>`
+    : "";
+  const maxHeight = block.maxHeight ? ` style="max-height: ${escapeHtml(block.maxHeight)}"` : "";
+  return `<figure><img src="${escapeHtml(block.src)}" alt="${escapeHtml(block.alt ?? "")}"${maxHeight} />${caption}</figure>`;
+}
+
 const RENDERERS = {
+  text: renderText,
+  steps: renderSteps,
+  image: renderImage,
   checklist: renderChecklist,
   points: renderPoints,
   table: renderTable,
@@ -147,10 +188,11 @@ function renderBlock(block) {
 
 function renderPage(page, sheet, pageNumber, pageCount) {
   const blocks = page.blocks.map(renderBlock).join("");
+  const labels = LABELS[sheet.lang ?? "en"] ?? LABELS.en;
   const sources =
     pageNumber === pageCount && sheet.sources?.length
       ? `<section class="sources">
-           <h2>Sources</h2>
+           <h2>${labels.sources}</h2>
            <ul>${sheet.sources
              .map(
                source =>
@@ -193,7 +235,7 @@ export function renderCheatSheet(sheet, fontCss = "") {
     .join("");
 
   return `<!doctype html>
-<html lang="en">
+<html lang="${escapeHtml(sheet.lang ?? "en")}">
 <head>
 <meta charset="utf-8" />
 <title>${escapeHtml(sheet.title)}</title>
@@ -387,6 +429,24 @@ pre code.inline { background: ${THEME.background}; }
 }
 .pane--good .pane-label { color: ${THEME.accent}; }
 .pane-body { margin: 0; }
+
+.text { margin: 0 0 1.6mm; }
+.text:last-child { margin-bottom: 0; }
+
+.steps { margin: 0; padding-left: 5mm; }
+.steps li { padding: 0.8mm 0; }
+.steps li::marker { color: ${THEME.accent}; font-weight: 700; }
+
+figure { margin: 0; }
+figure img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 1mm;
+  object-fit: contain;
+}
+
+a { color: ${THEME.accent}; text-decoration: none; }
 
 .sources { font-size: 6.8pt; color: ${THEME.mutedForeground}; line-height: 1.3; }
 .sources li { padding: 0.5mm 0; }

@@ -31,6 +31,10 @@ sources:
     url: "https://canlab.andrelademann.de/"
   - title: "vergissberlin/example-canbus (GitHub)"
     url: "https://github.com/vergissberlin/example-canbus"
+download:
+  file: /downloads/what-a-vw-lupo-and-a-tesla-roadster-have-in-common/canlab-whitepaper.pdf
+  title: "CAN-Lab white paper"
+  description: "Test results, methodology and the complete build guide: parts, wiring, flashing, load test and troubleshooting. Six pages with all diagrams."
 ---
 
 What does a VW Lupo 3L from 1999 have in common with the new Tesla Roadster? Not the range, not the acceleration, and certainly not the price. But if you could listen in on the wires behind the dashboard, you would hear both of them speaking the same language: **CAN bus**.
@@ -85,6 +89,6 @@ For my Peugeot this means bandwidth is the last thing I need to worry about. A h
 
 ## Try it yourself
 
-Everything you need to rebuild the test is in the **[CAN-Lab white paper](/canlab-whitepaper/)**: parts list, wiring diagrams, flashing, the load test step by step and a troubleshooting section, plus the full results and the measurement method. I am curious whether you beat my 4,303 frames per second, and what you plan to put on the bus once you trust it.
+Everything you need to rebuild the test is in the **CAN-Lab white paper**, free to download below: parts list, wiring diagrams, flashing, the load test step by step and a troubleshooting section, plus the full results and the measurement method. I am curious whether you beat my 4,303 frames per second, and what you plan to put on the bus once you trust it.
 
 _Links marked \* are affiliate links. As an Amazon Associate I earn from qualifying purchases. The price stays the same for you._

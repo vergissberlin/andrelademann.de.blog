@@ -39,9 +39,18 @@ const postRedirects = Object.fromEntries(
     .map(slug => [`/${slug}`, `/posts/${slug}`])
 );
 
+// Retired pages that were briefly live. The CAN-Lab white paper is now a PDF
+// download attached to its post.
+const retiredPageRedirects = {
+  "/canlab-whitepaper":
+    "/posts/what-a-vw-lupo-and-a-tesla-roadster-have-in-common/",
+  "/de/canlab-whitepaper":
+    "/de/posts/was-ein-vw-lupo-und-ein-tesla-roadster-gemeinsam-haben/",
+};
+
 export default defineConfig({
   site: config.site.url,
-  redirects: postRedirects,
+  redirects: { ...postRedirects, ...retiredPageRedirects },
   integrations: [
     mdx(),
     sitemap({
