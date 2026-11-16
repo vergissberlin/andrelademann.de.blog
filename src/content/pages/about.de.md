@@ -6,7 +6,7 @@ description: "Cloud Architect, Developer und Tech Lead bei Thinkport."
 
 Ich bin André Lademann – Cloud Architect, Developer und Tech Lead bei [Thinkport](https://thinkport.digital), einer IT-Cloud-Beratung aus Deutschland.
 
-Ich habe die [kieks.me GbR](https://kieks.me) gemeinsam mit Thomas Schöne gegründet.
+Ich habe die [kieks.me GbR](https://kieks.me) gemeinsam mit Thomas Schöne gegründet. Mein Schwerpunkt dort ist AI Consulting.
 
 Ich schreibe über Cloud-Architektur, Software-Engineering-Praktiken, Werkzeuge und gelegentliche Hardware-Experimente. Die Themen reichen von Infrastructure as Code und Kubernetes bis hin zu Flutter, Web-APIs und KI-Integrationen.
 
