@@ -8,6 +8,11 @@ import Footer from "@/components/Footer.astro";
 import config from "@/config";
 import { codeStatsProfileUrl, getCodeStats } from "@/utils/codeStats";
 import { credlyProfileUrl, getCredlyBadges } from "@/utils/credly";
+import {
+  getGitHubProfile,
+  githubAchievementsUrl,
+  githubProfileUrl,
+} from "@/utils/githubProfile";
 import { getMicrosoftLearnStats } from "@/utils/microsoftLearn";
 
 const locale = Astro.currentLocale ?? config.site.lang;
@@ -20,11 +25,13 @@ if (!about) {
 }
 
 const { Content } = await render(about);
-const [stats, badges, codeStats] = await Promise.all([
-  getMicrosoftLearnStats(),
-  getCredlyBadges(),
-  getCodeStats(),
-]);
+const [stats, badges, codeStats, [githubContributions, githubAchievements]] =
+  await Promise.all([
+    getMicrosoftLearnStats(),
+    getCredlyBadges(),
+    getCodeStats(),
+    getGitHubProfile(),
+  ]);
 const isGerman = locale === "de";
 const formatLocale = isGerman ? "de-DE" : "en-GB";
 const number = new Intl.NumberFormat(formatLocale);
@@ -47,6 +54,16 @@ const metrics = stats && [
   { label: isGerman ? "Trophäen" : "Trophies", value: stats.trophies },
 ];
 const profileUrl = `https://learn.microsoft.com/${isGerman ? "de-de" : "en-gb"}/users/alademann/`;
+const contributionDays = githubContributions?.days ?? [];
+const contributionWeeks =
+  Math.max(0, ...contributionDays.map(day => day.week)) + 1;
+const contributionColours = [
+  "bg-muted",
+  "bg-accent/25",
+  "bg-accent/50",
+  "bg-accent/75",
+  "bg-accent",
+];
 ---
 
 <Layout
@@ -236,6 +253,92 @@ const profileUrl = `https://learn.microsoft.com/${isGerman ? "de-de" : "en-gb"}/
         <a href={codeStatsProfileUrl}>
           {isGerman ? "Mein Code::Stats-Profil" : "My Code::Stats profile"}
         </a>
+      </p>
+    </section>
+
+    <section aria-labelledby="github">
+      <h2 id="github">GitHub</h2>
+      {
+        githubContributions && (
+          <>
+            <p class="not-prose mt-4 mb-3 text-sm">
+              <strong class="text-accent mr-1 text-2xl font-semibold tabular-nums">
+                {number.format(githubContributions.total)}
+              </strong>
+              {isGerman
+                ? "Beiträge im letzten Jahr"
+                : "contributions in the last year"}
+            </p>
+            {contributionDays.length > 0 && (
+              <div
+                aria-hidden="true"
+                class="not-prose mb-4 grid grid-rows-7 gap-px sm:gap-[2px]"
+                style={{
+                  gridTemplateColumns: `repeat(${contributionWeeks}, minmax(0, 1fr))`,
+                }}
+              >
+                {contributionDays.map(day => (
+                  <span
+                    class:list={[
+                      "aspect-square rounded-[1px]",
+                      contributionColours[day.level],
+                    ]}
+                    style={{
+                      gridColumn: day.week + 1,
+                      gridRow: day.weekday + 1,
+                    }}
+                    title={date.format(new Date(day.date))}
+                  />
+                ))}
+              </div>
+            )}
+          </>
+        )
+      }
+
+      {
+        githubAchievements && githubAchievements.length > 0 && (
+          <>
+            <h3>Achievements</h3>
+            <ul
+              class="not-prose my-4 grid list-none grid-cols-2 gap-2 p-0 sm:grid-cols-4"
+              role="list"
+            >
+              {githubAchievements.map(achievement => (
+                <li class="min-w-0">
+                  <a
+                    href={achievement.url}
+                    class="border-border flex h-full flex-col items-center gap-2 border px-2 py-3 text-center text-sm"
+                  >
+                    <img
+                      src={achievement.imageUrl}
+                      alt=""
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                      class="m-0 border-0"
+                    />
+                    <span>
+                      {achievement.title} {achievement.tier}
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        )
+      }
+
+      <p>
+        <a href={githubProfileUrl}
+          >{isGerman ? "Mein GitHub-Profil" : "My GitHub profile"}</a
+        >
+        {" · "}
+        <a href={githubAchievementsUrl}
+          >{isGerman ? "Achievements auf GitHub" : "Achievements on GitHub"}</a
+        >
       </p>
     </section>
   </Main>
