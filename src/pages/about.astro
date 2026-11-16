@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb.astro";
 import Main from "@/components/Main.astro";
 import Footer from "@/components/Footer.astro";
 import config from "@/config";
+import { getMicrosoftLearnStats } from "@/utils/microsoftLearn";
 
 const locale = Astro.currentLocale ?? config.site.lang;
 const about = await getEntry("pages", locale === "de" ? "aboutde" : "about");
@@ -17,6 +18,21 @@ if (!about) {
 }
 
 const { Content } = await render(about);
+const stats = await getMicrosoftLearnStats();
+const isGerman = locale === "de";
+const formatLocale = isGerman ? "de-DE" : "en-GB";
+const number = new Intl.NumberFormat(formatLocale);
+const date = new Intl.DateTimeFormat(formatLocale, {
+  dateStyle: "long",
+  timeZone: "Europe/Berlin",
+});
+const metrics = stats && [
+  { label: "Level", value: stats.level },
+  { label: "XP", value: stats.xp },
+  { label: "Badges", value: stats.badges },
+  { label: isGerman ? "Trophäen" : "Trophies", value: stats.trophies },
+];
+const profileUrl = `https://learn.microsoft.com/${isGerman ? "de-de" : "en-gb"}/users/alademann/`;
 ---
 
 <Layout
@@ -31,6 +47,43 @@ const { Content } = await render(about);
 
   <Main pageTitle={about.data.title} class="app-prose">
     <Content />
+
+    <section aria-labelledby="microsoft-learn">
+      <h2 id="microsoft-learn">Microsoft Learn</h2>
+
+      {
+        stats && metrics && (
+          <>
+            <dl class="not-prose border-border my-4 grid grid-cols-2 gap-x-4 gap-y-4 border-y py-4 sm:grid-cols-4">
+              {metrics.map(({ label, value }) => (
+                <div>
+                  <dt class="text-sm">{label}</dt>
+                  <dd class="text-accent text-2xl font-semibold tabular-nums">
+                    {number.format(value)}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <p class="text-sm">
+              {isGerman ? "Abgerufen am " : "Last checked "}
+              <time datetime={stats.fetchedAt}>
+                {date.format(new Date(stats.fetchedAt))}
+              </time>
+            </p>
+          </>
+        )
+      }
+
+      <p>
+        <a href={profileUrl}>
+          {
+            isGerman
+              ? "Mein Microsoft-Learn-Profil"
+              : "My Microsoft Learn profile"
+          }
+        </a>
+      </p>
+    </section>
   </Main>
 
   <Footer />
