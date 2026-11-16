@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb.astro";
 import Main from "@/components/Main.astro";
 import Footer from "@/components/Footer.astro";
 import config from "@/config";
+import { credlyProfileUrl, getCredlyBadges } from "@/utils/credly";
 import { getMicrosoftLearnStats } from "@/utils/microsoftLearn";
 
 const locale = Astro.currentLocale ?? config.site.lang;
@@ -18,7 +19,10 @@ if (!about) {
 }
 
 const { Content } = await render(about);
-const stats = await getMicrosoftLearnStats();
+const [stats, badges] = await Promise.all([
+  getMicrosoftLearnStats(),
+  getCredlyBadges(),
+]);
 const isGerman = locale === "de";
 const formatLocale = isGerman ? "de-DE" : "en-GB";
 const number = new Intl.NumberFormat(formatLocale);
@@ -26,6 +30,14 @@ const date = new Intl.DateTimeFormat(formatLocale, {
   dateStyle: "long",
   timeZone: "Europe/Berlin",
 });
+const credentialDate = new Intl.DateTimeFormat(formatLocale, {
+  dateStyle: "medium",
+  timeZone: "UTC",
+});
+const credentialCategories = new Map([
+  ["Certification", isGerman ? "Zertifizierung" : "Certification"],
+  ["Learning", isGerman ? "Lernnachweis" : "Learning badge"],
+]);
 const metrics = stats && [
   { label: "Level", value: stats.level },
   { label: "XP", value: stats.xp },
@@ -81,6 +93,80 @@ const profileUrl = `https://learn.microsoft.com/${isGerman ? "de-de" : "en-gb"}/
               ? "Mein Microsoft-Learn-Profil"
               : "My Microsoft Learn profile"
           }
+        </a>
+      </p>
+    </section>
+
+    <section aria-labelledby="credly-credentials">
+      <h2 id="credly-credentials">
+        {
+          isGerman
+            ? "Zertifikate und Lernnachweise"
+            : "Certifications and learning badges"
+        }
+      </h2>
+
+      {
+        badges.length > 0 && (
+          <ul
+            class="not-prose divide-border border-border my-4 list-none divide-y border-y p-0"
+            role="list"
+          >
+            {badges.map(badge => (
+              <li class="flex items-start gap-4 py-4">
+                <div class="w-12 shrink-0 sm:w-16">
+                  {badge.imageUrl && (
+                    <img
+                      src={badge.imageUrl}
+                      alt=""
+                      width="64"
+                      height="64"
+                      loading="lazy"
+                      decoding="async"
+                      referrerpolicy="no-referrer"
+                      class="m-0 aspect-square w-full border-0 object-contain"
+                    />
+                  )}
+                </div>
+                <div class="min-w-0">
+                  <a
+                    href={badge.verificationUrl}
+                    class="font-semibold underline decoration-dashed underline-offset-4"
+                  >
+                    {badge.title}
+                  </a>
+                  <p class="my-1 text-sm">
+                    {[
+                      badge.issuer,
+                      credentialCategories.get(badge.category ?? ""),
+                    ]
+                      .filter(Boolean)
+                      .join(" · ")}
+                  </p>
+                  <p class="text-muted-foreground m-0 text-xs">
+                    {isGerman ? "Ausgestellt am " : "Issued "}
+                    <time datetime={badge.issuedOn}>
+                      {credentialDate.format(new Date(badge.issuedOn))}
+                    </time>
+                    {badge.expiresOn && (
+                      <>
+                        {isGerman ? " · Ablaufdatum " : " · Expiry date "}
+                        <time datetime={badge.expiresOn}>
+                          {credentialDate.format(new Date(badge.expiresOn))}
+                        </time>
+                      </>
+                    )}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+
+      <p>
+        <a href={credlyProfileUrl}>
+          {isGerman ? "Mein Credly-Profil" : "My Credly profile"}
         </a>
       </p>
     </section>
